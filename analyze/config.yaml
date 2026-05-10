@@ -1,0 +1,48 @@
+# Round 2 聚合分析配置
+
+paths:
+  extractions_dir: ../extract/data/extractions
+  outputs_dir: ./data/outputs
+
+# Embedding：OpenAI text-embedding-3-small 便宜稳，~$0.02/1M tokens
+embedding:
+  api_key_env: OPENAI_API_KEY
+  base_url: "https://api.openai.com/v1"
+  model: "text-embedding-3-small"
+  batch_size: 100
+  cache_file: ./data/outputs/embedding_cache.json
+
+# V0 level → 数值映射
+level_map:
+  "高": 3
+  "中": 2
+  "低": 1
+  "无证据": 0
+
+evidence_strength_map:
+  "强": 3
+  "中": 2
+  "弱": 1
+  "无": 0
+
+# 涌现聚类
+emergent_clustering:
+  min_cluster_size: 3            # 至少出现 3 次才算一个簇
+  algorithm: "agglomerative"     # agglomerative | kmeans
+  k_range: [8, 25]               # k-means 时尝试的 k 范围
+  distance_threshold: 0.35       # agglomerative 时切割阈值（cosine 距离）
+
+# V0 ↔ 涌现 匹配
+compare:
+  similarity_high: 0.65          # > 视作"确证候选"
+  similarity_low: 0.40           # < 视作"无 V0 对应"
+  v0_strength_threshold: 1.5     # v0_score 平均 < 此值算"V0 弱"
+
+# Archetype 聚类
+archetype:
+  k_range: [3, 8]
+  algorithm: "kmeans"            # 也支持 agglomerative
+
+# 正交性
+orthogonality:
+  high_corr_threshold: 0.7       # 相关系数 > 视作"应考虑合并"
