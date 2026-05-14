@@ -1,109 +1,49 @@
 # AI 领军人才画像建设研究
 
-学院 AI 博士生培养——即 AI 领军人才培养——画像方法论与执行管线。
+本仓库服务于 AI 领军人才画像研究。主线不是写代码，而是通过 AI 名人画像抽取、学生数据映射和数据补全，形成可用于博士生培养的画像框架。
 
-详见研究方案：[`AI领军人才画像研究方案_V0.1.md`](./AI领军人才画像研究方案_V0.1.md)
+主文档：[AI领军人才画像研究方案.md](./AI领军人才画像研究方案.md)
 
----
+阶段一成果：
 
-## 方法论一句话
+- [阶段一研究报告：60 人证据审计与原子能力 V1.1](./stage1/阶段一_名人画像研究报告.md)
+- [60 人证据审计矩阵](./stage1/60人证据审计矩阵.md)
+- [原子能力修订说明 V1.1](./stage1/原子能力修订说明_V1.1.md)
+- [领军人才评价尺度 V1.1](./stage1/领军人才评价尺度_V1.1.md)
 
-不靠人定维度，也不让数据空降；**先种 V0 假设，让大批名人公开痕迹来涌现挑战，三轨握手得到 V1**。核心交付物不是 V1 框架本身，而是 **V0 → V1 的认知更新报告**。
+## 三阶段主线
 
----
+```text
+阶段一：AI 抽取名人画像
+  从公开网络材料中抽取 AI 领域代表人物的关键特征，形成候选维度、证据样例和 archetype。
 
-## 三个执行模块
+阶段二：引入真实学生画像
+  用候选框架映射真实学生材料，识别哪些维度有证据、哪些维度缺数据。
 
-```
-scrape/    抓取 100-200 位 AI 名人公开痕迹（学术 / 代码 / 传记 / 主页）
-   ↓
-extract/   Round 1 双抽取：开放式 + 半结构式（多模型 × 多次采样）
-   ↓
-analyze/   Round 2 聚合：V0 评分 / 涌现聚类 / 三方对照 / archetype / 报告
-```
-
-每个模块独立 README，独立可跑。
-
----
-
-## 端到端跑全流程
-
-```bash
-# 1. 装依赖（每个模块各一次）
-cd scrape   && pip install -r requirements.txt
-cd ../extract && pip install -r requirements.txt
-cd ../analyze && pip install -r requirements.txt
-
-# 2. 设 API key（环境变量）
-export ANTHROPIC_API_KEY=sk-ant-...
-export OPENAI_API_KEY=sk-...
-export DEEPSEEK_API_KEY=sk-...     # 可选
-export GITHUB_TOKEN=ghp_...        # 可选，提速 GitHub 抓取
-export SS_API_KEY=...              # 可选，提速 Semantic Scholar
-
-# 3. 抓数据
-cd ../scrape
-python scrape.py
-python aggregate.py
-
-# 4. 双抽取
-cd ../extract
-python extract.py
-
-# 5. 聚合分析
-cd ../analyze
-python 01_load_normalize.py && \
-python 02_v0_matrix.py && \
-python 03_emergent_cluster.py && \
-python 04_compare.py && \
-python 05_orthogonality.py && \
-python 06_archetype.py && \
-python 07_report.py
-
-# 报告：analyze/data/outputs/V0_to_V1_report.md
+阶段三：补全数据并形成完整画像
+  基于数据缺口补充低负担证据，形成学生原子能力画像、archetype 相似度和培养建议。
 ```
 
----
+## 代码定位
 
-## 当前状态
+现有代码是辅助工具，主要服务阶段一的公开材料收集和初步抽取。
 
-- ✅ V0.1 方案文档
-- ✅ scrape / extract / analyze 三模块代码
-- ✅ 60 人名人池种子（待扩到 100-200）
-- ⏳ 实跑数据待启动
-- ⏳ Round 3 回测待 Round 2 结束后
+| 目录 | 作用 |
+|---|---|
+| `scrape/` | 抓取 AI 名人公开痕迹 |
+| `extract/` | 用 LLM 做开放式和半结构式抽取 |
+| `analyze/` | 聚合抽取结果，辅助做聚类和对照 |
 
----
+当前最重要的工作不是扩展代码，而是把 V1.1 拿到真实学生材料上测试数据覆盖度，并继续补齐 C/D 级名人的可靠来源。
 
-## 仓库结构
+## 当前文件
 
-```
+```text
 .
-├── README.md                                此文件
-├── AI领军人才画像研究方案_V0.1.md           方法论与计划
-├── scrape/                                  公开痕迹抓取
-│   ├── README.md
-│   ├── scrape.py
-│   ├── aggregate.py
-│   ├── scrapers/                            分源 scraper
-│   └── data/names_seed.csv                  60 人名单
-├── extract/                                 LLM 双抽取
-│   ├── README.md
-│   ├── extract.py
-│   ├── llm.py
-│   └── prompts/
-│       ├── open.md
-│       └── seeded.md
-└── analyze/                                 聚合分析
-    ├── README.md
-    ├── 01_load_normalize.py
-    ├── 02_v0_matrix.py
-    ├── 03_emergent_cluster.py
-    ├── 04_compare.py
-    ├── 05_orthogonality.py
-    ├── 06_archetype.py
-    ├── 07_report.py
-    └── lib/
-        ├── v0.py                            V0 12 原子定义
-        └── io.py
+├── README.md
+├── AI领军人才画像研究方案.md
+├── stage1/
+├── scrape/
+├── extract/
+└── analyze/
 ```
