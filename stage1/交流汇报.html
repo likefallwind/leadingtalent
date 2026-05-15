@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 领军人才画像研究阶段汇报</title>
+  <style>
+    :root {
+      --ink: #17202a;
+      --muted: #5c6b7a;
+      --line: #d9e1e8;
+      --soft: #f5f7fa;
+      --panel: #ffffff;
+      --blue: #1f6feb;
+      --green: #1f8f5f;
+      --amber: #b76e00;
+      --red: #c2410c;
+      --violet: #6b4eff;
+      --shadow: 0 16px 40px rgba(23, 32, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #eef3f7;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .shell {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      min-height: 100vh;
+    }
+
+    aside {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      padding: 28px 20px;
+      background: #111827;
+      color: #f8fafc;
+      overflow: auto;
+    }
+
+    aside h1 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    aside .meta {
+      color: #b7c4d2;
+      font-size: 13px;
+      margin-bottom: 28px;
+    }
+
+    nav {
+      display: grid;
+      gap: 8px;
+    }
+
+    nav a {
+      display: block;
+      padding: 9px 10px;
+      color: #dbeafe;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.08);
+      text-decoration: none;
+    }
+
+    main {
+      padding: 36px;
+    }
+
+    .hero {
+      max-width: 1180px;
+      margin: 0 auto 28px;
+      padding: 42px;
+      border-radius: 16px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--blue);
+    }
+
+    .hero h2 {
+      margin: 0;
+      max-width: 980px;
+      font-size: clamp(30px, 5vw, 56px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .hero p {
+      max-width: 900px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    section {
+      max-width: 1180px;
+      margin: 0 auto 28px;
+      padding: 30px;
+      border-radius: 14px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    section h2 {
+      margin: 0 0 16px;
+      font-size: 28px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    section h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .grid.two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid.three {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .grid.four {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .card {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .metric {
+      display: flex;
+      flex-direction: column;
+      min-height: 118px;
+      justify-content: space-between;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 38px;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: var(--soft);
+      color: #334155;
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    .tag.green {
+      background: #e9f8ef;
+      color: var(--green);
+    }
+
+    .tag.amber {
+      background: #fff4de;
+      color: var(--amber);
+    }
+
+    .tag.red {
+      background: #fff0e8;
+      color: var(--red);
+    }
+
+    .tag.blue {
+      background: #eaf2ff;
+      color: var(--blue);
+    }
+
+    .flow {
+      display: grid;
+      gap: 12px;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 36px minmax(0, 1fr);
+      gap: 12px;
+      align-items: start;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+    }
+
+    .num {
+      display: grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #eaf2ff;
+      color: var(--blue);
+      font-weight: 800;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    th,
+    td {
+      padding: 12px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f1f5f9;
+      font-weight: 750;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .callout {
+      padding: 18px;
+      border-left: 5px solid var(--amber);
+      background: #fff8ed;
+      border-radius: 10px;
+    }
+
+    .callout strong {
+      color: #8a5200;
+    }
+
+    .ok {
+      border-left-color: var(--green);
+      background: #effaf3;
+    }
+
+    .ok strong {
+      color: var(--green);
+    }
+
+    .risk {
+      border-left-color: var(--red);
+      background: #fff5ef;
+    }
+
+    .risk strong {
+      color: var(--red);
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .footer {
+      max-width: 1180px;
+      margin: 0 auto 44px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 980px) {
+      .shell {
+        grid-template-columns: 1fr;
+      }
+
+      aside {
+        position: static;
+        height: auto;
+      }
+
+      nav {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      main {
+        padding: 18px;
+      }
+
+      .hero,
+      section {
+        padding: 22px;
+      }
+
+      .grid.two,
+      .grid.three,
+      .grid.four,
+      .split {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <aside>
+      <h1>AI 领军人才画像研究</h1>
+      <div class="meta">阶段交流页 · Stage 1 V1.2</div>
+      <nav>
+        <a href="#goal">研究目标</a>
+        <a href="#progress">当前进展</a>
+        <a href="#data">数据质量</a>
+        <a href="#findings">可信结论</a>
+        <a href="#scale">能力尺度</a>
+        <a href="#risk">方法风险</a>
+        <a href="#next">下一步方案</a>
+        <a href="#files">文件入口</a>
+      </nav>
+    </aside>
+
+    <main>
+      <div class="hero" id="top">
+        <div class="eyebrow"><span class="dot"></span>当前阶段：从名人公开材料建立可验证的画像框架</div>
+        <h2>不是给学生排名，而是找到 AI 领军人才的能力结构、证据缺口和培养路径。</h2>
+        <p>当前已经完成 60 人名单的数据审计、可信源补强和阶段一 V1.2 结论整理。下一步需要把结论拿到真实学生材料里做覆盖测试，并进一步降低初始维度带来的自证循环风险。</p>
+      </div>
+
+      <section id="goal">
+        <h2>1. 研究目标</h2>
+        <p class="lead">这套画像方法服务于 AI 博士生培养，不做单一总分，也不把专家预设维度强行套到学生身上。</p>
+        <div class="grid three">
+          <div class="card">
+            <h3>识别能力结构</h3>
+            <p>AI 领域领军人才身上稳定出现了哪些关键特征？这些特征是否能被证据支持？</p>
+          </div>
+          <div class="card">
+            <h3>服务培养过程</h3>
+            <p>这些特征在博士培养期能否观察、记录和训练？哪些需要新增低负担数据？</p>
+          </div>
+          <div class="card">
+            <h3>形成路径建议</h3>
+            <p>学生当前更接近哪类发展路径，下一步应补什么能力、项目和证据？</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="progress">
+        <h2>2. 当前已经做了什么</h2>
+        <div class="flow">
+          <div class="step">
+            <div class="num">1</div>
+            <div>
+              <h3>建立 60 人 AI 领军样本名单</h3>
+              <p>覆盖学术认证、工业领军、创业领军、中国本土、AI 安全治理、理论解释影响力、跨界教育等类型。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">2</div>
+            <div>
+              <h3>自动抓取并审计数据质量</h3>
+              <p>发现 Semantic Scholar 和 Wikipedia 搜索存在大量同名错配，自动抓取结果不能直接用于画像抽取。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">3</div>
+            <div>
+              <h3>补充人工可信源</h3>
+              <p>为 60 人逐一补充官方主页、机构页面、项目/论文/产品源、权威二级来源，形成可进入分析的可信源矩阵。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">4</div>
+            <div>
+              <h3>形成阶段一 V1.2 结论</h3>
+              <p>保留 17 个核心原子能力、1 个学生过程证据项，并形成 7 类 archetype 作为学生画像相似度坐标。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="data">
+        <h2>3. 数据质量：从不可信到可进入研究</h2>
+        <div class="grid four">
+          <div class="card metric">
+            <strong>60</strong>
+            <span>名单人数，全量覆盖</span>
+          </div>
+          <div class="card metric">
+            <strong>60</strong>
+            <span>已生成人物 profile</span>
+          </div>
+          <div class="card metric">
+            <strong>26</strong>
+            <span>A 级可信源样本</span>
+          </div>
+          <div class="card metric">
+            <strong>34</strong>
+            <span>B 级可信源样本</span>
+          </div>
+        </div>
+        <div class="split" style="margin-top: 18px;">
+          <div class="callout risk">
+            <strong>原始问题</strong>
+            <p>自动抓取中有 42 人存在疑似错配风险，主要集中在 Semantic Scholar 作者 ID/同名作者错配、Wikipedia 搜索错配。因此自动源只能做线索，不能直接进入画像判断。</p>
+          </div>
+          <div class="callout ok">
+            <strong>补强结果</strong>
+            <p>补充人工可信源后，C/D 样本归零。A 级用于尺度校准，B 级用于路径覆盖、反例检查和补足创业/工业样本。</p>
+          </div>
+        </div>
+        <table style="margin-top: 18px;">
+          <thead>
+            <tr>
+              <th>来源等级</th>
+              <th>来源类型</th>
+              <th>研究用途</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag green">S1</span></td>
+              <td>官方个人主页、大学/公司/机构主页、IR/治理页面</td>
+              <td>确认身份、角色、长期贡献</td>
+            </tr>
+            <tr>
+              <td><span class="tag blue">S2</span></td>
+              <td>官方项目、论文、GitHub 组织、产品文档</td>
+              <td>确认作品、工程系统、生态影响</td>
+            </tr>
+            <tr>
+              <td><span class="tag amber">S3</span></td>
+              <td>奖项、听证证词、交易所文件、权威媒体人物稿</td>
+              <td>补充组织影响、战略选择、外部叙事</td>
+            </tr>
+            <tr>
+              <td><span class="tag red">S4</span></td>
+              <td>Wikipedia / 搜索结果 / 未校验数据库</td>
+              <td>只做导航，不直接作为画像证据</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="findings">
+        <h2>4. 阶段一可信结论 V1.2</h2>
+        <p class="lead">当前结论是“可进入学生数据映射”的阶段一版本，不是终版量表。</p>
+        <div class="grid two">
+          <div class="card">
+            <h3>AI 领军能力不是单一优秀</h3>
+            <p>至少由智识判断、工程与产品、内驱成长、外向影响、组织领导五类能力共同构成。</p>
+          </div>
+          <div class="card">
+            <h3>不能只看论文或创业头衔</h3>
+            <p>画像要同时看研究问题、方法、系统、产品、社区、团队和资源组织。</p>
+          </div>
+          <div class="card">
+            <h3>领导力必须拆开</h3>
+            <p>不能用一个“领导力”大词打分，应拆成愿景、人才、资源、外部信任四类证据。</p>
+          </div>
+          <div class="card">
+            <h3>AI 需要看基础设施杠杆</h3>
+            <p>数据、算力、平台、工具链和组织节奏是 AI 领域区别于一般科研/创业的重要变量。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="scale">
+        <h2>5. 当前 17 个核心原子能力</h2>
+        <p class="lead">V1.2 暂时保留 17 个核心能力，并把“复现与调试力”单独作为学生过程证据项。</p>
+        <table>
+          <thead>
+            <tr>
+              <th>能力簇</th>
+              <th>原子能力</th>
+              <th>当前判断</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>智识判断</td>
+              <td>问题嗅觉、理论/机制深度、系统性思维、反共识判断、实验与评估品味</td>
+              <td>多数为高置信；反共识判断为中置信，不是所有路径都必须高。</td>
+            </tr>
+            <tr>
+              <td>工程与产品</td>
+              <td>代码/系统实现力、速度/迭代节奏、产品化/场景定义、数据/算力/基础设施杠杆</td>
+              <td>基础设施杠杆是 AI 领域特殊性；速度需要时间线证据。</td>
+            </tr>
+            <tr>
+              <td>内驱成长</td>
+              <td>长期专注与韧性、跨范式迁移与自我更新</td>
+              <td>长期专注高置信；跨范式迁移需要阶段二继续验证。</td>
+            </tr>
+            <tr>
+              <td>外向影响</td>
+              <td>技术表达与解释力、社区/生态建设、外部叙事与信任建立</td>
+              <td>外部叙事对创业/组织型重要，但受媒体曝光偏差影响。</td>
+            </tr>
+            <tr>
+              <td>组织领导</td>
+              <td>愿景与议程设定、人才吸引与团队构建、资源整合与关键决策</td>
+              <td>用于刻画平台型、研究院型、创业型领军路径。</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="callout" style="margin-top: 18px;">
+          <strong>过程证据项</strong>
+          <p>复现与调试力对博士生成长很关键，但在名人公开材料中不稳定可见，所以不进入名人核心尺度，阶段二单独记录。</p>
+        </div>
+      </section>
+
+      <section id="risk">
+        <h2>6. 当前方案的关键风险</h2>
+        <div class="grid two">
+          <div class="callout risk">
+            <strong>初始维度影响过强</strong>
+            <p>如果先由 AI 生成维度，再让 AI 去材料里找这些维度，容易形成自证循环。</p>
+          </div>
+          <div class="callout risk">
+            <strong>资料源偏新闻和官网</strong>
+            <p>新闻、公司官网、融资报道更容易抽出企业家式能力，而不是科学家的深层研究能力。</p>
+          </div>
+          <div class="callout risk">
+            <strong>科学家能力刻画不足</strong>
+            <p>目前尺度里组织、资源、叙事偏多；问题形式化、方法发明、学术脉络、异常敏感性等科学家能力需要补强。</p>
+          </div>
+          <div class="callout risk">
+            <strong>统一尺度可能误伤路径差异</strong>
+            <p>科学家、工程系统建设者、创业者、生态教育者不应完全用同一把尺子衡量。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="next">
+        <h2>7. 下一步更合理的方案</h2>
+        <p class="lead">建议把下一轮阶段一从“能力维度验证”改成“关键事件开放编码”。</p>
+        <div class="flow">
+          <div class="step">
+            <div class="num">1</div>
+            <div>
+              <h3>先抽关键事件卡，而不是直接抽能力</h3>
+              <p>记录人物在什么时间点、面对什么问题、做了什么选择、如何证明、后来产生什么影响。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">2</div>
+            <div>
+              <h3>按资料类型分层</h3>
+              <p>科学家画像优先看论文、代表作、研究路线、课程讲座、深度访谈；新闻稿只做背景。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">3</div>
+            <div>
+              <h3>开放编码后再和 V0/V1.2 对照</h3>
+              <p>V0/V1.2 不再作为抽取模板，而是作为最后对照表：保留、拆分、删除、新增。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">4</div>
+            <div>
+              <h3>重构为“共通底座 + 路径特异能力”</h3>
+              <p>避免用企业家的尺子衡量科学家，也避免用论文的尺子衡量创业者。</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid two" style="margin-top: 18px;">
+          <div class="card">
+            <h3>科学家路径需要补的能力</h3>
+            <div class="pill-list">
+              <span class="tag">问题形式化</span>
+              <span class="tag">研究品味</span>
+              <span class="tag">机制建模</span>
+              <span class="tag">方法发明</span>
+              <span class="tag">证据严谨性</span>
+              <span class="tag">异常敏感性</span>
+              <span class="tag">学术脉络掌握</span>
+              <span class="tag">长期研究纲领</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>路径化画像结构</h3>
+            <p>共通底座：问题判断、长期专注、学习迁移、表达解释、证据严谨性。</p>
+            <p>路径特异：科学家、工程系统、企业家平台、生态教育、AI 安全治理分别校准。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="files">
+        <h2>8. 当前应该看哪些文件</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>文件</th>
+              <th>用途</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="./README.md">stage1/README.md</a></td>
+              <td>Stage 1 阅读入口。</td>
+            </tr>
+            <tr>
+              <td><a href="./阶段一_可信研究结论_V1.2.md">阶段一_可信研究结论_V1.2.md</a></td>
+              <td>当前阶段一可信结论。</td>
+            </tr>
+            <tr>
+              <td><a href="./领军人才评价尺度_V1.2.md">领军人才评价尺度_V1.2.md</a></td>
+              <td>阶段二试用量表。</td>
+            </tr>
+            <tr>
+              <td><a href="./可信源补强矩阵.md">可信源补强矩阵.md</a></td>
+              <td>数据质量补强说明。</td>
+            </tr>
+            <tr>
+              <td><a href="./60人证据审计矩阵.md">60人证据审计矩阵.md</a></td>
+              <td>自动抓取原始质量审计。</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <div class="footer">生成时间：2026-05-15 · 本页为阶段交流材料，最终方案仍需经过学生材料映射测试。</div>
+    </main>
+  </div>
+</body>
+</html>
