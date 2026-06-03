@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 领军人才画像 · 数据驱动研究报告</title>
+<style>
+ :root{--bg:#0f1115;--card:#171a21;--card2:#1e222b;--bd:#2a2f3a;--tx:#e8eaed;--mut:#9aa0a6;--ac:#7c83ff;}
+ *{box-sizing:border-box}
+ body{margin:0;font-family:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--tx);line-height:1.65}
+ a{color:var(--ac)}
+ header{padding:28px 22px 14px;border-bottom:1px solid var(--bd);background:linear-gradient(180deg,#13161d,#0f1115)}
+ header h1{margin:0 0 6px;font-size:24px}
+ header .sub{color:var(--mut);font-size:14px}
+ header .stat{display:inline-flex;gap:18px;margin-top:12px;flex-wrap:wrap}
+ header .stat b{color:var(--ac);font-size:20px}
+ header .stat span{display:flex;flex-direction:column;font-size:12px;color:var(--mut)}
+ nav{position:sticky;top:0;z-index:10;display:flex;gap:4px;padding:8px 14px;background:#12141b;border-bottom:1px solid var(--bd);overflow-x:auto}
+ nav button{background:transparent;border:1px solid transparent;color:var(--mut);padding:8px 14px;border-radius:8px;cursor:pointer;font-size:14px;white-space:nowrap}
+ nav button.on{background:var(--card2);color:var(--tx);border-color:var(--bd)}
+ main{max-width:1080px;margin:0 auto;padding:22px 16px 80px}
+ .tab{display:none}.tab.on{display:block}
+ .card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:18px 20px;margin:14px 0}
+ h2{font-size:19px;margin:6px 0 12px;border-left:4px solid var(--ac);padding-left:10px}
+ h3{font-size:16px;margin:18px 0 8px}
+ .mut{color:var(--mut)}.sm{font-size:13px}
+ .chip{display:inline-block;font-size:11px;padding:2px 8px;border-radius:20px;color:#0f1115;font-weight:600;margin:2px 3px 2px 0;white-space:nowrap;cursor:default}
+ .layer{border-radius:10px;padding:14px 16px;margin:10px 0}
+ .layer.l1{background:rgba(46,194,126,.10);border:1px solid rgba(46,194,126,.4)}
+ .layer.l2{background:rgba(255,176,32,.09);border:1px solid rgba(255,176,32,.4)}
+ .layer.l3{background:rgba(181,23,158,.10);border:1px solid rgba(181,23,158,.4)}
+ .layer b.tag{font-size:13px;letter-spacing:1px}
+ ul{margin:8px 0;padding-left:20px}li{margin:4px 0}
+ .bar{display:flex;align-items:center;gap:10px;margin:6px 0;cursor:pointer;padding:4px 6px;border-radius:8px}
+ .bar:hover{background:var(--card2)}
+ .bar .nm{width:230px;font-size:13px;flex:none}
+ .bar .track{flex:1;background:#11141a;border-radius:6px;height:22px;position:relative;overflow:hidden}
+ .bar .fill{height:100%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;font-size:12px;font-weight:700;color:#0f1115;min-width:34px}
+ .bar .pid{font-size:11px;color:var(--mut);width:64px;text-align:right;flex:none}
+ .controls{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
+ input,select{background:var(--card2);border:1px solid var(--bd);color:var(--tx);padding:8px 10px;border-radius:8px;font-size:14px}
+ input{flex:1;min-width:180px}
+ table{width:100%;border-collapse:collapse;font-size:13px}
+ th,td{text-align:left;padding:8px 8px;border-bottom:1px solid var(--bd);vertical-align:top}
+ th{color:var(--mut);font-weight:600;position:sticky;top:46px;background:#12141b}
+ td.p{white-space:nowrap;color:var(--ac)}td.from{white-space:nowrap;color:var(--mut);font-size:11px}
+ .person{border:1px solid var(--bd);border-radius:10px;margin:10px 0;overflow:hidden}
+ .person .ph{padding:12px 14px;cursor:pointer;display:flex;justify-content:space-between;gap:10px;align-items:center;background:var(--card)}
+ .person .ph:hover{background:var(--card2)}
+ .person .pb{display:none;padding:8px 14px 14px;background:#13161d;border-top:1px solid var(--bd)}
+ .person.open .pb{display:block}
+ .fact{font-size:12.5px;color:var(--mut);margin:3px 0;padding-left:4px}
+ .fact b{color:#cdd2db;font-weight:600}
+ .caprow{font-size:13px;margin:5px 0;padding:6px 8px;background:var(--card2);border-radius:8px}
+ .conf{font-size:10px;border:1px solid var(--bd);border-radius:4px;padding:0 4px;color:var(--mut)}
+ .note{font-size:12px;color:var(--mut);border-top:1px dashed var(--bd);margin-top:14px;padding-top:10px}
+ .fp{display:flex;flex-wrap:wrap;gap:3px;margin-top:4px}
+</style>
+</head>
+<body>
+<header>
+ <h1>人工智能领军人才画像 · 数据驱动研究报告</h1>
+ <div class="sub">60 位公认领军人才 → 硬事实 → 原子能力 → 涌现聚类 → 画像。全程自下而上、不预设维度，每一步可回溯。</div>
+ <div class="stat" id="stat"></div>
+</header>
+<nav id="nav"></nav>
+<main>
+ <section class="tab on" id="t-conc"></section>
+ <section class="tab" id="t-clu"></section>
+ <section class="tab" id="t-caps"></section>
+ <section class="tab" id="t-walk"></section>
+ <section class="tab" id="t-ppl"></section>
+</main>
+<script>
+/*__DATA__*/
+const C=DATA.clusters, CO=DATA.colors;
+const elStat=document.getElementById('stat');
+elStat.innerHTML=`<span><b>${DATA.totals.people}</b>领军人才</span><span><b>${DATA.totals.facts}</b>硬事实</span><span><b>${DATA.totals.caps}</b>原子能力</span><span><b>17</b>能力簇</span><span><b>6</b>原型</span>`;
+function chip(cl){return `<span class="chip" style="background:${CO[cl]}" title="${C[cl]}">${cl} ${C[cl]}</span>`}
+function chipS(cl){return `<span class="chip" style="background:${CO[cl]}" title="${C[cl]}">${cl}</span>`}
+const TABS=[["t-conc","结论画像"],["t-clu","能力簇分布"],["t-caps","全部原子能力"],["t-walk","三人走查"],["t-ppl","60 人映射"]];
+const nav=document.getElementById('nav');
+TABS.forEach(([id,nm],i)=>{const b=document.createElement('button');b.textContent=nm;b.className=i==0?'on':'';b.onclick=()=>{document.querySelectorAll('nav button').forEach(x=>x.classList.remove('on'));b.classList.add('on');document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));document.getElementById(id).classList.add('on');window.scrollTo(0,0)};nav.appendChild(b)});
+
+/* ---------- 结论画像 ---------- */
+document.getElementById('t-conc').innerHTML=`
+<div class="card">
+ <h2>一句话结论</h2>
+ <p><b>AI 领军人才不是“一种人”，而是几种差异很大的原型叠加。</b> 把 406 条能力聚成 17 簇后，<b>命中最多的簇（造基础件）也只覆盖约 2/3（39/60）</b>，分布随即迅速衰减、多数簇在 1/4 上下——<b>没有任何一条“软特质”是人人都有的</b>。任何“领军人才应同时具备远见+领导力+技术深度”的画像都是过度拟合、是自我证明。</p>
+</div>
+<div class="card">
+ <h2>三层画像</h2>
+ <div class="layer l1"><b class="tag">① 门槛项 · 事实层面近乎全员</b>
+ <ul><li><b>至少一件被公认的硬成果</b>：奠基方法/架构、撑业务的系统、定义品类的产品、国家标准、或一家头部公司——空有潜力没“作品”的人不在此列。</li>
+ <li><b>长期、高强度、可持续的投入</b>：从寒冬坚持几十年，到“3 年读 1800 篇论文”“六七年 AGI 长跑”——是时间与强度的复利。</li></ul>
+ <div class="mut sm">门槛是“实打实的成果 + 长期投入”，而<b>不是任何性格或风格</b>。</div></div>
+ <div class="layer l2"><b class="tag">② 区分项 · 约 1/4–1/2 的人具备 · 不同原型的“杠杆”</b>
+ <div class="mut sm" style="margin:6px 0">这些不是人人都有，而是把人分化成不同类型领军者的关键变量。领军者通常把其中 <b>3–5 个做到极致</b>，而非每个都沾。</div>
+ <div id="layer2chips"></div></div>
+ <div class="layer l3"><b class="tag">③ 特异项 · 个人独有签名 · 不可复制、不应作标准</b>
+ <ul class="sm"><li>Hinton：与抑郁/伤病/两任配偶病逝长期共存仍维持顶级产出</li><li>Hassabis：象棋神童→游戏设计→神经科学→AI 四段跨界都到顶尖</li><li>王兴兴：英语差无缘名校、靠动手能力逆袭、用春晚破圈</li><li>梁文锋：用量化私募的钱与算力反哺“不融资”的大模型公司</li><li>Altman：以“末日准备者”心态管理不确定性；被逐出数日重夺控制权</li><li>雷军：横跨 PC/互联网/移动/IoT/汽车五个时代仍持续成功</li></ul>
+ <div class="mut sm">特异项无法清单化，但共同暗示一个<b>元能力：把自己独特的非典型资源/经历，转化为别人没有的杠杆</b>。</div></div>
+</div>
+<div class="card">
+ <h2>三个“反直觉”观察（数据给的，不是预设）</h2>
+ <ul><li><b>没有全能模板</b>：命中最多的特质（造基础件）也只覆盖 39/60，其余迅速降到一半以下。</li>
+ <li><b>“原型迁移”比静态特质更醒目</b>：Hinton/Bengio 奠基科学家→安全倡导者；汤晓鸥/唐杰/印奇 科学家→创业者；颜水成/田奇 学界↔工业界反复横跳。能在原型间迁移且每次都成立，是反复出现的模式。</li>
+ <li><b>“诚实面对边界”反复出现</b>：Hinton 承认他人优先权、Ilya 公开认错、Altman/汤晓鸥/李开复/朱珑 的失败与误判都被如实记录——领军≠完人。</li></ul>
+</div>
+<div class="card">
+ <h2>因果边界声明（结论的使用说明书）</h2>
+ <ul class="sm"><li><b>相关，不是因果</b>：60 人全是赢家、无对照组。只能说“领军者中很多人有 X”，<b>不能</b>说“有 X 就能成为领军者”。</li>
+ <li><b>名单决定画像</b>：名单偏向创始人/大厂科学家/院士，故“建机构/撬资本/巨头统帅”被放大；换名单分布会变。</li>
+ <li><b>AI 归纳有投射风险</b>：故每条能力都留 <code>from F#</code> 证据链，可回到原始事实复核、可证伪。</li>
+ <li><b>逼近因果的下一步</b>：引入“努力相当但未成名”的对照组，或追踪早期特征对后续成就的预测力。</li></ul>
+</div>`;
+
+/* ---------- 能力簇分布 ---------- */
+(function(){
+ const order=Object.keys(C).filter(k=>k!=='CL0').sort((a,b)=>DATA.cluStats[b].n-DATA.cluStats[a].n);
+ const max=Math.max(...order.map(k=>DATA.cluStats[k].n));
+ let h=`<div class="card"><h2>17 个涌现能力簇 · 命中人数分布（/60）</h2>
+ <p class="mut sm">簇由 406 条能力自下而上归并而成，<b>未使用任何预设维度</b>。点击任一条，查看该簇覆盖了哪些人、对应哪些原子能力。计数为分析者编码，±2–3 人误差，结论对小误差稳健。</p><div id="bars"></div></div>
+ <div class="card" id="cluDetail"><span class="mut">↑ 点击上方某个能力簇查看明细</span></div>`;
+ document.getElementById('t-clu').innerHTML=h;
+ const bars=document.getElementById('bars');
+ order.forEach(k=>{const s=DATA.cluStats[k];const d=document.createElement('div');d.className='bar';
+  d.innerHTML=`<div class="nm">${k} ${C[k]}</div><div class="track"><div class="fill" style="width:${Math.max(6,s.n/max*100)}%;background:${CO[k]}">${s.n}</div></div><div class="pid">${s.caps}条能力</div>`;
+  d.onclick=()=>showClu(k);bars.appendChild(d)});
+ // layer2 chips on conclusion tab, ordered by count
+ document.getElementById('layer2chips').innerHTML=order.map(k=>`<span class="chip" style="background:${CO[k]}" title="${C[k]}">${k} ${C[k]} · ${DATA.cluStats[k].n}人</span>`).join('');
+})();
+function pname(pid){const p=DATA.people.find(x=>x.id===pid);return p?p.name.replace(/\s*\(.+?\)/,''):pid}
+function showClu(k){
+ const s=DATA.cluStats[k];
+ let h=`<h2>${chip(k)} <span class="mut sm">${s.n} 人 / ${s.caps} 条能力</span></h2>`;
+ h+=`<p class="mut sm">覆盖人物（${s.n}）：`+s.people.map(pid=>`<span class="chip" style="background:#2a2f3a;color:#cdd2db">${pid} ${pname(pid)}</span>`).join('')+`</p>`;
+ h+=`<table><thead><tr><th>人物</th><th>原子能力（落入本簇）</th><th>事实</th></tr></thead><tbody>`;
+ DATA.people.forEach(p=>p.caps.forEach(c=>{if(c.cl===k)h+=`<tr><td class="p">${p.id} ${pname(p.id)}</td><td>${c.t}</td><td class="from">${c.from}</td></tr>`}));
+ h+=`</tbody></table>`;
+ document.getElementById('cluDetail').innerHTML=h;
+ document.getElementById('cluDetail').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+/* ---------- 全部原子能力 ---------- */
+(function(){
+ const opts=Object.keys(C).map(k=>`<option value="${k}">${k} ${C[k]}</option>`).join('');
+ const popts=DATA.people.map(p=>`<option value="${p.id}">${p.id} ${pname(p.id)}</option>`).join('');
+ document.getElementById('t-caps').innerHTML=`<div class="card"><h2>全部 ${DATA.totals.caps} 条原子能力 → 能力簇 对应关系</h2>
+ <p class="mut sm">每条能力都挂在具体硬事实上（from 列），并被归入一个能力簇。可按簇/人/关键词筛选。</p>
+ <div class="controls"><input id="q" placeholder="关键词搜索能力文本…"><select id="fcl"><option value="">全部能力簇</option>${opts}</select><select id="fp"><option value="">全部人物</option>${popts}</select></div>
+ <div class="mut sm" id="capCount"></div>
+ <table><thead><tr><th>人物</th><th>能力</th><th>能力簇</th><th>事实</th></tr></thead><tbody id="capBody"></tbody></table></div>`;
+ const rows=[];DATA.people.forEach(p=>p.caps.forEach(c=>rows.push({pid:p.id,nm:pname(p.id),t:c.t,cl:c.cl,from:c.from})));
+ const body=document.getElementById('capBody'),q=document.getElementById('q'),fcl=document.getElementById('fcl'),fp=document.getElementById('fp'),cc=document.getElementById('capCount');
+ function render(){const kw=q.value.trim(),cl=fcl.value,pp=fp.value;
+  const f=rows.filter(r=>(!cl||r.cl===cl)&&(!pp||r.pid===pp)&&(!kw||r.t.includes(kw)));
+  cc.textContent=`显示 ${f.length} / ${rows.length} 条`;
+  body.innerHTML=f.map(r=>`<tr><td class="p">${r.pid} ${r.nm}</td><td>${r.t}</td><td>${chipS(r.cl)}<span class="mut sm"> ${C[r.cl]}</span></td><td class="from">${r.from}</td></tr>`).join('');}
+ q.oninput=render;fcl.onchange=render;fp.onchange=render;render();
+})();
+
+/* ---------- 三人走查 ---------- */
+(function(){
+ let h=`<div class="card"><h2>三人端到端走查：事实 → 原子能力 → 能力簇 → 画像层</h2>
+ <p class="mut sm">完整呈现“怎么从一个人的硬事实，一步步走到他在画像里的位置”。</p></div>`;
+ ["F01","F31","F32"].forEach(pid=>{const p=DATA.people.find(x=>x.id===pid);
+  const fps=[...new Set(p.caps.map(c=>c.cl))];
+  h+=`<div class="card"><h2>${p.id} ${p.name}</h2><div class="mut sm" style="margin-bottom:8px">${p.intro}</div>`;
+  h+=`<div class="layer l3" style="background:rgba(124,131,255,.08);border-color:rgba(124,131,255,.4)"><b>走查解读：</b> ${DATA.walk[pid]}</div>`;
+  h+=`<h3>① 硬事实（${p.facts.length} 条，节选）</h3>`;
+  h+=p.facts.slice(0,8).map(f=>`<div class="fact"><span class="conf">${f.conf}</span> <b>${f.id}</b> ${f.t}</div>`).join('');
+  if(p.facts.length>8)h+=`<div class="fact mut">…共 ${p.facts.length} 条，详见 research/facts/${p.id}…md</div>`;
+  h+=`<h3>② 原子能力 → ③ 能力簇</h3>`;
+  h+=p.caps.map(c=>`<div class="caprow">${chipS(c.cl)} <b>${c.id}</b> ${c.t} <span class="from">· ${c.from}</span></div>`).join('');
+  h+=`<h3>④ 能力簇指纹 → 画像定位</h3><div class="fp">${fps.map(chip).join('')}</div>`;
+  const arc=DATA.archetypes.filter(a=>a[3].includes(pid)).map(a=>a[0]);
+  h+=`<div class="note">归入原型：<b>${arc.join(' / ')||'—'}</b>。在画像三层中：命中“门槛项”（硬成果+长期投入）；其“区分项”集中在上述指纹簇；其“特异项”见结论页。</div></div>`;
+ });
+ document.getElementById('t-walk').innerHTML=h;
+})();
+
+/* ---------- 60 人映射 ---------- */
+(function(){
+ let h=`<div class="card"><h2>6 个原型 · 代表人物</h2><p class="mut sm">一个人常同属 2–3 个原型，且很多人在生涯中迁移原型；下表为代表性归类（非排他）。</p>`;
+ DATA.archetypes.forEach(a=>{h+=`<div style="margin:10px 0"><b>${a[0]}</b> <span class="chip" style="background:#2a2f3a;color:#cdd2db">${a[1]}</span><div class="mut sm">${a[2]}</div><div style="margin-top:4px">${a[3].map(pid=>`<span class="chip" style="background:#2a2f3a;color:#cdd2db">${pid} ${pname(pid)}</span>`).join('')}</div></div>`});
+ h+=`</div><div class="card"><h2>60 人 · 能力簇指纹（点击展开事实与能力）</h2><div id="pplist"></div></div>`;
+ document.getElementById('t-ppl').innerHTML=h;
+ const list=document.getElementById('pplist');
+ DATA.people.forEach(p=>{const fps=[...new Set(p.caps.map(c=>c.cl))];
+  const d=document.createElement('div');d.className='person';
+  d.innerHTML=`<div class="ph"><div><b>${p.id}</b> ${p.name}<div class="fp">${fps.map(chipS).join('')}</div></div><span class="mut sm">${p.facts.length}事实·${p.caps.length}能力 ▾</span></div>
+   <div class="pb"><div class="mut sm" style="margin-bottom:6px">${p.intro}</div>
+   ${p.caps.map(c=>`<div class="caprow">${chipS(c.cl)} <b>${c.id}</b> ${c.t} <span class="from">· ${c.from}</span></div>`).join('')}
+   <h3>硬事实</h3>${p.facts.map(f=>`<div class="fact"><span class="conf">${f.conf}</span> <b>${f.id}</b> ${f.t}</div>`).join('')}</div>`;
+  d.querySelector('.ph').onclick=()=>d.classList.toggle('open');
+  list.appendChild(d)});
+})();
+</script>
+</body>
+</html>
