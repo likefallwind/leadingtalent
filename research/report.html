@@ -113,13 +113,13 @@
     <span class="tag">自下而上 · 不预设维度 · 数据驱动</span>
     <h1>AI 领军人才到底长什么样？
       <small>从 60 位公认领军人物的真实资料出发，逐层涌现地得到画像。<br>
-      核心发现：<b style="color:var(--acc2)">领军人才不是一种人</b>——最拥挤的能力簇也只覆盖约一半人，群体是多峰、异质的。</small>
+      核心发现：<b style="color:var(--acc2)">领军人才不是一种人</b>——除两条门槛外,最高频的能力也只覆盖约一半人,群体是多峰、异质的。</small>
     </h1>
     <div class="nums">
       <div class="num"><b>60</b><span>样本人物</span></div>
       <div class="num"><b>~420</b><span>原子事实 (带来源)</span></div>
       <div class="num"><b>~430</b><span>原子能力 (带证据链)</span></div>
-      <div class="num"><b>18</b><span>涌现能力簇</span></div>
+      <div class="num"><b>42</b><span>规范能力</span></div>
       <div class="num"><b>7</b><span>领军原型</span></div>
     </div>
   </div>
@@ -127,13 +127,13 @@
 
 <section><div class="wrap">
   <h2><span class="k">方法</span>五步流水线（每层都可下钻复核）</h2>
-  <p class="sub">关键原则：不从结论倒推。先有事实，再有能力，再有簇，最后才有画像，最后用真人证伪。</p>
+  <p class="sub">关键原则：不从结论倒推。先有事实，再有逐人能力，再去重成规范能力库，最后才有画像，最后用真人证伪。</p>
   <div class="steps">
     <div class="step"><div class="n">STEP 1</div><b>原子事实</b><span>逐人从资料抽硬事实，标 [A]/[B] + 来源</span></div>
     <div class="arrow">→</div>
     <div class="step"><div class="n">STEP 2</div><b>原子能力</b><span>逐人从事实归纳能力，每条挂 from F#</span></div>
     <div class="arrow">→</div>
-    <div class="step"><div class="n">STEP 3</div><b>涌现聚类</b><span>约 430 条能力自下而上聚成 18 簇</span></div>
+    <div class="step"><div class="n">STEP 3</div><b>去重归并</b><span>约430条 → ~42条规范能力(带频率/层级)</span></div>
     <div class="arrow">→</div>
     <div class="step"><div class="n">STEP 4</div><b>整合画像</b><span>门槛 / 区分 / 特异 三层 + 7 原型</span></div>
     <div class="arrow">→</div>
@@ -142,14 +142,14 @@
 </div></section>
 
 <section><div class="wrap">
-  <h2><span class="k">STEP 3</span>18 个涌现能力簇 · 人数分布</h2>
-  <p class="sub">每条能力归到一簇，再回到 60 人统计"该人≥1 条能力落入此簇"。计数为分析者编码，±2~3 人误差，故用"约"。</p>
+  <h2><span class="k">STEP 3</span>42 条规范能力 · 频率分布（按拥有人数）</h2>
+  <p class="sub">把约 430 条原始能力<b>人工主题编码</b>去重成 ~42 条规范能力（<b style="color:var(--warn)">非算法聚类</b>，方法与局限见 <code>capability_pool.md</code>）。按层级着色：<span style="color:var(--c2)">门槛</span> / <span style="color:var(--c1)">区分</span> / <span style="color:var(--c5)">特异</span>。频率为分析者判断，±2~3 人误差，故用"约"。</p>
   <div id="bars"></div>
   <div class="callout">
-    <b>最重要的发现：没有一条是"人人都有"的。</b><br>
-    命中最多的两簇（建机构 ~33/60、造基础件 ~32/60）也只各覆盖约一半，分布迅速衰减、强烈多峰。
-    <b>没有任何单一能力/特质能覆盖全部 60 人。</b>数据本身拒绝坍缩成"领军人才就该是 XX 样"的单一模板。<br><br>
-    唯一在<b>事实层面</b>接近全员的不是软特质，而是两条硬通货：① 至少做出过一件被公认的硬成果（论文/架构/系统/产品/标准/芯片/公司/教材之一，形态可替代）；② 长期、高强度的投入。
+    <b>最重要的发现：除两条门槛外，没有一条是"人人都有"的。</b><br>
+    只有 <b>T1（至少一件硬成果）</b>与 <b>T2（长期投入）</b>两条 ≈ 全员；其余从"造基础件 ~26"迅速衰减成<b>长尾</b>。
+    <b>没有任何单一区分能力覆盖全部 60 人。</b>数据本身拒绝坍缩成"领军人才就该是 XX 样"的单一模板。<br><br>
+    长尾里的低频能力（特异层）不是"更弱"，而是<b>个性化但同样优秀</b>——正是它们让每个人独一无二。详见下方"能力池"。
   </div>
 </div></section>
 
@@ -192,7 +192,7 @@
 
 <section><div class="wrap">
   <h2><span class="k">雷达</span>能力雷达图 · 看"形状"不看"面积"</h2>
-  <p class="sub">18 簇归并成 8 个单极维度（0→3）。点亮原型模板看"标志性轮廓"，选个人叠加对照。
+  <p class="sub">42 条规范能力归到 8 个单极维度（0→3）。点亮原型模板看"标志性轮廓"，选个人叠加对照。
     <b style="color:var(--warn)">面积大 ≠ 更优秀</b>——Bostrom 又小又尖却是顶级领军，余凯一根独大正是其不可替代之处。多峰、异质本身就是结论。</p>
   <div class="radarwrap">
     <div class="radarside">
@@ -204,17 +204,6 @@
     </div>
     <svg id="radar8" class="radar"></svg>
   </div>
-  <details style="margin-top:20px">
-    <summary>展开 18 簇细粒度雷达（原型模板 + 个人叠加）</summary>
-    <div class="radarwrap">
-      <div class="radarside">
-        <div class="rlabel">原型模板</div><select id="ar18"></select>
-        <div class="rlabel">叠加个人（0/1 命中）</div><select id="p18"></select>
-        <div id="legend18" class="legend"></div>
-      </div>
-      <svg id="radar18" class="radar"></svg>
-    </div>
-  </details>
   <p class="sub" style="margin-top:14px">打分方式 = Hybrid：先按每人在能力库中命中的条目自动折算 0–3 基线，再人工校正明显失真处；是分析者编码判断，可对照 <code>facts/F#</code> 复核。详见 <code>research/scores.md</code>。</p>
 </div></section>
 
@@ -267,9 +256,9 @@
   <h3 style="margin:28px 0 4px;font-size:17px">B 留出验证：名单外真人也装得下、且不漂移</h3>
   <div class="vcards">
     <div class="vcard"><h4>黄仁勋 Jensen Huang <span class="ok">✓</span></h4>
-      <small>Nvidia 创始人</small><br>GPU/CUDA=基础件✓，30 余年=长期✓。坐标：组织 · <b>极端原子</b> · 推进 · 半收敛。落位＝<b>物理/硬件型 + 巨头统帅</b>，补强 CL5 一支。</div>
+      <small>Nvidia 创始人</small><br>GPU/CUDA=基础件✓，30 余年=长期✓。坐标：组织 · <b>极端原子</b> · 推进 · 半收敛。落位＝<b>物理/硬件型 + 巨头统帅</b>，补强 D5(物理/硬件) 一支。</div>
     <div class="vcard"><h4>J. Schmidhuber <span class="ok">✓</span></h4>
-      <small>LSTM 奠基者</small><br>LSTM=基础件✓。落位＝奠基型科学家，且长期<b>争夺命名权/优先权</b>——精准命中最稀缺的特异层 CL12，并印证其高张力。</div>
+      <small>LSTM 奠基者</small><br>LSTM=基础件✓。落位＝奠基型科学家，且长期<b>争夺命名权/优先权</b>——精准命中最稀缺的特异能力 D6.3(范式命名权)，并印证其高张力。</div>
     <div class="vcard"><h4>Mustafa Suleyman <span class="ok">✓</span></h4>
       <small>DeepMind→Inflection→微软 AI</small><br><b>几乎不命中"造基础件"</b>，却仍是领军。落位＝产品/组织型领袖，反向验证"组织 vs 创造"这条轴的必要性。</div>
   </div>
@@ -284,46 +273,26 @@
   <h2><span class="k">边界</span>因果边界声明（必须与画像一并引用）</h2>
   <div class="bias"><ol>
     <li><b>这是"相关画像"，不是"因果配方"。</b>60 人全是已成名者，<b>没有对照组</b>。回答的是"成名领军者群体长什么样"，不回答"做到这些就能成为领军"。门槛层很可能<b>必要而远非充分</b>。</li>
-    <li><b>名单构成决定画像形状。</b>名单偏"创始人 + 大厂首席 + 院士"，放大了"建机构/撬资本/巨头统帅/硬件创业"等簇。换一份名单，四条轴还在，但各簇人数与原型配比会变。</li>
+    <li><b>名单构成决定画像形状。</b>名单偏"创始人 + 大厂首席 + 院士"，放大了"建机构/撬资本/巨头统帅/硬件创业"等能力的频率。换一份名单，四条轴还在，但各能力频率与原型配比会变。</li>
     <li><b>运气、时代窗口与平台不可忽略且无法测量。</b>AlexNet 赶上 GPU+ImageNet、DeepSeek 赶上算力与开源拐点——把时代红利误读成个人特质，是这类研究最大陷阱。</li>
-    <li><b>每条结论都可回溯。</b>18 簇 → ~430 条 CAP（挂 from F#）→ ~420 条 FACT（标 [A]/[B]+来源）→ profiles/ 原始资料。任一编码判断都可被质疑。</li>
+    <li><b>每条结论都可回溯。</b>8 维度 ← 42 规范能力 ← ~430 条原始 CAP（挂 from F#）← ~420 条 FACT（标 [A]/[B]+来源）← profiles/ 原始资料。任一归并/编码判断都可被质疑。</li>
   </ol></div>
 </div></section>
 
 <footer><div class="wrap">
-  数据驱动研究 · <code>research/</code> 目录：README（方法）/ facts（逐人事实+能力）/ clusters（聚类）/ profile（画像）/ validation（验证）。<br>
+  数据驱动研究 · <code>research/</code> 目录：README（方法）/ facts（逐人事实+能力）/ capability_pool（规范能力库）/ scores（8维评分）/ profile（画像）/ validation（验证）。<br>
   计数为分析者编码判断，结论建立在分布形态而非精确整数上。
 </div></footer>
 
 <script>
-const CLUSTERS=[
- ["CL3","从零创建并长期领导机构（公司/院/实验室/学科）",33],
- ["CL1","造出被全行业沿用的\"基础件\"（方法/架构/系统/标准/数据集/框架）",32],
- ["CL4","从研究打通到量产/产品/平台（0→1 工程落地）",28],
- ["CL2","按长期信念逆向押注、不随主流",16],
- ["CL7","早慧硬底子 + 顶级师承/竞赛/状元谱系",14],
- ["CL8","\"师父\"——批量培养人才、形成谱系",13],
- ["CL10","撬动巨额资本与组织动员力",13],
- ["CL16","捕捉拐点/窗口、趋势预判",13],
- ["CL18","数十年长期专注与持续产出",13],
- ["CL6","跨学科/跨界迁移、重定义问题",12],
- ["CL5","把 AI 推进到物理世界（芯片/机器人/终端/边缘/具身）",11],
- ["CL14","教育/科普/把复杂讲清楚、降低门槛",10],
- ["CL9","多角色/多机构间高频转场、被持续争抢",10],
- ["CL11","安全/风险/治理/伦理的公共担当",9],
- ["CL12","命名/造词/框架化与元认知自省",9],
- ["CL13","开源/开放作为路线与护城河",9],
- ["CL17","韧性：挫折/失败/健康/争议中维持产出",8],
- ["CL15","选标志性大问题、用长期愿景组织攻坚",7],
-];
 const ARCH=[
- ["奠基型科学家","CL1+CL2+CL8+CL18","var(--c1)"],
- ["科学家–创业者","CL1+CL3+CL4+CL10","var(--c2)"],
- ["产品/组织型领袖","CL4+CL10+CL16+CL17","var(--c4)"],
- ["巨头技术统帅","CL1+CL3+CL4+CL9","var(--c6)"],
- ["安全/思想型","CL11+CL12+CL14","var(--c5)"],
- ["传播/教育/开源型","CL13+CL14","var(--c7)"],
- ["物理世界/硬件型","CL5+CL4+CL15","var(--c3)"],
+ ["奠基型科学家","D1原创·D7教育·D8预判 三尖","var(--c1)"],
+ ["科学家–创业者","D1原创+D3机构 鼓、偏创造","var(--c2)"],
+ ["产品/组织型领袖","D2工程·D4资本·D8预判 鼓,D1塌","var(--c4)"],
+ ["巨头技术统帅","D1–D3 均衡偏工程","var(--c6)"],
+ ["安全/思想型","D6安全/思想 一柱擎天","var(--c5)"],
+ ["传播/教育/开源型","D7教育/开源 顶满","var(--c7)"],
+ ["物理世界/硬件型","D5物理/硬件 突出","var(--c3)"],
 ];
 const P=[
  [1,"Geoffrey Hinton","奠基型科学家","也属安全/思想型；反传·Boltzmann·AlexNet","海外"],
@@ -387,17 +356,12 @@ const P=[
  [59,"孙茂松","奠基型科学家","也属教育；中文NLP奠基·九歌·密度法则","中国"],
  [60,"李航","巨头技术统帅","也属教育；统计学习方法·诺亚·字节","中国"],
 ];
-// render bars
-const max=Math.max(...CLUSTERS.map(c=>c[2]));
-document.getElementById('bars').innerHTML=CLUSTERS.map(c=>
- `<div class="bar"><div class="lbl"><span class="cl">${c[0]}</span>${c[1]}</div>
-  <div class="track"><div class="fill" style="width:${c[2]/max*100}%">${c[2]}</div></div></div>`).join('');
 // render archetype cards
 const cardEl=document.getElementById('cards');
 const archCount={};P.forEach(p=>archCount[p[2]]=(archCount[p[2]]||0)+1);
 ARCH.forEach(a=>{
  const d=document.createElement('div');d.className='card';d.style.setProperty('--ac',a[2]);
- d.innerHTML=`<h3>${a[0]}</h3><div class="cnt">主原型 ${archCount[a[0]]||0} 人</div><div class="dom">主导簇 ${a[1]}</div>`;
+ d.innerHTML=`<h3>${a[0]}</h3><div class="cnt">主原型 ${archCount[a[0]]||0} 人</div><div class="dom">主导维度 ${a[1]}</div>`;
  d.onclick=()=>{const cur=document.querySelector('.card.active');const same=cur===d;
    document.querySelectorAll('.card').forEach(x=>x.classList.remove('active'));
    if(!same){d.classList.add('active');fArch.value=a[0];}else{fArch.value='';}
@@ -440,25 +404,8 @@ const S=[
 [3,1,1,0,2,0,1,1],[3,0,3,1,1,2,1,3],[1,2,3,2,1,0,1,2],[2,1,3,1,1,1,3,2],[2,1,2,1,0,0,3,1],
 [3,2,2,1,2,0,2,2],[2,2,2,2,2,0,1,2],[2,2,2,1,0,1,3,2],[3,1,2,0,0,1,3,2],[2,2,2,1,0,0,3,1]
 ];
-const CLM=[
-[1,2,8,11,6,18],[1,2,3,13,9,16],[1,2,3,8,11,12],[1,4,9],[1,2,7,11,15],
-[1,3,6,15,4],[4,10,16,17],[1,3,11,2,6],[14,9,7,4],[11,12,13,14,2],
-[14,4,3,16],[1,3,2,6,9],[4,3,1,18],[3,4,9,7,10],[1,3,8,14,18],
-[1,6,11,14],[1,3,4,8,10,17],[3,8,12,18,6],[1,3,5,18],[2,6,13,10,16],
-[1,7,4,10],[10,16,17,4],[4,7,16],[9,3,10,14,16],[14,12,3,11,2],
-[12,3,11,6],[1,11,3,2],[1,2,14,3,8,12,18],[1,14,7,9],[1,7,4,2,10],
-[4,8,3],[1,6,7,3,2],[6,12,15,3,8,16],[1,3,4,16],[5,3,10,16],
-[3,13,4],[4,10,16,17],[4,3,18],[3,4,5,7,10,17],[5,2,15,3],
-[7,1,3,17,4],[5,7,3,2],[5,4,15],[4,10,16,17],[13,4,1],
-[1,4,3,18],[6,4,3],[1,5,3,15,18],[1,7,8,18],[1,5,8,7],
-[1,5,18],[2,12,3,6,15],[3,9,4,10],[3,13,2,18],[1,13,3,8],
-[1,8,4,5,17],[9,4,2],[1,13,3,12,16],[1,12,8,14,18],[1,14,4,18]
-];
-const CL18=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
-const CL18N={1:"基础件",2:"逆向押注",3:"建机构",4:"研究→产品",5:"物理世界",6:"跨界迁移",7:"早慧师承",8:"师父谱系",9:"高频转场",10:"撬资本",11:"安全治理",12:"框架命名",13:"开源",14:"教育科普",15:"大问题愿景",16:"趋势预判",17:"韧性",18:"长期专注"};
 function archIdx(name){return P.map((p,i)=>p[2]===name?i:-1).filter(i=>i>=0);}
 function archAvg8(name){const id=archIdx(name);return DIMS.map((_,d)=>id.reduce((s,i)=>s+S[i][d],0)/id.length);}
-function archAvg18(name){const id=archIdx(name);return CL18.map(cl=>id.reduce((s,i)=>s+(CLM[i].includes(cl)?1:0),0)/id.length);}
 function radar(svg,labels,series,maxv){
   const W=440,H=420,cx=W/2,cy=H/2,R=135,N=labels.length;
   const ang=i=>-Math.PI/2+i*2*Math.PI/N, pt=(i,r)=>[cx+Math.cos(ang(i))*r,cy+Math.sin(ang(i))*r];
@@ -489,19 +436,6 @@ function render8(){
   document.getElementById('legend8').innerHTML=series.map(s=>`<span class="lg"><i style="background:${s.color}"></i>${s.name}</span>`).join('')||'<span class="lg" style="color:var(--mut)">请选择原型或个人</span>';
 }
 pA.onchange=render8;pB.onchange=render8;render8();
-// 18-cluster controls
-const ar18=document.getElementById('ar18'),p18=document.getElementById('p18');
-ar18.innerHTML=ARCH.map(a=>`<option value="${a[0]}">${a[0]}</option>`).join('');
-p18.innerHTML='<option value="">— 不叠加个人 —</option>'+P.map((p,i)=>`<option value="${i}">${p[1]}</option>`).join('');
-function render18(){
-  const series=[],a=ar18.value;
-  if(a)series.push({name:a+' 模板',color:archColor[a],values:archAvg18(a)});
-  if(p18.value!==''){const i=+p18.value;series.push({name:P[i][1],color:'#ffffff',values:CL18.map(cl=>CLM[i].includes(cl)?1:0)});}
-  radar(document.getElementById('radar18'),CL18.map(c=>'CL'+c),series,1);
-  document.getElementById('legend18').innerHTML=series.map(s=>`<span class="lg"><i style="background:${s.color}"></i>${s.name}</span>`).join('')
-    +'<div class="cl18map">'+CL18.map(c=>'CL'+c+' '+CL18N[c]).join(' · ')+'</div>';
-}
-ar18.onchange=render18;p18.onchange=render18;render18();
 
 /* ===== 能力池 ===== */
 const POOL=[
@@ -565,6 +499,17 @@ function renderPool(){
   pcnt.textContent=n+' 条';
 }
 pq.oninput=renderPool;pdim.onchange=renderPool;play.onchange=renderPool;renderPool();
+
+/* ===== STEP3 频率分布条形（由 42 规范能力渲染） ===== */
+(function(){
+  const layColor={'门槛':'var(--c2)','区分':'var(--c1)','特异':'var(--c5)'};
+  const sorted=POOL.slice().sort((a,b)=>b[4]-a[4]);
+  document.getElementById('bars').innerHTML=sorted.map(e=>{
+    const nm=e[1].length>24?e[1].slice(0,24)+'…':e[1];
+    return `<div class="bar"><div class="lbl"><span class="cl">${e[0]}</span>${nm}</div>
+      <div class="track"><div class="fill" style="width:${Math.max(4,e[4]/60*100)}%;background:${layColor[e[3]]}">${e[4]}</div></div></div>`;
+  }).join('');
+})();
 </script>
 </body>
 </html>
