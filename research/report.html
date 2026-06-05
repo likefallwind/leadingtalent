@@ -102,8 +102,8 @@
   .cl18map{font-size:10.5px;color:var(--mut);margin-top:10px;line-height:1.9}
   .freqbar{display:inline-block;height:8px;background:var(--c1);border-radius:4px;vertical-align:middle;margin-right:7px}
   .lay-门槛{color:var(--c2);border-color:var(--c2)!important}
-  .lay-区分{color:var(--c1);border-color:var(--c1)!important}
-  .lay-特异{color:var(--c5);border-color:var(--c5)!important}
+  .lay-中频{color:var(--c1);border-color:var(--c1)!important}
+  .lay-低频{color:var(--c5);border-color:var(--c5)!important}
   @media(max-width:680px){.bar .lbl{width:150px}.axis{grid-template-columns:1fr}.axis .end.r{text-align:left}h1{font-size:28px}.radar{width:100%}}
 </style>
 </head>
@@ -126,57 +126,56 @@
 </header>
 
 <section><div class="wrap">
-  <h2><span class="k">方法</span>五步流水线（每层都可下钻复核）</h2>
-  <p class="sub">关键原则：不从结论倒推。先有事实，再有逐人能力，再去重成规范能力库，最后才有画像，最后用真人证伪。</p>
+  <h2><span class="k">方法</span>六步流水线（每层都可下钻复核）</h2>
+  <p class="sub">关键原则：不从结论倒推。先有事实，再有逐人能力，再去重成规范能力库，再逐人折算成 8 维分，最后才有画像并用真人证伪。</p>
   <div class="steps">
     <div class="step"><div class="n">STEP 1</div><b>原子事实</b><span>逐人从资料抽硬事实，标 [A]/[B] + 来源</span></div>
     <div class="arrow">→</div>
     <div class="step"><div class="n">STEP 2</div><b>原子能力</b><span>逐人从事实归纳能力，每条挂 from F#</span></div>
     <div class="arrow">→</div>
-    <div class="step"><div class="n">STEP 3</div><b>去重归并</b><span>约430条 → ~42条规范能力(带频率/层级)</span></div>
+    <div class="step"><div class="n">STEP 3</div><b>去重归并</b><span>约430条 → 42条规范能力(带频率档)</span></div>
     <div class="arrow">→</div>
-    <div class="step"><div class="n">STEP 4</div><b>整合画像</b><span>门槛 / 区分 / 特异 三层 + 7 原型</span></div>
+    <div class="step"><div class="n">STEP 4</div><b>明账+打分</b><span>逐人对齐能力→折算 8 维 0–3 分</span></div>
     <div class="arrow">→</div>
-    <div class="step"><div class="n">STEP 5</div><b>真人验证</b><span>名单内外真人 + 证伪测试</span></div>
+    <div class="step"><div class="n">STEP 5</div><b>整合画像</b><span>门槛地板 + 八维雷达 + 7 原型</span></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="n">STEP 6</div><b>真人验证</b><span>名单内外真人 + 证伪测试</span></div>
   </div>
 </div></section>
 
 <section><div class="wrap">
   <h2><span class="k">STEP 3</span>42 条规范能力 · 频率分布（按拥有人数）</h2>
-  <p class="sub">把约 430 条原始能力<b>人工主题编码</b>去重成 ~42 条规范能力（<b style="color:var(--warn)">非算法聚类</b>，方法与局限见 <code>capability_pool.md</code>）。按层级着色：<span style="color:var(--c2)">门槛</span> / <span style="color:var(--c1)">区分</span> / <span style="color:var(--c5)">特异</span>。频率为分析者判断，±2~3 人误差，故用"约"。</p>
+  <p class="sub">把约 430 条原始能力<b>人工主题编码</b>去重成 42 条规范能力（<b style="color:var(--warn)">非算法聚类</b>，方法与局限见 <code>capability_pool.md</code>）。按<b>频率档</b>着色：<span style="color:var(--c2)">门槛(≈全员)</span> / <span style="color:var(--c1)">中频</span> / <span style="color:var(--c5)">低频</span>。频率为分析者判断，±2~3 人误差，故用"约"。</p>
   <div id="bars"></div>
   <div class="callout">
     <b>最重要的发现：除两条门槛外，没有一条是"人人都有"的。</b><br>
     只有 <b>T1（至少一件硬成果）</b>与 <b>T2（长期投入）</b>两条 ≈ 全员；其余从"造基础件 ~26"迅速衰减成<b>长尾</b>。
-    <b>没有任何单一区分能力覆盖全部 60 人。</b>数据本身拒绝坍缩成"领军人才就该是 XX 样"的单一模板。<br><br>
-    长尾里的低频能力（特异层）不是"更弱"，而是<b>个性化但同样优秀</b>——正是它们让每个人独一无二。详见下方"能力池"。
+    <b>没有任何单一能力覆盖全部 60 人。</b>数据本身拒绝坍缩成"领军人才就该是 XX 样"的单一模板。<br><br>
+    长尾里的低频能力不是"更弱"，而是<b>个性化但同样优秀</b>——正是它们让每个人独一无二。详见下方"能力池"。
   </div>
 </div></section>
 
 <section><div class="wrap">
-  <h2><span class="k">STEP 4</span>画像：门槛 / 区分 / 特异 三层</h2>
-  <p class="sub">从下往上越来越稀缺，也越来越不该当选拔标准。门槛决定能否进门；区分决定是哪一类；特异决定是否成为传奇、但无法被规划。</p>
-  <div class="layer l3"><span class="t">特异层</span><span class="tag2">少数独有 · 高分项,非选拔项</span>
-    <ul><li>范式命名权 · 原型迁移 · 诺奖级跨界冲击 · 韧性中的诚实</li></ul></div>
-  <div class="layer l2"><span class="t">区分层</span><span class="tag2">撑起群体内部差异 · 四条互不相关的轴</span>
-    <ul>
-      <li><b>A 创造 ↔ 组织</b>：亲手造基础件 ↔ 搭机构/动员资本组织他人</li>
-      <li><b>B 比特 ↔ 原子</b>：算法/模型/软件 ↔ 芯片/机器人/终端/边缘</li>
-      <li><b>C 推进 ↔ 约束</b>：把能力边界往前推 ↔ 安全/治理/对齐把能力关进笼子</li>
-      <li><b>D 收敛 ↔ 扩散</b>：闭源/护城河/单点突破 ↔ 开源/教育/把门槛降给所有人</li>
-    </ul></div>
-  <div class="layer l1"><span class="t">门槛层</span><span class="tag2">≈ 全员 · 入场券,非区分项</span>
+  <h2><span class="k">STEP 5</span>画像：一块门槛地板 + 一张八维雷达</h2>
+  <p class="sub">画像的脊柱只有两层：门槛地板决定"能否进门"（≈全员、不进雷达）；八维雷达就是"差异本身"——每个人 = 一组坐标 / 一个形状。<b>没有"区分层"、没有"四条轴"</b>，差异已被 8 维完整装下。</p>
+  <div class="layer l1"><span class="t">门槛地板</span><span class="tag2">≈ 全员 · 入场券,不进雷达</span>
     <ul>
       <li>① <b>至少做出过一件被公认的硬成果</b>（形态可互相替代：论文 / 架构 / 系统 / 产品 / 标准 / 芯片 / 公司 / 教材）</li>
       <li>② <b>长期、高强度的投入</b>（常含低潮期 / 冷门期的坚持）</li>
     </ul></div>
+  <div class="layer l2"><span class="t">八维雷达</span><span class="tag2">差异本身 · 每人一个形状（见下方雷达）</span>
+    <ul><li>D1原创 · D2工程 · D3机构 · D4资本 · D5物理 · D6安全 · D7教开 · D8预判</li></ul></div>
 
-  <h3 style="margin:32px 0 6px;font-size:17px">四条轴：每个人是一组坐标，不是某条的极值</h3>
-  <p class="sub" style="margin-bottom:14px">四条轴彼此不强相关——各自都有人站在两端，这正是无法用一句话概括所有人的原因。</p>
-  <div class="axis"><div class="end">亲手造基础件<span class="eg">何恺明 · Sutton · Bengio</span></div><div class="mid">A 创造 ↔ 组织</div><div class="end r">搭机构/撬资本<span class="eg">Altman · 张亚勤 · 李开复</span></div></div>
-  <div class="axis"><div class="end">比特：算法/软件<span class="eg">Bengio · Olah · 杨植麟</span></div><div class="mid">B 比特 ↔ 原子</div><div class="end r">原子：芯片/机器人<span class="eg">余凯 · 陈天石 · 王兴兴</span></div></div>
-  <div class="axis"><div class="end">推进能力边界<span class="eg">Sutskever · 梁文锋 · 张一鸣</span></div><div class="mid">C 推进 ↔ 约束</div><div class="end r">约束/安全/治理<span class="eg">Bostrom · Russell · Christiano</span></div></div>
-  <div class="axis"><div class="end">收敛/护城河<span class="eg">多数产品公司</span></div><div class="mid">D 收敛 ↔ 扩散</div><div class="end r">开源/教育/降门槛<span class="eg">Andrew Ng · Karpathy · 林达华</span></div></div>
+  <h3 style="margin:32px 0 6px;font-size:17px">从 60 份分数直接算出的形态（明账 <code>capability_matrix.md</code>）</h3>
+  <p class="sub" style="margin-bottom:14px">这不是叙述，是把 60 人八维分数统计出来的：<b>60 人 59 种不同形状</b>；没有任何一维是全员的标志级强项；每维两端都有人。</p>
+  <div class="axis"><div class="end">打 3（标志级）最多<span class="eg">D1原创 28/60 · D3机构 20/60 — 都仅约一半</span></div><div class="mid">无任一维"全员高分"</div><div class="end r">多峰 / 异质<span class="eg">越往高分越分散成长尾</span></div></div>
+  <div class="axis"><div class="end">强两极：多数 0、少数顶满<span class="eg">D5物理 34人=0 · D6安全 34人=0</span></div><div class="mid">每维两端都有人</div><div class="end r">少数把它推到端点<span class="eg">余凯/王兴兴(D5) · Bostrom/Russell(D6)</span></div></div>
+  <div class="axis"><div class="end">低标准近全员（≥1）<span class="eg">D8预判 60/60 · D3机构 59/60</span></div><div class="mid">诚实修正</div><div class="end r">很可能是名单选样产物<span class="eg">名单全是创始人/首席/院士</span></div></div>
+  <div class="axis"><div class="end">原创端<span class="eg">何恺明 · Sutton · Bengio</span></div><div class="mid">D1原创 与 D2/D4 在数据上此消彼长(−0.4~−0.55)</div><div class="end r">组织/资本端<span class="eg">Altman · 张亚勤 · 李开复</span></div></div>
+  <p class="sub" style="margin-top:14px;font-size:12px">注：8 维大体各测各的（两两相关多在 ±0.3 内），唯一例外是 <b>D2工程 ~ D4资本 +0.67</b>——二者其实是"产品/组织型"同一簇两面，不算两根独立轴。</p>
+
+  <h3 style="margin:28px 0 6px;font-size:17px">少数特异能力（个别人独有，是"高分项"不是"选拔项"）</h3>
+  <div class="callout">范式命名权（~9 人）· 一生多次原型迁移（~8 人）· 诺奖级跨界（Hinton/Hassabis）。稀缺到<b>不能写进通用画像</b>——它们解释"为何这几人格外耀眼"，不解释"如何成为领军"。</div>
 </div></section>
 
 <section><div class="wrap">
@@ -204,7 +203,7 @@
     </div>
     <svg id="radar8" class="radar"></svg>
   </div>
-  <p class="sub" style="margin-top:14px">打分方式 = Hybrid：先按每人在能力库中命中的条目自动折算 0–3 基线，再人工校正明显失真处；是分析者编码判断，可对照 <code>facts/F#</code> 复核。详见 <code>research/scores.md</code>。</p>
+  <p class="sub" style="margin-top:14px">打分有据可查：每个 0–3 分都在 <code>capability_matrix.md</code>（人×能力明账）里列出它命中哪几条规范能力、源自哪条 <code>from F#</code> 的 CAP，再按明账折算规则得来。可逐层下钻到 <code>facts/</code> 复核。详见 <code>research/scores.md</code> 与 <code>capability_matrix.md</code>。</p>
 </div></section>
 
 <section><div class="wrap">
@@ -223,48 +222,47 @@
 
 <section><div class="wrap">
   <h2><span class="k">能力池</span>规范能力库 · 全是好能力,频率分共有/个性化</h2>
-  <p class="sub">把约 430 条逐人原始能力去重成 ~42 条规范能力。<b>高频≠更优秀</b>：频率只回答"它是领军共有的<b style="color:var(--c2)">入场券(门槛)</b>，还是<b style="color:var(--c5)">个性化但同样优秀的特异能力</b>"。详见 <code>research/capability_pool.md</code>（原始 430 条见 <code>facts/</code>）。</p>
+  <p class="sub">把约 430 条逐人原始能力去重成 42 条规范能力。<b>高频≠更优秀</b>：频率只回答"它是领军共有的<b style="color:var(--c2)">入场券(门槛)</b>，还是<b style="color:var(--c5)">个性化但同样优秀的低频能力</b>"。详见 <code>research/capability_pool.md</code>（原始 430 条见 <code>facts/</code>）。</p>
   <div class="controls">
     <input id="pq" placeholder="搜索能力 / 代表人物…" />
     <select id="pdim"><option value="">全部维度</option></select>
-    <select id="play"><option value="">全部层级</option><option value="门槛">门槛(≈全员)</option><option value="区分">区分(中频)</option><option value="特异">特异(低频/个性化)</option></select>
+    <select id="play"><option value="">全部频率档</option><option value="门槛">门槛(≈全员)</option><option value="中频">中频</option><option value="低频">低频(个性化)</option></select>
     <span class="count" id="pcnt"></span>
   </div>
   <div style="overflow-x:auto">
-  <table><thead><tr><th>ID</th><th>规范能力</th><th>维度</th><th>层级</th><th>频率/60</th><th>代表</th></tr></thead>
+  <table><thead><tr><th>ID</th><th>规范能力</th><th>维度</th><th>频率档</th><th>频率/60</th><th>代表</th></tr></thead>
   <tbody id="prows"></tbody></table>
   </div>
 </div></section>
 
 <section><div class="wrap">
-  <h2><span class="k">STEP 5</span>用真人验证：能解释 · 能区分 · 不万能套用</h2>
-  <p class="sub">A 样本内走查：取 4 位"都是领军、但彼此极不像"的人——若画像有效，他们应门槛层一致、区分层迥异。</p>
+  <h2><span class="k">STEP 6</span>用真人验证：能解释 · 能区分 · 不万能套用</h2>
+  <p class="sub">A 样本内走查：取 4 位"都是领军、但彼此极不像"的人——若画像有效，他们应门槛一致、八维形状迥异（分取自 <code>scores.md</code>）。</p>
   <div class="vtable"><table>
     <thead><tr><th></th><th>Geoffrey Hinton</th><th>Sam Altman</th><th>王兴兴</th><th>Nick Bostrom</th></tr></thead>
     <tbody>
       <tr><td>门槛①硬成果</td><td>反向传播/AlexNet</td><td>ChatGPT/OpenAI</td><td>可量产机器人</td><td>《Superintelligence》</td></tr>
       <tr><td>门槛②长期投入</td><td>连接主义低潮坚持</td><td>YC→OpenAI 十余年</td><td>学生起做足式</td><td>FHI 近 20 年</td></tr>
-      <tr><td>A 创造↔组织</td><td>极端创造</td><td>极端组织</td><td>创造+组织</td><td>思想创造</td></tr>
-      <tr><td>B 比特↔原子</td><td>比特</td><td>比特</td><td><b style="color:var(--warn)">极端原子</b></td><td>比特(纯思想)</td></tr>
-      <tr><td>C 推进↔约束</td><td>推进→<b style="color:var(--warn)">晚年约束</b></td><td>推进</td><td>推进</td><td><b style="color:var(--warn)">极端约束</b></td></tr>
-      <tr><td>D 收敛↔扩散</td><td>扩散</td><td>收敛</td><td>部分扩散</td><td>扩散</td></tr>
+      <tr><td>八维 [D1..D8]</td><td><code>[3,1,2,1,0,2,2,3]</code></td><td><code>[0,3,3,3,0,1,0,3]</code></td><td><code>[2,3,2,1,3,0,1,2]</code></td><td><code>[1,0,2,0,0,3,2,2]</code></td></tr>
+      <tr><td>峰在哪</td><td><b style="color:var(--warn)">D1原创</b>+D8</td><td><b style="color:var(--warn)">D2/D3/D4</b>+D8</td><td><b style="color:var(--warn)">D5物理</b>+D2</td><td><b style="color:var(--warn)">D6安全</b>一柱</td></tr>
+      <tr><td>谷在哪</td><td>D5物理=0</td><td>D1原创=0</td><td>D6安全=0</td><td>D2/D4/D5=0</td></tr>
       <tr><td>主原型</td><td>奠基→安全</td><td>产品/组织</td><td>物理/硬件</td><td>安全/思想</td></tr>
     </tbody>
   </table></div>
-  <p class="sub" style="margin-top:12px">→ 四人门槛层全中，四条轴坐标几乎两两相反。画像<b style="color:var(--c2)">能区分</b>，不是"人人全中"的空话；共享的只有两条硬门槛。</p>
+  <p class="sub" style="margin-top:12px">→ 四人门槛全中，但八维形状峰谷互补：Hinton 的峰(D1)正是 Altman 的谷；王兴兴的峰(D5)是其余三人的谷。画像<b style="color:var(--c2)">能区分</b>，不是"人人全中"的空话；共享的只有两条硬门槛。</p>
 
   <h3 style="margin:28px 0 4px;font-size:17px">B 留出验证：名单外真人也装得下、且不漂移</h3>
   <div class="vcards">
     <div class="vcard"><h4>黄仁勋 Jensen Huang <span class="ok">✓</span></h4>
-      <small>Nvidia 创始人</small><br>GPU/CUDA=基础件✓，30 余年=长期✓。坐标：组织 · <b>极端原子</b> · 推进 · 半收敛。落位＝<b>物理/硬件型 + 巨头统帅</b>，补强 D5(物理/硬件) 一支。</div>
+      <small>Nvidia 创始人</small><br>GPU/CUDA=基础件✓，30 余年=长期✓。八维：<b>D5物理</b>顶满 + D2/D3/D4 高。落位＝<b>物理/硬件型 + 巨头统帅</b>，补强 D5 一支。</div>
     <div class="vcard"><h4>J. Schmidhuber <span class="ok">✓</span></h4>
-      <small>LSTM 奠基者</small><br>LSTM=基础件✓。落位＝奠基型科学家，且长期<b>争夺命名权/优先权</b>——精准命中最稀缺的特异能力 D6.3(范式命名权)，并印证其高张力。</div>
+      <small>LSTM 奠基者</small><br>LSTM=基础件✓，D1原创+D7+D8 高。落位＝奠基型科学家，且长期<b>争夺命名权/优先权</b>——精准命中最稀缺的特异能力 D6.3(范式命名权)，印证其高张力。</div>
     <div class="vcard"><h4>Mustafa Suleyman <span class="ok">✓</span></h4>
-      <small>DeepMind→Inflection→微软 AI</small><br><b>几乎不命中"造基础件"</b>，却仍是领军。落位＝产品/组织型领袖，反向验证"组织 vs 创造"这条轴的必要性。</div>
+      <small>DeepMind→Inflection→微软 AI</small><br>D3机构/D2/D4 高，<b>D1原创≈0</b>，却仍是领军。落位＝产品/组织型领袖，反向印证"D1原创 与 D3机构 在数据上此消彼长"。</div>
   </div>
 
   <h3 style="margin:28px 0 4px;font-size:17px">C 可证伪测试：主动找破绽</h3>
-  <details><summary>门槛是否"必要而不充分"？</summary>成千上万资深研究员/工程师都有"一件成果 + 十年投入"却不被称领军——他们通常在四条轴上都不突出。✓ 门槛确是必要不充分。</details>
+  <details><summary>门槛是否"必要而不充分"？</summary>成千上万资深研究员/工程师都有"一件成果 + 十年投入"却不被称领军——他们通常八维上没有任何一维到标志级。✓ 门槛确是必要不充分。</details>
   <details><summary>能否找到"全员共享的软特质"推翻多峰结论？</summary>试"远见"（何恺明靠方法简洁非远见叙事）、"领导力"（Bostrom/Olah 不管大团队）、"技术深度"（Altman/雷军不靠个人技术深度）、"逆向"（大厂统帅多顺势做扎实）——<b>每个软特质都被名单内反例击穿</b>，只有两条硬门槛幸存。✓</details>
   <details><summary>画像会不会把"任何成功人士"都装进去？</summary>纯财务投资人 / 与 AI 无关的传统 CEO，其硬成果不在 AI 技术链条上 → 门槛①不命中。画像<b>有边界</b>，不收编所有成功者。✓</details>
 </div></section>
@@ -272,10 +270,10 @@
 <section><div class="wrap">
   <h2><span class="k">边界</span>因果边界声明（必须与画像一并引用）</h2>
   <div class="bias"><ol>
-    <li><b>这是"相关画像"，不是"因果配方"。</b>60 人全是已成名者，<b>没有对照组</b>。回答的是"成名领军者群体长什么样"，不回答"做到这些就能成为领军"。门槛层很可能<b>必要而远非充分</b>。</li>
-    <li><b>名单构成决定画像形状。</b>名单偏"创始人 + 大厂首席 + 院士"，放大了"建机构/撬资本/巨头统帅/硬件创业"等能力的频率。换一份名单，四条轴还在，但各能力频率与原型配比会变。</li>
+    <li><b>这是"相关画像"，不是"因果配方"。</b>60 人全是已成名者，<b>没有对照组</b>。回答的是"成名领军者群体长什么样"，不回答"做到这些就能成为领军"。门槛很可能<b>必要而远非充分</b>。</li>
+    <li><b>名单构成决定画像形状。</b>名单偏"创始人 + 大厂首席 + 院士"，放大了"建机构/撬资本/巨头统帅/硬件创业"等能力的频率（D3机构 59/60、D8预判 60/60 在低标准上近全员，很可能正是选样产物）。换一份名单，8 维还在，但各维频率与原型配比会变。</li>
     <li><b>运气、时代窗口与平台不可忽略且无法测量。</b>AlexNet 赶上 GPU+ImageNet、DeepSeek 赶上算力与开源拐点——把时代红利误读成个人特质，是这类研究最大陷阱。</li>
-    <li><b>每条结论都可回溯。</b>8 维度 ← 42 规范能力 ← ~430 条原始 CAP（挂 from F#）← ~420 条 FACT（标 [A]/[B]+来源）← profiles/ 原始资料。任一归并/编码判断都可被质疑。</li>
+    <li><b>每条结论都可回溯。</b>8 维分 ← capability_matrix.md 明账（命中哪些规范能力）← 42 规范能力 ← ~430 条原始 CAP（挂 from F#）← ~420 条 FACT（标 [A]/[B]+来源）← profiles/ 原始资料。任一归并/编码/打分判断都可被质疑、下钻。</li>
   </ol></div>
 </div></section>
 
@@ -441,45 +439,45 @@ pA.onchange=render8;pB.onchange=render8;render8();
 const POOL=[
 ["T1","至少做出过一件被公认的硬成果(论文/架构/系统/产品/标准/芯片/公司/教材之一)",0,"门槛",60,"全员"],
 ["T2","长期、高强度的投入(常含低潮期坚持)",0,"门槛",58,"全员"],
-["B1","早慧硬底子 + 顶级师承/竞赛/状元谱系",-1,"特异",14,"Sutskever·沈向洋·陈天石·印奇·王小川·Gomez"],
-["B2","韧性:挫折/健康/争议中维持产出并诚实面对边界",-1,"特异",8,"Altman·王慧文·朱珑·汤晓鸥·Christiano"],
-["D1.1","造出被全行业沿用的架构/方法/系统",1,"区分",26,"Hinton·LeCun·Gomez·何恺明·Sutton·Goodfellow·Dean"],
-["D1.2","造出改变领域的基础数据集/基准/标准",1,"特异",5,"Fei-Fei(ImageNet)·高文(AVS)·张正友(相机标定)"],
-["D1.3","提出有原创性的理论体系",1,"特异",7,"张钹·朱松纯·Sutton·周志华·鄂维南·Bengio"],
-["D1.4","用跨学科工具为 AI 注入新基础方法",1,"特异",9,"Hinton·Hassabis·Amodei·鄂维南·朱松纯·Fei-Fei"],
-["D1.5","创造'让重大想法诞生'的研究土壤",1,"特异",5,"Bengio·Hinton·鄂维南·汤晓鸥"],
-["D1.6","研究品味:抓关键瓶颈给出足够简洁的方法",1,"特异",5,"何恺明·Sutton·Bengio·谢赛宁"],
-["D2.1","把一个算法思想打通到工业级量产系统",2,"区分",15,"LeCun(支票)·黄学东·Dean·余凯·王兴兴"],
-["D2.2","把研究封装为可大规模调用的平台/框架/API",2,"区分",12,"Dean·周靖人(Qwen)·王海峰(飞桨)·黄学东·印奇"],
-["D2.3","把模型能力做成大众可感知的产品入口",2,"区分",10,"Altman·杨植麟(Kimi)·王小川·张一鸣·闫俊杰"],
-["D2.4","模型能力 + 工程系统双轮(推理效率/服务)",2,"特异",7,"杨植麟(Mooncake)·朱军·颜水成·刘知远·谢赛宁"],
-["D3.1","从零创建并长期领导世界级研究机构",3,"区分",20,"Bengio(Mila)·LeCun(FAIR)·Hassabis·Fei-Fei·周志华·朱松纯·Russell·Bostrom"],
-["D3.2","从零创建并长期领导公司",3,"区分",24,"Altman·雷军·张一鸣·梁文锋·唐杰·印奇·余凯·陈天石"],
-["D3.3","巨头体系内统管全局 AI / 保住研究文化",3,"区分",9,"Dean·沈向洋·王海峰·周靖人·田奇·张亚勤·黄学东"],
-["D3.4","从研究者转向人才培养 / 机构组织",3,"特异",4,"刘铁岩·张亚勤·黄铁军"],
-["D3.5","跨国公司–大厂–高校多组织的'系统搭建者'",3,"特异",4,"张亚勤·李开复·沈向洋"],
-["D4.1","撬动巨额资本与算力",4,"区分",12,"Altman·雷军·梁文锋(算力)·陈天石·闫俊杰·王慧文"],
-["D4.2","顶级人才在多机构间高频转场、被持续争抢",4,"区分",10,"Karpathy·Goodfellow·沈向洋·李开复·张亚勤·Fei-Fei"],
-["D4.3","设计资本结构 / 推动上市",4,"特异",8,"Altman(capped-profit)·雷军·陈天石·闫俊杰·王小川"],
-["D4.4","用投资配置影响整个生态",4,"特异",3,"李开复(创新工场)·Andrew Ng(AI Fund)·王慧文"],
-["D5.1","把 AI 推进到芯片 / 算力底座",5,"特异",6,"陈天石·余凯·高文·王海峰(昆仑)·朱珑(求索)"],
-["D5.2","把 AI 推进到机器人 / 具身智能",5,"特异",4,"王兴兴·张正友·Hassabis·朱松纯"],
-["D5.3","软硬协同 / 边缘 / 端侧高效部署",5,"特异",7,"余凯·谢赛宁·张祥雨·颜水成"],
-["D5.4","把 AI 嵌入大规模消费终端生态",5,"特异",3,"雷军(人车家)·印奇(AIoT)"],
-["D5.5","把 AI 用于科学计算 / 工业严肃场景",5,"特异",7,"张林峰/鄂维南(AI4S)·田奇(盘古天气)·贾佳亚(工业)·朱珑(医疗)"],
-["D6.1","安全/风险/治理/伦理的公共担当",6,"区分",9,"Hinton·Bengio·Russell·Bostrom·Christiano·Amodei·Sutskever"],
-["D6.2","把抽象安全担忧转化为具体可研究的技术问题",6,"特异",5,"Christiano(RLHF)·Olah(可解释)·朱军(鲁棒)·Amodei(RSP)"],
-["D6.3","范式命名权 / 框架化整个领域",6,"特异",9,"Bostrom(超级智能)·Russell·Sutton(苦涩教训)·朱松纯·张钹·鄂维南·刘知远/孙茂松(密度法则)"],
-["D6.4","元认知 / 反身性自省(诚实承认边界)",6,"特异",4,"Bostrom·朱松纯·Christiano·LeCun"],
-["D7.1","写出定义一代学习者的经典教材",7,"特异",7,"Russell(AIMA)·Sutton·Goodfellow·周志华(西瓜书)·李航·朱军"],
-["D7.2","通过课程/科普大规模降低入门门槛",7,"特异",6,"Andrew Ng(Coursera)·Karpathy(CS231n)·Olah(Distill)·孙茂松"],
-["D7.3","开源/开放作为路线与护城河",7,"区分",10,"LeCun(PyTorch)·梁文锋·周靖人(Qwen)·林达华·刘知远·张鹏·黄铁军"],
-["D7.4","'师父'——批量培养人才、形成谱系",7,"区分",13,"Hinton·Bengio·张钹·汤晓鸥·周志华·鄂维南·孙茂松·贾佳亚"],
-["D7.5","把'可复现/解释清楚'做成研究基础设施",7,"特异",4,"Olah(Distill)·林达华(OpenMMLab)"],
-["D8.1","按长期信念逆向押注、不随主流",8,"区分",16,"Hinton·LeCun(世界模型)·Bengio·Sutskever·Fei-Fei(数据)·Sutton(经验)·朱松纯·梁文锋·余凯·黄铁军(类脑)"],
-["D8.2","捕捉拐点/窗口、趋势预判",8,"区分",13,"Altman·张一鸣·雷军·王慧文·梁文锋·唐杰(agent)·Amodei·李开复"],
-["D8.3","选标志性大问题、用长期愿景组织攻坚",8,"特异",7,"Hassabis(solve intelligence)·余凯(Wintel)·鄂维南·朱松纯·王兴兴"],
-["D8.4","一生完成多次原型迁移(最接近'领军内核')",8,"特异",8,"Hinton·LeCun·Bengio·汤晓鸥·Fei-Fei·唐杰·印奇"]
+["B1","早慧硬底子 + 顶级师承/竞赛/状元谱系",-1,"低频",14,"Sutskever·沈向洋·陈天石·印奇·王小川·Gomez"],
+["B2","韧性:挫折/健康/争议中维持产出并诚实面对边界",-1,"低频",8,"Altman·王慧文·朱珑·汤晓鸥·Christiano"],
+["D1.1","造出被全行业沿用的架构/方法/系统",1,"中频",26,"Hinton·LeCun·Gomez·何恺明·Sutton·Goodfellow·Dean"],
+["D1.2","造出改变领域的基础数据集/基准/标准",1,"低频",5,"Fei-Fei(ImageNet)·高文(AVS)·张正友(相机标定)"],
+["D1.3","提出有原创性的理论体系",1,"低频",7,"张钹·朱松纯·Sutton·周志华·鄂维南·Bengio"],
+["D1.4","用跨学科工具为 AI 注入新基础方法",1,"低频",9,"Hinton·Hassabis·Amodei·鄂维南·朱松纯·Fei-Fei"],
+["D1.5","创造'让重大想法诞生'的研究土壤",1,"低频",5,"Bengio·Hinton·鄂维南·汤晓鸥"],
+["D1.6","研究品味:抓关键瓶颈给出足够简洁的方法",1,"低频",5,"何恺明·Sutton·Bengio·谢赛宁"],
+["D2.1","把一个算法思想打通到工业级量产系统",2,"中频",15,"LeCun(支票)·黄学东·Dean·余凯·王兴兴"],
+["D2.2","把研究封装为可大规模调用的平台/框架/API",2,"中频",12,"Dean·周靖人(Qwen)·王海峰(飞桨)·黄学东·印奇"],
+["D2.3","把模型能力做成大众可感知的产品入口",2,"中频",10,"Altman·杨植麟(Kimi)·王小川·张一鸣·闫俊杰"],
+["D2.4","模型能力 + 工程系统双轮(推理效率/服务)",2,"低频",7,"杨植麟(Mooncake)·朱军·颜水成·刘知远·谢赛宁"],
+["D3.1","从零创建并长期领导世界级研究机构",3,"中频",20,"Bengio(Mila)·LeCun(FAIR)·Hassabis·Fei-Fei·周志华·朱松纯·Russell·Bostrom"],
+["D3.2","从零创建并长期领导公司",3,"中频",24,"Altman·雷军·张一鸣·梁文锋·唐杰·印奇·余凯·陈天石"],
+["D3.3","巨头体系内统管全局 AI / 保住研究文化",3,"中频",9,"Dean·沈向洋·王海峰·周靖人·田奇·张亚勤·黄学东"],
+["D3.4","从研究者转向人才培养 / 机构组织",3,"低频",4,"刘铁岩·张亚勤·黄铁军"],
+["D3.5","跨国公司–大厂–高校多组织的'系统搭建者'",3,"低频",4,"张亚勤·李开复·沈向洋"],
+["D4.1","撬动巨额资本与算力",4,"中频",12,"Altman·雷军·梁文锋(算力)·陈天石·闫俊杰·王慧文"],
+["D4.2","顶级人才在多机构间高频转场、被持续争抢",4,"中频",10,"Karpathy·Goodfellow·沈向洋·李开复·张亚勤·Fei-Fei"],
+["D4.3","设计资本结构 / 推动上市",4,"低频",8,"Altman(capped-profit)·雷军·陈天石·闫俊杰·王小川"],
+["D4.4","用投资配置影响整个生态",4,"低频",3,"李开复(创新工场)·Andrew Ng(AI Fund)·王慧文"],
+["D5.1","把 AI 推进到芯片 / 算力底座",5,"低频",6,"陈天石·余凯·高文·王海峰(昆仑)·朱珑(求索)"],
+["D5.2","把 AI 推进到机器人 / 具身智能",5,"低频",4,"王兴兴·张正友·Hassabis·朱松纯"],
+["D5.3","软硬协同 / 边缘 / 端侧高效部署",5,"低频",7,"余凯·谢赛宁·张祥雨·颜水成"],
+["D5.4","把 AI 嵌入大规模消费终端生态",5,"低频",3,"雷军(人车家)·印奇(AIoT)"],
+["D5.5","把 AI 用于科学计算 / 工业严肃场景",5,"低频",7,"张林峰/鄂维南(AI4S)·田奇(盘古天气)·贾佳亚(工业)·朱珑(医疗)"],
+["D6.1","安全/风险/治理/伦理的公共担当",6,"中频",9,"Hinton·Bengio·Russell·Bostrom·Christiano·Amodei·Sutskever"],
+["D6.2","把抽象安全担忧转化为具体可研究的技术问题",6,"低频",5,"Christiano(RLHF)·Olah(可解释)·朱军(鲁棒)·Amodei(RSP)"],
+["D6.3","范式命名权 / 框架化整个领域",6,"低频",9,"Bostrom(超级智能)·Russell·Sutton(苦涩教训)·朱松纯·张钹·鄂维南·刘知远/孙茂松(密度法则)"],
+["D6.4","元认知 / 反身性自省(诚实承认边界)",6,"低频",4,"Bostrom·朱松纯·Christiano·LeCun"],
+["D7.1","写出定义一代学习者的经典教材",7,"低频",7,"Russell(AIMA)·Sutton·Goodfellow·周志华(西瓜书)·李航·朱军"],
+["D7.2","通过课程/科普大规模降低入门门槛",7,"低频",6,"Andrew Ng(Coursera)·Karpathy(CS231n)·Olah(Distill)·孙茂松"],
+["D7.3","开源/开放作为路线与护城河",7,"中频",10,"LeCun(PyTorch)·梁文锋·周靖人(Qwen)·林达华·刘知远·张鹏·黄铁军"],
+["D7.4","'师父'——批量培养人才、形成谱系",7,"中频",13,"Hinton·Bengio·张钹·汤晓鸥·周志华·鄂维南·孙茂松·贾佳亚"],
+["D7.5","把'可复现/解释清楚'做成研究基础设施",7,"低频",4,"Olah(Distill)·林达华(OpenMMLab)"],
+["D8.1","按长期信念逆向押注、不随主流",8,"中频",16,"Hinton·LeCun(世界模型)·Bengio·Sutskever·Fei-Fei(数据)·Sutton(经验)·朱松纯·梁文锋·余凯·黄铁军(类脑)"],
+["D8.2","捕捉拐点/窗口、趋势预判",8,"中频",13,"Altman·张一鸣·雷军·王慧文·梁文锋·唐杰(agent)·Amodei·李开复"],
+["D8.3","选标志性大问题、用长期愿景组织攻坚",8,"低频",7,"Hassabis(solve intelligence)·余凯(Wintel)·鄂维南·朱松纯·王兴兴"],
+["D8.4","一生完成多次原型迁移(最接近'领军内核')",8,"低频",8,"Hinton·LeCun·Bengio·汤晓鸥·Fei-Fei·唐杰·印奇"]
 ];
 const dimName=d=>d===0?'门槛层':d===-1?'背景层':('D'+d+' '+DIMS[d-1]);
 const pdim=document.getElementById('pdim');
@@ -502,7 +500,7 @@ pq.oninput=renderPool;pdim.onchange=renderPool;play.onchange=renderPool;renderPo
 
 /* ===== STEP3 频率分布条形（由 42 规范能力渲染） ===== */
 (function(){
-  const layColor={'门槛':'var(--c2)','区分':'var(--c1)','特异':'var(--c5)'};
+  const layColor={'门槛':'var(--c2)','中频':'var(--c1)','低频':'var(--c5)'};
   const sorted=POOL.slice().sort((a,b)=>b[4]-a[4]);
   document.getElementById('bars').innerHTML=sorted.map(e=>{
     const nm=e[1].length>24?e[1].slice(0,24)+'…':e[1];

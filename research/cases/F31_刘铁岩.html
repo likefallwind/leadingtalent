@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>刘铁岩 · 一条可追溯的推理链</title>
+<style>
+  :root{
+    --bg:#0d1117;--panel:#161b22;--panel2:#1c2230;--line:#2b3340;--ink:#e6edf3;--mut:#9aa7b4;
+    --acc:#5aa9ff;--acc2:#7ee787;--warn:#ffd166;--pink:#ff8da1;--purple:#b692ff;
+    --c1:#5aa9ff;--c2:#7ee787;--c5:#b692ff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+  .wrap{max-width:960px;margin:0 auto;padding:0 22px}
+  header{padding:42px 0 26px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#11161f,#0d1117)}
+  .tag{display:inline-block;font-size:12px;color:var(--acc2);border:1px solid var(--line);border-radius:20px;padding:3px 12px;margin-bottom:14px}
+  h1{margin:0 0 8px;font-size:30px}
+  h1 small{display:block;font-size:14px;color:var(--mut);font-weight:400;margin-top:10px;line-height:1.6}
+  .chainbar{display:flex;flex-wrap:wrap;gap:6px;margin-top:20px;font-size:12px}
+  .chainbar span{background:var(--panel2);border:1px solid var(--line);border-radius:7px;padding:5px 10px;color:var(--mut)}
+  .chainbar b{color:var(--ink)}
+  .chainbar .ar{background:none;border:none;color:var(--acc);padding:5px 2px}
+  section{padding:34px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:21px;margin:0 0 4px;display:flex;align-items:center;gap:10px}
+  h2 .k{font-size:11px;background:var(--acc);color:#04101f;border-radius:6px;padding:3px 9px;font-weight:700;letter-spacing:.5px}
+  .sub{color:var(--mut);font-size:13.5px;margin:6px 0 18px}
+  .fact{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--acc);border-radius:9px;padding:12px 15px;margin:9px 0}
+  .fact .id{font-weight:700;color:var(--acc);margin-right:8px}
+  .fact .a{font-size:10px;padding:1px 6px;border-radius:10px;border:1px solid var(--acc2);color:var(--acc2);margin-right:7px}
+  .fact .cat{font-size:11px;color:var(--mut);display:block;margin-bottom:3px}
+  .cap{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:12px 15px;margin:9px 0}
+  .cap .id{font-weight:700;color:var(--acc2);margin-right:8px}
+  .cap .from{font-size:11px;color:var(--mut);border:1px solid var(--line);border-radius:10px;padding:1px 8px;margin-left:6px;white-space:nowrap}
+  .map{width:100%;border-collapse:collapse;margin-top:6px;font-size:13.5px}
+  .map th,.map td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+  .map th{background:var(--panel2);color:var(--mut);font-weight:600;font-size:12px}
+  .map code{color:var(--warn);font-size:12.5px}
+  .pill{display:inline-block;font-size:11px;border:1px solid var(--line);border-radius:10px;padding:1px 8px;color:var(--mut)}
+  .scoregrid{display:grid;grid-template-columns:1fr;gap:10px}
+  .srow{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:13px 15px}
+  .srow .top{display:flex;align-items:center;gap:10px;margin-bottom:5px}
+  .srow .dim{font-weight:700}
+  .srow .sc{margin-left:auto;font-weight:800;font-size:20px;width:30px;text-align:center;border-radius:7px}
+  .sc0{background:#21262d;color:#6e7681}.sc1{background:#1f2a37;color:#7d93b0}
+  .sc2{background:#15324a;color:#9cd0ff}.sc3{background:#1d4023;color:#9bf0a5}
+  .srow .ev{font-size:13px;color:var(--mut)}
+  .srow .ev b{color:var(--ink)}
+  .srow .ev code{color:var(--warn);font-size:12px}
+  .bar{height:7px;background:#21262d;border-radius:4px;margin-top:8px;overflow:hidden}
+  .bar i{display:block;height:100%;border-radius:4px}
+  .radarwrap{display:flex;gap:26px;flex-wrap:wrap;align-items:center;justify-content:center;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .radar{width:440px;max-width:100%}
+  .legend{font-size:13px;margin-top:10px}
+  .legend .lg{display:flex;align-items:center;gap:7px;margin:5px 0}
+  .legend i{width:13px;height:13px;border-radius:3px;display:inline-block}
+  .callout{background:linear-gradient(180deg,#15203033,#1c2230);border:1px solid var(--line);border-left:3px solid var(--warn);border-radius:10px;padding:15px 17px;margin-top:16px;font-size:14px}
+  .rule{background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:12px 15px;font-size:12.5px;color:var(--mut)}
+  .rule b{color:var(--ink)}
+  .note{font-size:12.5px;color:var(--mut)}
+  a{color:var(--acc)}
+  .arch{display:inline-block;background:#15324a;color:#9cd0ff;border-radius:7px;padding:2px 10px;font-weight:700;font-size:13px}
+  footer{padding:28px 0 50px;color:var(--mut);font-size:12.5px}
+</style></head>
+<body>
+
+<header><div class="wrap">
+  <span class="tag">个案推理链 · 从原始资料到雷达图，每步可追溯</span>
+  <h1>刘铁岩（F31）
+    <small>北京中关村学院党委书记/院长 · 前微软亚洲研究院副院长 · learning to rank / AI for Science。
+    本页演示：他的雷达分 <code style="color:var(--warn)">[2,2,2,1,0,0,3,1]</code> 不是拍脑袋给的，而是从资料一层层推出来的。</small></h1>
+  <div class="chainbar">
+    <span>① <b>原始资料</b></span><span class="ar">→</span>
+    <span>② <b>原子事实</b> 6 条</span><span class="ar">→</span>
+    <span>③ <b>原子能力</b> 6 条</span><span class="ar">→</span>
+    <span>④ <b>对齐规范能力</b></span><span class="ar">→</span>
+    <span>⑤ <b>折算 8 维分</b></span><span class="ar">→</span>
+    <span>⑥ <b>雷达 + 原型</b></span>
+  </div>
+</div></header>
+
+<section><div class="wrap">
+  <h2><span class="k">STEP 1</span>原始资料（输入）</h2>
+  <p class="sub">来源 = <code>profiles/刘铁岩.md</code>。本研究只从公开深度资料中提炼，不引入资料之外的印象。下面每一步都能回指到这里。</p>
+  <div class="rule">关键身份线索：1976 生，清华电子工程 → 微软亚洲研究院（MSRA）长期做机器学习/信息检索/<b>排序学习 learning to rank</b>、任副院长 → 微软科学智能研究院首席科学家（转 <b>AI for Science</b>）→ 现任<b>北京中关村学院院长</b>（转人才培养与机构建设）。IEEE Fellow、ACM Distinguished Scientist。</div>
+</div></section>
+
+<section><div class="wrap">
+  <h2><span class="k">STEP 2</span>原子事实（FACTS · 可核验的硬事实）</h2>
+  <p class="sub">逐条从资料抽出，标 <span class="fact" style="display:inline;padding:1px 6px;border:none"><span class="a">A</span></span> = 资料明确陈述的硬事实。每条都有编号 F#，后面的能力会引用它。</p>
+
+  <div class="fact"><span class="cat">出身与路径</span><span class="id">F1</span><span class="a">A</span>1976.6 生；1994 入清华电子工程系（信号/通信/信息检索/模式识别传统）；走清华电子工程→微软亚研的典型路径。</div>
+  <div class="fact"><span class="cat">微软亚研</span><span class="id">F2</span><span class="a">A</span>2000s 加入 MSRA 长期做机器学习/信息检索/<b>排序学习（learning to rank，搜索/推荐核心技术）</b>；任 MSRA 副院长成重要学术管理者。</div>
+  <div class="fact"><span class="cat">微软亚研</span><span class="id">F3</span><span class="a">A</span>在搜索/计算广告场景中长期处于"算法如何进入真实产品"的环境（A/B 测试/指标设计/在线学习/模型治理）。</div>
+  <div class="fact"><span class="cat">AI for Science</span><span class="id">F4</span><span class="a">A</span>任微软科学智能研究院首席科学家，把机器学习迁移到 <b>AI for Science</b>（材料/药物/化学/物理/气候）——能把方法迁移到新领域的组织型科学家。</div>
+  <div class="fact"><span class="cat">转向教育</span><span class="id">F5</span><span class="a">A</span>现任北京中关村学院党委书记/院长、中关村人工智能研究院理事长；<b>从顶尖科学家转向 AI 人才培养</b>，构建"教育—科研—产业—创业"闭环。</div>
+  <div class="fact"><span class="cat">荣誉</span><span class="id">F6</span><span class="a">A</span>IEEE Fellow、ACM Distinguished Scientist；CMU/清华/中科大等兼职教授；Nottingham 荣誉教授。</div>
+</div></section>
+
+<section><div class="wrap">
+  <h2><span class="k">STEP 3</span>原子能力（CAPS · 从事实归纳，每条挂 from F#）</h2>
+  <p class="sub">"他展示了什么能力"——每条<b>必须</b>挂事实编号作证据链，可复核。允许重叠。</p>
+
+  <div class="cap"><span class="id">C1</span>工业研究院科学家：把机器学习连接到真实互联网产品（排序/广告）<span class="from">from F2,F3</span></div>
+  <div class="cap"><span class="id">C2</span>把方法跨领域迁移（信息检索 → AI for Science）<span class="from">from F4</span></div>
+  <div class="cap"><span class="id">C3</span>从研究者转向人才培养与机构建设组织者<span class="from">from F5</span></div>
+  <div class="cap"><span class="id">C4</span>多机构学术管理与共同体角色<span class="from">from F2,F6</span></div>
+  <div class="cap"><span class="id">C5</span>用系统/反馈思维贯穿研究—产品—教育<span class="from">from F3,F5</span></div>
+  <div class="cap"><span class="id">C6</span>顶级师承体系内成长并复制其育人方法<span class="from">from F2,F5</span></div>
+</div></section>
+
+<section><div class="wrap">
+  <h2><span class="k">STEP 4</span>对齐到规范能力库（去重归并的 42 条）</h2>
+  <p class="sub">把上面 6 条逐人能力，对齐到全样本共用的 <a href="../capability_pool.md">规范能力库</a>（人工主题编码）。这一步把"刘铁岩的能力"翻译成"可与 60 人横向比较的标准条目"。</p>
+  <table class="map">
+    <thead><tr><th>他的能力(CAP)</th><th>对齐到的规范能力</th><th>所属维度</th><th>这条在全样本的频率</th></tr></thead>
+    <tbody>
+      <tr><td>C1 排序学习进真实产品</td><td><code>D2.1</code> 把算法思想打通到工业级系统</td><td>D2 工程产品化</td><td>中频 ~15/60</td></tr>
+      <tr><td>C1 learning to rank 本身</td><td><code>D1.1</code> 造出被沿用的方法（边缘命中：被搜索/推荐沿用，但非奠基级架构）</td><td>D1 原创奠基</td><td>中频 ~26/60</td></tr>
+      <tr><td>C3 从科学家转人才培养</td><td><code>D3.4</code> 从研究者转向人才培养/机构组织</td><td>D3 机构组织</td><td>低频 ~4/60</td></tr>
+      <tr><td>C4 多机构学术管理</td><td><code>D3.3</code> 在体系内统管（MSRA 副院长）</td><td>D3 机构组织</td><td>中频 ~9/60</td></tr>
+      <tr><td>C3+C6 复制师承、办学院育人</td><td><code>D7.4</code> "师父"——批量培养人才、形成谱系</td><td>D7 教育/开源</td><td>中频 ~13/60</td></tr>
+      <tr><td>C2 信息检索 → AI for Science</td><td><code>D8.1</code> 跨领域迁移/逆向布局（弱命中）</td><td>D8 预判/逆向</td><td>中频 ~16/60</td></tr>
+      <tr><td>—（无）</td><td>无 D4 撬资本、无 D5 物理硬件、无 D6 安全/思想</td><td>D4 / D5 / D6</td><td>未命中</td></tr>
+    </tbody>
+  </table>
+  <p class="note" style="margin-top:10px">门槛项：<b>T1 至少一件硬成果</b> = learning to rank / AI4S 成果 ✓；<b>T2 长期投入</b> = 二十余年持续 ✓。门槛≈全员、不进雷达轴。</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2><span class="k">STEP 5</span>折算成 8 维分（0–3，规则透明）</h2>
+  <div class="rule" style="margin-bottom:16px">
+    <b>折算规则</b>（同一套规则用于全 60 人，见 <a href="../capability_matrix.md">capability_matrix.md</a>）：
+    某维分 = 该维命中规范能力的<b>条数 × 显著度</b>。
+    0=未命中 / 1=早期·次要·参与性 / 2=清晰强项(1 条标志或 ≥2 条扎实) / 3=此人最为人所知的标志(signature) 或命中 ≥3 条。
+    <code>†</code> = 人工校正处，标明原因。
+  </div>
+
+  <div class="scoregrid">
+    <div class="srow"><div class="top"><span class="dim">D1 原创奠基</span><span class="sc sc2">2</span></div>
+      <div class="ev">命中 <b>D1.1</b>（边缘）：learning to rank 是被搜索/推荐<b>沿用的方法</b>，但不是 ResNet/Transformer 那种奠基级架构 → 给"清晰强项"而非标志级。</div>
+      <div class="bar"><i style="width:66%;background:var(--c1)"></i></div></div>
+
+    <div class="srow"><div class="top"><span class="dim">D2 工程产品化</span><span class="sc sc2">2</span></div>
+      <div class="ev">命中 <b>D2.1</b>：C1 把排序算法接入<b>真实互联网产品</b>（搜索/计算广告，<code>from F2,F3</code>）→ 清晰强项。但非他个人最知名的标签，故 2 不 3。</div>
+      <div class="bar"><i style="width:66%;background:var(--c1)"></i></div></div>
+
+    <div class="srow"><div class="top"><span class="dim">D3 机构组织</span><span class="sc sc2">2</span></div>
+      <div class="ev">命中 <b>D3.3</b>（MSRA 副院长统管）+ <b>D3.4</b>（转人才培养/机构组织，<code>from F5</code>）→ 两条扎实，清晰强项。未到"从零创世界级机构"的 3。</div>
+      <div class="bar"><i style="width:66%;background:var(--c1)"></i></div></div>
+
+    <div class="srow"><div class="top"><span class="dim">D4 资本动员</span><span class="sc sc1">1</span></div>
+      <div class="ev">无撬动巨额资本 / 上市 / 投资生态的证据；仅有机构内资源配置 → 存在但次要。</div>
+      <div class="bar"><i style="width:33%;background:#7d93b0"></i></div></div>
+
+    <div class="srow"><div class="top"><span class="dim">D5 物理/硬件</span><span class="sc sc0">0</span></div>
+      <div class="ev">无芯片 / 机器人 / 具身 / 端侧的任何命中 → 0。<span class="note">（注：AI for Science 归到 D8 的跨界布局，未计入 D5 的"物理硬件本体"。）</span></div>
+      <div class="bar"><i style="width:4%;background:#6e7681"></i></div></div>
+
+    <div class="srow"><div class="top"><span class="dim">D6 安全/思想</span><span class="sc sc0">0</span></div>
+      <div class="ev">无安全 / 治理 / 可解释 / 范式命名的证据 → 0。</div>
+      <div class="bar"><i style="width:4%;background:#6e7681"></i></div></div>
+
+    <div class="srow" style="border-color:var(--c2)"><div class="top"><span class="dim">D7 教育/开源</span><span class="sc sc3">3</span><span class="pill" style="border-color:var(--c2);color:var(--c2)">signature</span></div>
+      <div class="ev">命中 <b>D7.4</b>"师父"：C3+C6 从顶尖科学家<b>转向人才培养、复制师承育人法、出任中关村学院院长办学</b>（<code>from F5,F2</code>）。<code>†</code> 校正：这是他<b>当下最为人所知的转向</b>，以"育人/机构组织"计为标志级 3——这也是他雷达上唯一的尖峰。</div>
+      <div class="bar"><i style="width:100%;background:var(--c2)"></i></div></div>
+
+    <div class="srow"><div class="top"><span class="dim">D8 预判/逆向</span><span class="sc sc1">1</span></div>
+      <div class="ev">命中 <b>D8.1</b>（弱）：C2 信息检索 → AI for Science 的跨领域迁移，有方向判断但非强逆向押注 → 存在但次要。</div>
+      <div class="bar"><i style="width:33%;background:#7d93b0"></i></div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2><span class="k">STEP 6</span>雷达 + 原型判定（输出）</h2>
+  <p class="sub">把 8 个分画成形状。<b style="color:var(--warn)">看形状不看面积</b>——这张图的意义是"他是哪一类"，不是"他多强"。</p>
+  <div class="radarwrap">
+    <svg id="radar" class="radar"></svg>
+    <div>
+      <div class="legend" id="legend"></div>
+      <div class="callout" style="margin-top:14px">
+        <b>原型 = <span class="arch">巨头技术统帅</span></b>（D1–D3 均衡偏工程）。<br>
+        但他有一处<b style="color:var(--c2)">超出该原型模板</b>的尖峰：<b>D7=3</b>（统帅模板均值仅约 1.6）。
+        这正是个体的价值——<b>他是"正在从工业统帅迁移向教育/育人组织者"的那一类</b>。
+        若只用一句标签会丢掉这个迁移，雷达把它显式画了出来。
+      </div>
+    </div>
+  </div>
+  <div class="callout" style="border-left-color:var(--mut)">
+    <b>为什么结论可信、又必须留余地：</b>
+    上面每个分都能<b>逆向下钻</b>——分 → 命中的规范能力 → CAP(<code>from F#</code>) → STEP 2 的事实 → <code>profiles/</code> 原文。
+    但折算规则（0–3 切分、D7 的 <code>†</code> 校正）是<b>分析者约定</b>，可质疑、可重定；本页保证的是"<b>有据可查</b>"，不是"客观唯一"。
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  数据来源：<code>research/facts/F31_刘铁岩.md</code>（事实+能力）· <code>capability_pool.md</code>（规范能力）· <code>capability_matrix.md</code>（打分明账）· <code>scores.md</code>（8 维分）。<br>
+  推理链：原始资料 → 原子事实 → 原子能力 → 规范能力 → 8 维分 → 雷达。每一环都可复核或推翻。
+</div></footer>
+
+<script>
+const DIMS=["D1原创","D2工程","D3机构","D4资本","D5物理","D6安全","D7教开","D8预判"];
+const SELF=[2,2,2,1,0,0,3,1];                 // 刘铁岩
+const ARCH=[2.1,2.5,2.3,1.5,0.7,0.1,1.6,1.2]; // 巨头技术统帅 模板均值
+const COL_SELF='#7ee787', COL_ARCH='#5aa9ff';
+
+function radar(svg,labels,series,maxv){
+  const W=440,H=420,cx=W/2,cy=H/2,R=140,N=labels.length;
+  const ang=i=>-Math.PI/2+i*2*Math.PI/N, pt=(i,r)=>[cx+Math.cos(ang(i))*r,cy+Math.sin(ang(i))*r];
+  let g='';
+  for(let k=1;k<=3;k++){let p='';for(let i=0;i<N;i++){const[x,y]=pt(i,R*k/3);p+=x.toFixed(1)+','+y.toFixed(1)+' ';}g+=`<polygon points="${p}" fill="none" stroke="#2b3340"/>`;}
+  for(let i=0;i<N;i++){const[x,y]=pt(i,R);g+=`<line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="#2b3340"/>`;
+    const[lx,ly]=pt(i,R+18);g+=`<text x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" font-size="11" fill="#9aa7b4" text-anchor="middle" dominant-baseline="middle">${labels[i]}</text>`;}
+  series.forEach(s=>{let p='';for(let i=0;i<N;i++){const[x,y]=pt(i,R*s.values[i]/maxv);p+=x.toFixed(1)+','+y.toFixed(1)+' ';}
+    g+=`<polygon points="${p}" fill="${s.color}26" stroke="${s.color}" stroke-width="2"/>`;
+    for(let i=0;i<N;i++){const[x,y]=pt(i,R*s.values[i]/maxv);g+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.8" fill="${s.color}"/>`;}});
+  svg.setAttribute('viewBox','0 0 '+W+' '+H);svg.innerHTML=g;
+}
+radar(document.getElementById('radar'),DIMS,[
+  {color:COL_ARCH,values:ARCH},
+  {color:COL_SELF,values:SELF}
+],3);
+document.getElementById('legend').innerHTML=
+  `<div class="lg"><i style="background:${COL_SELF}"></i>刘铁岩本人 [2,2,2,1,0,0,3,1]</div>`+
+  `<div class="lg"><i style="background:${COL_ARCH}"></i>"巨头技术统帅"原型模板（均值）</div>`;
+</script>
+</body></html>

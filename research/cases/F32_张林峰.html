@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>张林峰 · 一条可追溯的推理链</title>
+<style>
+  :root{
+    --bg:#0d1117;--panel:#161b22;--panel2:#1c2230;--line:#2b3340;--ink:#e6edf3;--mut:#9aa7b4;
+    --acc:#5aa9ff;--acc2:#7ee787;--warn:#ffd166;--pink:#ff8da1;--purple:#b692ff;
+    --c1:#5aa9ff;--c2:#7ee787;--c5:#b692ff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+  .wrap{max-width:960px;margin:0 auto;padding:0 22px}
+  header{padding:42px 0 26px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#11161f,#0d1117)}
+  .tag{display:inline-block;font-size:12px;color:var(--acc2);border:1px solid var(--line);border-radius:20px;padding:3px 12px;margin-bottom:14px}
+  h1{margin:0 0 8px;font-size:30px}
+  h1 small{display:block;font-size:14px;color:var(--mut);font-weight:400;margin-top:10px;line-height:1.6}
+  .chainbar{display:flex;flex-wrap:wrap;gap:6px;margin-top:20px;font-size:12px}
+  .chainbar span{background:var(--panel2);border:1px solid var(--line);border-radius:7px;padding:5px 10px;color:var(--mut)}
+  .chainbar b{color:var(--ink)}
+  .chainbar .ar{background:none;border:none;color:var(--acc);padding:5px 2px}
+  section{padding:34px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:21px;margin:0 0 4px;display:flex;align-items:center;gap:10px}
+  h2 .k{font-size:11px;background:var(--acc);color:#04101f;border-radius:6px;padding:3px 9px;font-weight:700;letter-spacing:.5px}
+  .sub{color:var(--mut);font-size:13.5px;margin:6px 0 18px}
+  .fact{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--acc);border-radius:9px;padding:12px 15px;margin:9px 0}
+  .fact .id{font-weight:700;color:var(--acc);margin-right:8px}
+  .fact .a{font-size:10px;padding:1px 6px;border-radius:10px;border:1px solid var(--acc2);color:var(--acc2);margin-right:7px}
+  .fact .cat{font-size:11px;color:var(--mut);display:block;margin-bottom:3px}
+  .cap{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:12px 15px;margin:9px 0}
+  .cap .id{font-weight:700;color:var(--acc2);margin-right:8px}
+  .cap .from{font-size:11px;color:var(--mut);border:1px solid var(--line);border-radius:10px;padding:1px 8px;margin-left:6px;white-space:nowrap}
+  .map{width:100%;border-collapse:collapse;margin-top:6px;font-size:13.5px}
+  .map th,.map td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+  .map th{background:var(--panel2);color:var(--mut);font-weight:600;font-size:12px}
+  .map code{color:var(--warn);font-size:12.5px}
+  .pill{display:inline-block;font-size:11px;border:1px solid var(--line);border-radius:10px;padding:1px 8px;color:var(--mut)}
+  .scoregrid{display:grid;grid-template-columns:1fr;gap:10px}
+  .srow{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:13px 15px}
+  .srow .top{display:flex;align-items:center;gap:10px;margin-bottom:5px}
+  .srow .dim{font-weight:700}
+  .srow .sc{margin-left:auto;font-weight:800;font-size:20px;width:30px;text-align:center;border-radius:7px}
+  .sc0{background:#21262d;color:#6e7681}.sc1{background:#1f2a37;color:#7d93b0}
+  .sc2{background:#15324a;color:#9cd0ff}.sc3{background:#1d4023;color:#9bf0a5}
+  .srow .ev{font-size:13px;color:var(--mut)}
+  .srow .ev b{color:var(--ink)}
+  .srow .ev code{color:var(--warn);font-size:12px}
+  .bar{height:7px;background:#21262d;border-radius:4px;margin-top:8px;overflow:hidden}
+  .bar i{display:block;height:100%;border-radius:4px}
+  .radarwrap{display:flex;gap:26px;flex-wrap:wrap;align-items:center;justify-content:center;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .radar{width:440px;max-width:100%}
+  .legend{font-size:13px;margin-top:10px}
+  .legend .lg{display:flex;align-items:center;gap:7px;margin:5px 0}
+  .legend i{width:13px;height:13px;border-radius:3px;display:inline-block}
+  .callout{background:linear-gradient(180deg,#15203033,#1c2230);border:1px solid var(--line);border-left:3px solid var(--warn);border-radius:10px;padding:15px 17px;margin-top:16px;font-size:14px}
+  .rule{background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:12px 15px;font-size:12.5px;color:var(--mut)}
+  .rule b{color:var(--ink)}
+  .note{font-size:12.5px;color:var(--mut)}
+  a{color:var(--acc)}
+  .arch{display:inline-block;background:#1d4023;color:#9bf0a5;border-radius:7px;padding:2px 10px;font-weight:700;font-size:13px}
+  footer{padding:28px 0 50px;color:var(--mut);font-size:12.5px}
+</style></head>
+<body>
+
+<header><div class="wrap">
+  <span class="tag">个案推理链 · 从原始资料到雷达图，每步可追溯</span>
+  <h1>张林峰（F32）
+    <small>深势科技 DP Technology 创始人兼首席科学家 · DeePMD 深度势能 · AI for Science。
+    本页演示：他的雷达分 <code style="color:var(--warn)">[3,2,2,1,1,0,1,2]</code> 不是拍脑袋给的，而是从资料一层层推出来的。</small></h1>
+  <div class="chainbar">
+    <span>① <b>原始资料</b></span><span class="ar">→</span>
+    <span>② <b>原子事实</b> 7 条</span><span class="ar">→</span>
+    <span>③ <b>原子能力</b> 7 条</span><span class="ar">→</span>
+    <span>④ <b>对齐规范能力</b></span><span class="ar">→</span>
+    <span>⑤ <b>折算 8 维分</b></span><span class="ar">→</span>
+    <span>⑥ <b>雷达 + 原型</b></span>
+  </div>
+</div></header>
+
+<section><div class="wrap">
+  <h2><span class="k">STEP 1</span>原始资料（输入）</h2>
+  <p class="sub">来源 = <code>profiles/张林峰.md</code>。本研究只从公开深度资料中提炼，不引入资料之外的印象。下面每一步都能回指到这里。</p>
+  <div class="rule">关键身份线索：1993 生，2016 北大 → 2020 Princeton 博士（<b>鄂维南门下</b>）→ 参与 <b>DeePMD 深度势能分子动力学</b>（让神经网络进入科学计算核心）→ 平台获 <b>2020 Gordon Bell Prize</b> → 创办 <b>深势科技</b>（AI for Science 产业化）→ 推动 AI4S 成体系。名单中较年轻者之一。</div>
+</div></section>
+
+<section><div class="wrap">
+  <h2><span class="k">STEP 2</span>原子事实（FACTS · 可核验的硬事实）</h2>
+  <p class="sub">逐条从资料抽出，标 <span class="fact" style="display:inline;padding:1px 6px;border:none"><span class="a">A</span></span> = 资料明确陈述的硬事实。每条都有编号 F#，后面的能力会引用它。</p>
+
+  <div class="fact"><span class="cat">出身与师承</span><span class="id">F1</span><span class="a">A</span>1993.4 生于山西汾阳；2016 北大毕业、2020 Princeton 博士；博士与<b>鄂维南团队密切合作</b>，继承"机器学习解决科学计算瓶颈"的方向。</div>
+  <div class="fact"><span class="cat">技术贡献</span><span class="id">F2</span><span class="a">A</span>参与<b>深度势能分子动力学 DeePMD</b>：用神经网络学习原子间势能面，使模拟兼具量子化学精度与大规模分子动力学效率，让机器学习进入科学计算核心（非外部辅助）。</div>
+  <div class="fact"><span class="cat">荣誉</span><span class="id">F3</span><span class="a">A</span>相关 AI 分子模拟平台获 <b>2020 Gordon Bell Prize</b>、入选 2020 中国十大科技进展。</div>
+  <div class="fact"><span class="cat">创业</span><span class="id">F4</span><span class="a">A</span>2020 前后创办<b>深势科技</b>，聚焦 AI for Science 大模型/材料/电池/生命科学/科学计算平台，发布 Uni 系列；把学术算法转化为可管理数据/运行模拟/部署到企业研发的工具链。</div>
+  <div class="fact"><span class="cat">领域建设</span><span class="id">F5</span><span class="a">A</span>2023 参与《科学智能 AI4S》报告与行业倡议，推动 AI for Science 成体系。</div>
+  <div class="fact"><span class="cat">跨学科</span><span class="id">F6</span><span class="a">A</span>AI for Science 需同时懂微分方程/分子动力学/量子化学/数值计算/神经网络/高性能计算；商业化慢、专业、需经实验与产业规模化检验。</div>
+  <div class="fact"><span class="cat">边界</span><span class="id">F7</span><span class="a">A</span>名单中较年轻者之一，获杰出青年中关村奖相关认可；长期影响仍在形成。</div>
+</div></section>
+
+<section><div class="wrap">
+  <h2><span class="k">STEP 3</span>原子能力（CAPS · 从事实归纳，每条挂 from F#）</h2>
+  <p class="sub">"他展示了什么能力"——每条<b>必须</b>挂事实编号作证据链，可复核。允许重叠。</p>
+
+  <div class="cap"><span class="id">C1</span>跨学科迁移、重定义问题（把 ML 做成科学计算核心工具）<span class="from">from F2,F6</span></div>
+  <div class="cap"><span class="id">C2</span>造出被沿用的基础件（DeePMD 深度势能）<span class="from">from F2,F3</span></div>
+  <div class="cap"><span class="id">C3</span>顶级师承谱系（鄂维南门下）+ 早慧硬底子<span class="from">from F1</span></div>
+  <div class="cap"><span class="id">C4</span>把科研突破转化为产业平台公司（深势科技）<span class="from">from F4</span></div>
+  <div class="cap"><span class="id">C5</span>选定 AI 下一战场（科学发现而非聊天）逆向于主流<span class="from">from F4,F6</span></div>
+  <div class="cap"><span class="id">C6</span>推动一个新领域成体系（AI4S 报告/倡议）<span class="from">from F5</span></div>
+  <div class="cap"><span class="id">C7</span>年轻即获顶级科学奖（Gordon Bell）+ 创业<span class="from">from F3,F7</span></div>
+</div></section>
+
+<section><div class="wrap">
+  <h2><span class="k">STEP 4</span>对齐到规范能力库（去重归并的 42 条）</h2>
+  <p class="sub">把上面 7 条逐人能力，对齐到全样本共用的 <a href="../capability_pool.md">规范能力库</a>（人工主题编码）。这一步把"张林峰的能力"翻译成"可与 60 人横向比较的标准条目"。</p>
+  <table class="map">
+    <thead><tr><th>他的能力(CAP)</th><th>对齐到的规范能力</th><th>所属维度</th><th>这条在全样本的频率</th></tr></thead>
+    <tbody>
+      <tr><td>C2 DeePMD 深度势能</td><td><code>D1.1</code> 造出被全行业沿用的架构/方法</td><td>D1 原创奠基</td><td>中频 ~26/60</td></tr>
+      <tr><td>C1 把 ML 做成科学计算核心工具</td><td><code>D1.4</code> 用跨学科工具为 AI 注入新基础方法</td><td>D1 原创奠基</td><td>低频 ~9/60</td></tr>
+      <tr><td>C4 深势科技工具链/平台</td><td><code>D2.x</code> 把研究封装为可调用的平台</td><td>D2 工程产品化</td><td>中频</td></tr>
+      <tr><td>C4 创办并领导深势科技</td><td><code>D3.2</code> 从零创建并长期领导公司</td><td>D3 机构组织</td><td>中频 ~24/60</td></tr>
+      <tr><td>C2+C4 分子模拟/材料/电池/生命科学</td><td><code>D5.5</code> 把 AI 用于科学计算/工业严肃场景</td><td>D5 物理/硬件</td><td>低频 ~7/60</td></tr>
+      <tr><td>C5 选科学发现而非聊天、逆向主流</td><td><code>D8.1</code> 按长期信念逆向押注</td><td>D8 预判/逆向</td><td>中频 ~16/60</td></tr>
+      <tr><td>C3 鄂维南门下 + 早慧</td><td><code>B1</code> 早慧硬底子 + 顶级师承（<b>背景项，不进雷达</b>）</td><td>背景</td><td>低频 ~14/60</td></tr>
+      <tr><td>C6+C7 Gordon Bell / 推 AI4S 成体系</td><td><code>D8.3</code> 选标志性大问题（<b>特异加分</b>）</td><td>D8（特异）</td><td>低频 ~7/60</td></tr>
+    </tbody>
+  </table>
+  <p class="note" style="margin-top:10px">门槛项：<b>T1 至少一件硬成果</b> = DeePMD / Gordon Bell ✓；<b>T2 长期投入</b> = 从博士到创业一以贯之 ✓。门槛≈全员、不进雷达轴。背景项 B1（师承/早慧）也不进雷达。</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2><span class="k">STEP 5</span>折算成 8 维分（0–3，规则透明）</h2>
+  <div class="rule" style="margin-bottom:16px">
+    <b>折算规则</b>（同一套规则用于全 60 人，见 <a href="../capability_matrix.md">capability_matrix.md</a>）：
+    某维分 = 该维命中规范能力的<b>条数 × 显著度</b>。
+    0=未命中 / 1=早期·次要·参与性 / 2=清晰强项(1 条标志或 ≥2 条扎实) / 3=此人最为人所知的标志(signature) 或命中 ≥3 条。
+  </div>
+
+  <div class="scoregrid">
+    <div class="srow" style="border-color:var(--c2)"><div class="top"><span class="dim">D1 原创奠基</span><span class="sc sc3">3</span><span class="pill" style="border-color:var(--c2);color:var(--c2)">signature</span></div>
+      <div class="ev">命中 <b>D1.1</b>（DeePMD 是被科学计算领域沿用的<b>基础件</b>，<code>from F2,F3</code>）+ <b>D1.4</b>（数学/物理跨学科注入新方法，<code>from F2,F6</code>）。两条且其中一条是标志成果 → <b>标志级 3</b>。这是他雷达上最高的尖峰。</div>
+      <div class="bar"><i style="width:100%;background:var(--c2)"></i></div></div>
+
+    <div class="srow"><div class="top"><span class="dim">D2 工程产品化</span><span class="sc sc2">2</span></div>
+      <div class="ev">命中 <b>D2.x</b>：C4 深势科技把学术算法做成<b>可部署的数据/模拟/研发工具链</b>（<code>from F4</code>）→ 清晰强项。但产品成熟度/规模尚在形成，故 2 不 3。</div>
+      <div class="bar"><i style="width:66%;background:var(--c1)"></i></div></div>
+
+    <div class="srow"><div class="top"><span class="dim">D3 机构组织</span><span class="sc sc2">2</span></div>
+      <div class="ev">命中 <b>D3.2</b>：C4 从零创办并领导深势科技（<code>from F4</code>）→ 清晰强项。规模与历时尚短于资深创始人，故 2。</div>
+      <div class="bar"><i style="width:66%;background:var(--c1)"></i></div></div>
+
+    <div class="srow"><div class="top"><span class="dim">D4 资本动员</span><span class="sc sc1">1</span></div>
+      <div class="ev">有创业融资，但无"撬动巨额资本/设计资本结构/影响生态"的标志性证据 → 存在但次要。</div>
+      <div class="bar"><i style="width:33%;background:#7d93b0"></i></div></div>
+
+    <div class="srow"><div class="top"><span class="dim">D5 物理/硬件</span><span class="sc sc1">1</span></div>
+      <div class="ev">命中 <b>D5.5</b>（分子模拟/材料/电池/生命科学等<b>科学计算严肃场景</b>，<code>from F2,F4</code>）。但他的核心是"比特端的方法"，物理硬件本体非主轴 → 存在但次要。</div>
+      <div class="bar"><i style="width:33%;background:#7d93b0"></i></div></div>
+
+    <div class="srow"><div class="top"><span class="dim">D6 安全/思想</span><span class="sc sc0">0</span></div>
+      <div class="ev">无安全 / 治理 / 可解释 / 范式命名的证据 → 0。</div>
+      <div class="bar"><i style="width:4%;background:#6e7681"></i></div></div>
+
+    <div class="srow"><div class="top"><span class="dim">D7 教育/开源</span><span class="sc sc1">1</span></div>
+      <div class="ev">无经典教材 / 大规模课程 / 开源护城河作为主线（DeePMD 有开放生态但非其个人标签）→ 存在但次要。</div>
+      <div class="bar"><i style="width:33%;background:#7d93b0"></i></div></div>
+
+    <div class="srow"><div class="top"><span class="dim">D8 预判/逆向</span><span class="sc sc2">2</span><span class="pill" style="border-color:var(--purple);color:var(--purple)">含特异 D8.3</span></div>
+      <div class="ev">命中 <b>D8.1</b>：C5 选 AI for Science 而非聊天、<b>逆向主流</b>（<code>from F4,F6</code>）→ 清晰强项 2。另命中<b>特异项 D8.3</b>（Gordon Bell 级标志性大问题，~7/60 稀缺）——是"高分项"但不抬高基线分。</div>
+      <div class="bar"><i style="width:66%;background:var(--c1)"></i></div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2><span class="k">STEP 6</span>雷达 + 原型判定（输出）</h2>
+  <p class="sub">把 8 个分画成形状。<b style="color:var(--warn)">看形状不看面积</b>——这张图的意义是"他是哪一类"，不是"他多强"。</p>
+  <div class="radarwrap">
+    <svg id="radar" class="radar"></svg>
+    <div>
+      <div class="legend" id="legend"></div>
+      <div class="callout" style="margin-top:14px">
+        <b>原型 = <span class="arch">科学家–创业者</span></b>（D1 创造 + D3 组织 + D2 工程）。<br>
+        他的形状<b>高度贴合该原型模板</b>：D1 顶峰（DeePMD）拉动，D2/D3 紧随（深势科技），D8 抬起（逆向押注科学）。
+        与同原型的汤晓鸥/唐杰相比，他更偏 <b>D1 原创 + D5 科学计算</b>，是"<b>AI for Science 学术创业者</b>"这一支的代表。
+      </div>
+    </div>
+  </div>
+  <div class="callout" style="border-left-color:var(--mut)">
+    <b>为什么结论可信、又必须留余地：</b>
+    上面每个分都能<b>逆向下钻</b>——分 → 命中的规范能力 → CAP(<code>from F#</code>) → STEP 2 的事实 → <code>profiles/</code> 原文。
+    特别提醒：F7 已注明他是<b>名单中较年轻者、长期影响仍在形成</b>——所以这张雷达是"<b>截至当下</b>"的形状，未来 D2/D3/D4 很可能随深势成长而上移。
+    折算规则是分析者约定，可质疑；本页保证"<b>有据可查</b>"，不是"客观唯一"。
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  数据来源：<code>research/facts/F32_张林峰.md</code>（事实+能力）· <code>capability_pool.md</code>（规范能力）· <code>capability_matrix.md</code>（打分明账）· <code>scores.md</code>（8 维分）。<br>
+  推理链：原始资料 → 原子事实 → 原子能力 → 规范能力 → 8 维分 → 雷达。每一环都可复核或推翻。
+</div></footer>
+
+<script>
+const DIMS=["D1原创","D2工程","D3机构","D4资本","D5物理","D6安全","D7教开","D8预判"];
+const SELF=[3,2,2,1,1,0,1,2];                 // 张林峰
+const ARCH=[2.9,2.0,2.4,1.4,0.9,0.2,1.2,1.8]; // 科学家-创业 模板均值
+const COL_SELF='#7ee787', COL_ARCH='#5aa9ff';
+
+function radar(svg,labels,series,maxv){
+  const W=440,H=420,cx=W/2,cy=H/2,R=140,N=labels.length;
+  const ang=i=>-Math.PI/2+i*2*Math.PI/N, pt=(i,r)=>[cx+Math.cos(ang(i))*r,cy+Math.sin(ang(i))*r];
+  let g='';
+  for(let k=1;k<=3;k++){let p='';for(let i=0;i<N;i++){const[x,y]=pt(i,R*k/3);p+=x.toFixed(1)+','+y.toFixed(1)+' ';}g+=`<polygon points="${p}" fill="none" stroke="#2b3340"/>`;}
+  for(let i=0;i<N;i++){const[x,y]=pt(i,R);g+=`<line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="#2b3340"/>`;
+    const[lx,ly]=pt(i,R+18);g+=`<text x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" font-size="11" fill="#9aa7b4" text-anchor="middle" dominant-baseline="middle">${labels[i]}</text>`;}
+  series.forEach(s=>{let p='';for(let i=0;i<N;i++){const[x,y]=pt(i,R*s.values[i]/maxv);p+=x.toFixed(1)+','+y.toFixed(1)+' ';}
+    g+=`<polygon points="${p}" fill="${s.color}26" stroke="${s.color}" stroke-width="2"/>`;
+    for(let i=0;i<N;i++){const[x,y]=pt(i,R*s.values[i]/maxv);g+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.8" fill="${s.color}"/>`;}});
+  svg.setAttribute('viewBox','0 0 '+W+' '+H);svg.innerHTML=g;
+}
+radar(document.getElementById('radar'),DIMS,[
+  {color:COL_ARCH,values:ARCH},
+  {color:COL_SELF,values:SELF}
+],3);
+document.getElementById('legend').innerHTML=
+  `<div class="lg"><i style="background:${COL_SELF}"></i>张林峰本人 [3,2,2,1,1,0,1,2]</div>`+
+  `<div class="lg"><i style="background:${COL_ARCH}"></i>"科学家–创业者"原型模板（均值）</div>`;
+</script>
+</body></html>
