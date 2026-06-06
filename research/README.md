@@ -26,6 +26,14 @@
 
 > 报告入口：`FINDINGS.md`（一页纸结论）/ `report.html`（交互式：能力频率分布 + 8 维雷达 + 能力池浏览）。
 
+## 数据求全层：完整主要贡献清单
+
+`research/contributions/` 是对第 1 步（FACT）的**前置加固**：在抽事实之前，先用统一的来源清单
+**穷举**每个人的主要贡献（八类维度，逐条带来源与影响规模），让 facts/scores 坐落在更全、更可比的
+事实集上。评分不公的根源是各人被挖掘的广度/深度不一致（如 F31 刘铁岩早期漏了 LightGBM）。
+本层由 `contribution-census` skill（`.claude/skills/contribution-census/`）标准化穷举执行，
+**只采集+回填事实、不改正式分**；满 60 人后再统一重评。详见 `research/contributions/README.md`。
+
 ## 实验层：规范能力证据账本
 
 `research/evidence/` 是对第 4 步的加固试点：不直接判断某人 `D1-D8` 强弱，而是逐人扫描

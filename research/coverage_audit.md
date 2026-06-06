@@ -61,7 +61,7 @@
 | F28 | Richard Sutton | queued |  | 需复核 TD learning、policy gradient、RL textbook、Bitter Lesson、DeepMind/Alberta |
 | F29 | Ian Goodfellow | queued |  | 需复核 GAN、deep learning textbook、adversarial examples、Google/OpenAI/Apple |
 | F30 | Aidan Gomez | queued |  | 需复核 Transformer、Cohere、企业级 LLM、开源/社区边界 |
-| F31 | 刘铁岩 | needs-followup | LightGBM 官方作者页、Microsoft Research LightGBM 论文、Alan Turing Institute 人物页、Microsoft Research LightLDA 项目页、FastSpeech 项目页、Microsoft Graphormer 仓库 | LightGBM 已回填；Graphormer、LightLDA、FastSpeech、dual learning 已确认为候选硬成果，需要统一判断是否补入 facts/evidence，并评估是否影响 `D2.2/D5.5` 与正式分数 |
+| F31 | 刘铁岩 | updated | MSRA「2021 ACM Fellow」官方文章、github.com/microsoft/LightGBM、LightGBM 作者页、Alan Turing Institute 人物页、清华电子系/校友总会页、MS Research 本人页 | 贡献清单 v1 已穷举八类维度并回填 F8–F14：对偶学习/listwise/Graphormer/LightLDA/FastSpeech/Suphx/新冠预测/T-DETECT/被引3.5万·h68/ACM Fellow2021/顶会主席·期刊副主编/专著近10万册/三清学历。清单见 `research/contributions/F31_刘铁岩.md`；对分数的建议见 evidence，待 60 人齐后统一重评。唯「具体学生谱系」仍 needs-source |
 | F32 | 张林峰 | needs-followup | DeePMD-kit GitHub/arXiv、DP Technology about page、Bohrium Docs、DP-GEN docs | 现有 facts 覆盖 DeePMD/Gordon Bell/深势主线；需补 DeePMD-kit v2/v3、DP-GEN、Bohrium/Science-as-a-Service、DeePKS-kit 等工具链，判断是否强化 `D2.2/D5.5` |
 | F33 | 鄂维南 | needs-followup | DeePMD-kit GitHub/arXiv、Deep Ritz/PNAS 论文线索、DeepModeling 文档 | 现有 facts 覆盖 AI4S 和数学基础，但需补 Deep Ritz/high-dimensional PDE、DeePMD-kit/DeepModeling 谱系、DeepPKS 等候选，判断是否强化 `D1.1/D1.3/D5.5/D8.3` |
 | F34 | 唐杰 | needs-followup | 唐杰清华个人主页、ChatGLM/GLM arXiv、CogDL PyPI、Zhipu/Z.ai 资料 | 现有 facts 已覆盖 AMiner/GLM/ChatGLM/智谱主线；还需补充 GLM-130B、ChatGLM 下载/使用规模、CogView/CogVideo、CodeGeeX、CogDL 与 AMiner 用户规模，判断是否强化 `D1.1/D2.2/D7.3` |
