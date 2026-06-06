@@ -62,7 +62,7 @@
 | F29 | Ian Goodfellow | queued |  | 需复核 GAN、deep learning textbook、adversarial examples、Google/OpenAI/Apple |
 | F30 | Aidan Gomez | queued |  | 需复核 Transformer、Cohere、企业级 LLM、开源/社区边界 |
 | F31 | 刘铁岩 | updated | MSRA「2021 ACM Fellow」官方文章、github.com/microsoft/LightGBM、LightGBM 作者页、Alan Turing Institute 人物页、清华电子系/校友总会页、MS Research 本人页 | 贡献清单 v1 已穷举八类维度并回填 F8–F14：对偶学习/listwise/Graphormer/LightLDA/FastSpeech/Suphx/新冠预测/T-DETECT/被引3.5万·h68/ACM Fellow2021/顶会主席·期刊副主编/专著近10万册/三清学历。清单见 `research/contributions/F31_刘铁岩.md`；对分数的建议见 evidence，待 60 人齐后统一重评。唯「具体学生谱系」仍 needs-source |
-| F32 | 张林峰 | needs-followup | DeePMD-kit GitHub/arXiv、DP Technology about page、Bohrium Docs、DP-GEN docs | 现有 facts 覆盖 DeePMD/Gordon Bell/深势主线；需补 DeePMD-kit v2/v3、DP-GEN、Bohrium/Science-as-a-Service、DeePKS-kit 等工具链，判断是否强化 `D2.2/D5.5` |
+| F32 | 张林峰 | updated | DeePMD-kit GitHub、深势科技/Bohrium/Hermite 官网、arXiv(1707.09571/1712.03641/2004.11658/2008.00167)、北大讲座预告、36氪/投中网/财联社融资报道、新华网/人民网专访、百度百科/LinkedIn | 贡献清单 v1 已穷举八类并回填 F8–F12、更正 F1（博导 Roberto Car，非鄂维南）：新增 AISI 院长、完整融资链(累计十几亿/估值数十倍)、DeePMD-kit 框架规模、Bohrium/Hermite/RiDYMO/Piloteye 产品矩阵、Uni 系列、DeepModeling 开源社区、福布斯/胡润 U30、Gordon Bell 亚洲首位。清单见 `research/contributions/F32_张林峰.md`；建议 D4.1/D7.3/D2 上调，待 60 人齐后统一重评。Scholar 精确被引与学生谱系仍 needs-source |
 | F33 | 鄂维南 | needs-followup | DeePMD-kit GitHub/arXiv、Deep Ritz/PNAS 论文线索、DeepModeling 文档 | 现有 facts 覆盖 AI4S 和数学基础，但需补 Deep Ritz/high-dimensional PDE、DeePMD-kit/DeepModeling 谱系、DeepPKS 等候选，判断是否强化 `D1.1/D1.3/D5.5/D8.3` |
 | F34 | 唐杰 | needs-followup | 唐杰清华个人主页、ChatGLM/GLM arXiv、CogDL PyPI、Zhipu/Z.ai 资料 | 现有 facts 已覆盖 AMiner/GLM/ChatGLM/智谱主线；还需补充 GLM-130B、ChatGLM 下载/使用规模、CogView/CogVideo、CodeGeeX、CogDL 与 AMiner 用户规模，判断是否强化 `D1.1/D2.2/D7.3` |
 | F35 | 雷军 | queued |  | 需复核金山、小米、MIUI、IoT/汽车/机器人、AIoT 与资本生态 |

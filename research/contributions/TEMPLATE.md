@@ -2,6 +2,9 @@
 > 原型：<学术/工业研究科学家 | 创始人/高管 | 工具·框架·平台型 | AI安全·治理·学者>。
 > 审计轮次：v1（YYYY-MM-DD）。本轮已查来源：<逐项列出实际打开过的核心层 + 加挂层来源>。
 
+## 教育与履历（非贡献，用于深度可比）
+- 本硕博院校·年份；关键任职年份（如 <大学> 学士YYYY/硕士YYYY/博士YYYY；YYYY 加入 <机构>，YYYY 任 <职>）。
+
 ## 1. 学术（论文/里程碑/高被引/开创概念）
 
 | 贡献 | 年份 | 来源URL + 层级 | 影响/规模 | 本人角色 | 与现有facts关系 |
@@ -53,6 +56,7 @@
 ## 对账小结
 
 - 缺口待补（现有 facts 未覆盖、来源够硬）：
+- 待更正（现有 facts/profile 错记的头衔/年份/归属/量级）：
 - 需更强来源（候选但来源不足，先不回填）：
 - 已建议回填到：`profiles/<name>.md` / `research/facts/F##_*.md` / `research/evidence/F##_*.md`
 - coverage_audit 状态拟升为：`audited-v1` / `updated` / `needs-source` / `needs-followup`

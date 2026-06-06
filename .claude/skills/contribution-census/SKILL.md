@@ -47,12 +47,23 @@ description: >
 7. **人才与生态**：师承谱系、培养的知名学生、社区/教育影响
 8. **思想与公共影响**：著作、有影响力的观点/报告、政策与治理参与
 
-## 检索引擎
+## 检索引擎（先探活，再选路）
 
-- **首选 `agent-reach`**：覆盖中英文 + GitHub / Google Scholar / LinkedIn / Exa web search +
-  微博/微信公众号/B站等中文源。逐维度发关键词检索。
-- **`WebFetch`**：打开官方人物页、项目仓库、论文页、奖项页核对**原文**，确认来源层级。
-- **`WebSearch`**：兜底补充。
+逐维度检索词配方见 `SEARCH_RECIPES.md`（本目录）——照配方发查询，保证每人深度可比。
+
+- **先探活**：`mcporter list` 看 agent-reach 的通道是否在位（常见的是只有 gitee、Exa 未配）。
+  通道在位才用 `agent-reach`（中英文 + GitHub/Scholar/LinkedIn/Exa + 微博/微信/B站）。
+- **没配 Exa 就直接走 `WebSearch` + `WebFetch`**（实测可完成全流程，不是降级）。中文人物尤其要发中文 query。
+- **`WebFetch` 的坑（实测）**：抓不动 JS 渲染的官方人物页（如 `microsoft.com/en-us/research/people/*`），
+  会返回空目录；这类页只当"指针"。改抓**纯 HTML 的机构文章/镜像、大学新闻页、项目仓库、arXiv**。
+  百度百科常 403——用 WebSearch 的摘要交叉，别依赖直接抓取。
+- **GitHub**：本机若无 `gh`，直接 `WebFetch https://github.com/<org>/<repo>` 读 star/fork 与简介。
+
+### 最高价值来源：先找"生平枚举型"长文（实测最省事）
+**Fellow/院士/获奖公告、机构人物特写、个人主页的 bio**，往往一篇就系统枚举一个人八成的代表贡献、
+被引量、h-index、比赛冠军、任职与荣誉。**Step 2 先把这类文章找到读透，再逐维度补缺**，效率最高。
+例：MSRA「XX 获选 ACM Fellow」一文即给出 LightGBM/对偶学习/Graphormer/Suphx/被引3.5万/h-index68/
+大会主席/期刊副主编/专著销量等几乎全部条目。
 
 ## 分步流程（按顺序执行，可低温度复现）
 
@@ -72,17 +83,25 @@ description: >
 
 ### Step 2 — 逐维度穷举检索，写贡献清单
 - 复制 `research/contributions/TEMPLATE.md` 到 `research/contributions/F##_<name>.md`。
-- 对**八类维度逐类**用 agent-reach 检索，每条命中用 WebFetch 核对官方原文，按 schema 填一行：
+- **先抓 1–2 篇"生平枚举型"长文**（见上节）打底，再按 `SEARCH_RECIPES.md` **逐维度**补缺。
+- 对**八类维度逐类**检索，每条命中尽量用 WebFetch 核对原文，按 schema 填一行：
   `贡献名 | 类别 | 年份 | 来源URL+层级 | 影响/规模 | 本人角色(独立/共同/团队/组织者) | 与现有facts关系`。
+- **本人角色必须区分**（实测关键）：LightGBM 这类是"团队/框架作者之一"，不能写成单人发明；
+  影响/规模要落到**数字**（star/引用/加速倍数/比赛冠军/销量/用户），没有数字的标"需更强来源"。
 - **目标是收全**：把基线之外新发现的主要贡献都加进来，不要只盯着"和现有 facts 的差"。
+- 顺手抓**教育与履历**（本硕博院校·年份、关键任职年份）写在清单"教育与履历"行——用于深度可比。
 - 在文件头"本轮已查来源"逐项记下实际打开过的来源，便于复核与保证深度可比。
 
-### Step 3 — 对账
+### Step 3 — 对账（含纠错）
 - 贡献清单 × 现有 facts，给每条标 `已覆盖 / 缺口待补 / 需更强来源`，汇总到清单末"对账小结"。
+- **不只补，还要改**（实测关键）：核对现有 facts/profile 是否有**错记**——头衔、年份、归属、量级。
+  例：F31 原档案把 ACM Fellow(2021) 误记为 ACM Distinguished Scientist。错记单列"待更正"并在回填时改掉。
 
 ### Step 4 — 回填（不动分数）
-- **profiles**：让 `profiles/<name>.md` 反映清单里的**全部主要贡献**（叙述化，标 `[A]/[B]` 口径）。
-- **facts**：在 `research/facts/F##_<name>.md` 把新增主要贡献写成 `F#` 事实并按需补 `C#` 能力，保 `from F#` 链。
+- **profiles**：让 `profiles/<name>.md` 反映清单里的**全部主要贡献**（叙述化，标 `[A]/[B]` 口径）；
+  **更正 Step 3 查出的错记**，并在"资料来源"补本轮新增 URL。
+- **facts**：在 `research/facts/F##_<name>.md` 把新增主要贡献写成 `F#` 事实并按需补 `C#` 能力，保 `from F#` 链；
+  在文件头加一行指针 `贡献清单（vN 日期）见 research/contributions/F##_<name>.md`。错记直接改对。
 - **evidence**：更新 `research/evidence/F##_<name>.md`——填 TEMPLATE 的 "Coverage Gap Audit" 段与 Evidence Rows；
   对分数的影响**只写在"对现有明账的校正提示"里作建议**，不改分数文件。
 - **coverage_audit**：在 `research/coverage_audit.md` 该人行填"本轮权威来源对照"列，状态升级：
