@@ -45,7 +45,7 @@
 | F12 | Fei-Fei Li | updated | hai.stanford.edu、profiles.stanford.edu、worldlabs.ai、CVPR 2009 ImageNet(55k被引)、IJCV 2015 ILSVRC(50k被引)、Princeton 2024-02(The Worlds I See)、qeprize.org/vinfutureprize.org(2023) | 贡献清单v1已穷举八类；大幅扩写F3(ImageNet论文名CVPR 2009/55k被引；ILSVRC IJCV 2015/50k被引)；更新F8(World Labs Series A $230M/2024)；扩写F9(QE Prize 2023年份+共同获奖者/VinFuture 2023)；新增F10(Karpathy/Justin Johnson学生谱系/The Worlds I See回忆录)；新增C10。清单见contributions/F12_Fei-Fei_Li.md。对分数潜在影响：D1.1(ImageNet引用量强化/ILSVRC系统化)、D7.3(学生谱系confirmed)，待60人齐后统一重评。 |
 | F13 | 黄学东 | updated | zoom.com/en/about/team/、blogs.microsoft.com/ai/、microsoft.com/en-us/research/(human-parity)、arXiv 1610.05256、zoom.com/en/blog/ | 贡献清单v1已穷举八类；既有facts已较完整；更新F3(论文名arXiv 1610.05256/被引1000+)；更新F6(NAE/AAAS院士2023年份)。清单见contributions/F13_黄学东.md。对分数潜在影响：D1.1(论文名补入强化)，待60人齐后统一重评。 |
 | F14 | 沈向洋 | updated | idea.edu.cn/teams/harry、microsoft.com/en-us/research/people/hshum/、hkbu.edu.hk(荣誉博士)、tsinghua.edu.cn(AIR记录) | 贡献清单v1已穷举八类；既有facts已较完整；更新F9(NAE外籍院士2017年份)；注：AIR院长已确认为张亚勤/刘洋，不属于沈向洋。清单见contributions/F14_沈向洋.md。对分数潜在影响：minimal，待60人齐后统一重评。 |
-| F15 | 周志华 | queued |  | 需复核 LAMDA、集成学习/弱监督/开放环境机器学习、西瓜书、CCF/IEEE/AAAI 角色 |
+| F15 | 周志华 | updated | cs.nju.edu.cn、lamda.nju.edu.cn、computer.org/profiles/zhi-hua-zhou、清华大学出版社(西瓜书) | 贡献清单v1已穷举八类；既有facts已较完整；更新F8(各奖年份：IEEE McCluskey 2019/CCF-ACM 2020/中科院院士2021)。清单见contributions/F15_周志华.md。对分数潜在影响：minimal，待60人齐后统一重评。 |
 | F16 | 朱军 | queued |  | 需复核 DPM-Solver、U-ViT、ZhuSuan、概率机器学习、鲁棒/安全贡献 |
 | F17 | 汤晓鸥 | queued |  | 需复核 MMLab、DeepID、商汤、暗原色先验、人才谱系与产业化事实 |
 | F18 | 张钹 | queued |  | 需复核商空间、第三代 AI、清华智能实验室、中国 AI 学科建设 |
