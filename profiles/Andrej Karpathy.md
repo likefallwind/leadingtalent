@@ -60,9 +60,9 @@ TechCrunch 2024 年报道称，Eureka Labs 是 Karpathy 推出的 AI-native educ
 
 ## 技术风格与影响
 
-Karpathy 的技术风格以清晰、直观、从零实现和工程化解释著称。他的博客《The Unreasonable Effectiveness of Recurrent Neural Networks》、CS231n 课程、minGPT/nanoGPT 风格教程和 YouTube 课程，使大量学习者理解神经网络、反向传播、Transformer、tokenization、训练循环和模型采样。
+Karpathy 的技术风格以清晰、直观、从零实现和工程化解释著称。他的博客《The Unreasonable Effectiveness of Recurrent Neural Networks》（2015）、2017 年博文《Software 2.0》（首次系统阐述"神经网络权重替代传统代码"软件范式转变）、CS231n 课程、nanoGPT（GitHub 40k+ Stars）/micrograd/makemore 开源教学代码，以及 YouTube 频道（70 万+ 订阅者，代表视频"Let's build GPT from scratch"数百万观看），使大量学习者理解神经网络、反向传播、Transformer、tokenization、训练循环和模型采样。
 
-这种影响不同于论文引用。Karpathy 降低了深度学习和大模型工程的入门门槛，培养了一代工程师对神经网络的直觉。他常把复杂模型还原为可读代码和逐步推理，这对 AI 产业人才扩散有很高价值。
+这种影响不同于论文引用。Karpathy 降低了深度学习和大模型工程的入门门槛，培养了一代工程师对神经网络的直觉。他常把复杂模型还原为可读代码和逐步推理，这对 AI 产业人才扩散有很高价值。他入选 TIME100 AI 2024。
 
 ## 评价：为什么 Karpathy 是 AI 领军人才
 
