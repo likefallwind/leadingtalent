@@ -11,11 +11,14 @@ Olah 是 mechanistic interpretability 方向的代表人物之一。这个方向
 - 2010 年代前期：通过个人博客和可视化文章进入机器学习社区视野，强调清晰解释复杂神经网络概念。
 - Google Brain 阶段：从事神经网络可视化和 interpretability 研究，参与 DeepDream、feature visualization 等相关方向。
 - 2017 年：共同创办 Distill，一本强调优秀科学沟通、交互式解释和可复现研究表达的在线期刊。
-- 2018 年前后：加入 OpenAI，领导 interpretability research，推动 Clarity/circuits/Microscope 等研究与工具。
-- 2020 年：OpenAI 发布 Microscope，提供视觉模型层和神经元的系统化可视化，Olah 是贡献者之一。
-- 2020 年后：推动 circuits 研究线，包括理解视觉模型中神经元、特征和组合机制。
-- 2021 年：参与创办 Anthropic，并建立 interpretability 团队。
-- 2023-2024 年：Anthropic interpretability 团队发布 Towards Monosemanticity、Scaling Monosemanticity 等研究，尝试从大语言模型中抽取可解释特征。
+- 2014-：colah.github.io 博客，"Understanding LSTM Networks"（2015）等文章，最广泛引用的 LSTM 入门文章之一。
+- 2017 年：共同创办 Distill 期刊，强调可视化和解释清楚作为学术贡献；Distill 2021 起转为 on hiatus。
+- 2018 年前后：加入 OpenAI，领导 interpretability research；推出 OpenAI Microscope（视觉模型系统化可视化工具）。
+- 2020 年：《Zoom In: An Introduction to Circuits》（Distill 2020），正式提出 circuits 框架。
+- 2021 年：《A Mathematical Framework for Transformer Circuits》（transformer-circuits.pub），将 circuits 扩展至 Transformer 注意力头；参与创办 Anthropic，并建立 interpretability 团队。
+- 2022 年：《Toy Models of Superposition》，提出 superposition 问题。
+- 2023 年：《Towards Monosemanticity: Decomposing Language Models With Dictionary Learning》（Anthropic），sparse autoencoders 提取单义特征。
+- 2024 年：《Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet》（Anthropic），将方法扩展到前沿大模型。
 - 2024-2026 年：继续作为 Anthropic interpretability research lead 参与 AI 安全和模型内部机制研究，并进入更广泛的公共讨论。
 
 ## 早年经历与教育资料的边界
