@@ -14,9 +14,14 @@ Amodei 是 AI 领军人才中“能力扩展 + 安全约束”路线的代表。
 - 博士后阶段：在 Stanford University School of Medicine 从事质谱、细胞蛋白质组网络和癌症 biomarker 相关研究。
 - Google Brain 阶段：任 Senior Research Scientist，研究深度学习和神经网络能力扩展。
 - 2016-2020 年前后：加入 OpenAI，后任 Vice President of Research，参与 GPT-2、GPT-3 和长期安全研究方向。
-- 2021 年：与姐姐 Daniela Amodei 及其他 OpenAI 前员工共同创办 Anthropic。
-- 2023 年：在美国参议院关于 AI 监管原则的听证中作证，强调短期、中期和长期 AI 风险。
-- 2024-2026 年：作为 Anthropic CEO 持续推动 Claude 系列、AI 安全评估、可解释性和 AI 政策讨论。
+- 2021 年：与姐姐 Daniela Amodei 及其他 OpenAI 前员工共同创办 Anthropic（首轮 $124M）。
+- 2022 年：发表 Constitutional AI 论文（arXiv 2212.15006），系统化"AI 依原则自我批判修正"训练路线。
+- 2023 年：在美国参议院 Judiciary Committee 作证；Amazon 2023-09 投资 $1.25B；Google 追加 $500M。
+- 2023-09：发布 RSP v1（Responsible Scaling Policy），引入 ASL-1 至 ASL-4 能力分级+安全措施框架，行业首个公开 RSP。
+- 2024-03：Claude 3 Opus/Sonnet/Haiku 发布，Opus 在 MMLU/HumanEval 超越 GPT-4；Amazon 追加 $2.75B（总承诺 $4B）。
+- 2024-06：Claude 3.5 Sonnet 发布，编码基准超越 GPT-4o，获开发者广泛认可。
+- 2024-10：发表长文《Machines of Loving Grace》，阐述 AI 加速生命科学发现的愿景。
+- 2025-03：Anthropic 完成融资，估值 $61.5B。
 
 ## 早年与教育经历
 
@@ -34,7 +39,7 @@ Amodei 是 AI 领军人才中“能力扩展 + 安全约束”路线的代表。
 
 Amodei 后来加入 OpenAI，并升任 Vice President of Research。他个人网站称，他在 OpenAI 领导 GPT-2 和 GPT-3 等大语言模型开发。Hertz Foundation 资料也称，他在 OpenAI 设定整体研究方向，领导 GPT-2/GPT-3 工作，并领导多个长期安全研究团队，包括 AI 可解释性、如何把人类偏好和价值嵌入未来强大 AI 系统等。
 
-这段经历使 Amodei 位于大模型能力跃升的早期核心。GPT-2 让公众和研究界看到大规模语言模型能够生成连贯文本；GPT-3 则用规模化证明了 few-shot prompting 和通用文本能力的潜力。Amodei 的贡献不是单一论文，而是组织研究方向、推动模型规模化和安全议题并行。
+这段经历使 Amodei 位于大模型能力跃升的早期核心。GPT-2（2019，被引 10,000+）让公众和研究界看到大规模语言模型能够生成连贯文本；GPT-3（arXiv 2005.14165，NeurIPS 2020，被引 60,000+）用规模化证明了 few-shot prompting 和通用文本能力的潜力。Amodei 的贡献不是单一论文，而是组织研究方向、推动模型规模化和安全议题并行。
 
 ## Anthropic 的创立与组织定位
 
@@ -48,11 +53,17 @@ Amodei 的公共角色很大一部分与 AI 风险治理相关。2023 年美国�
 
 他的证词特别强调，政策不应只看今天模型的能力，而要“skate to where the puck is going”，也就是为两三年后的技术状态做准备。这体现了 Amodei 的核心思路：前沿 AI 进展速度很快，治理和安全评估必须提前于能力，而不是在事故后补救。
 
-## 技术路线：Constitutional AI、RLHF 与可解释性
+## 技术路线：Constitutional AI、RSP 与可解释性
 
-Amodei 相关的技术路线包括 RLHF、Constitutional AI 和 interpretability。RLHF 通过人类反馈训练模型，使输出更符合人类偏好。Constitutional AI 则尝试让模型根据一组原则自我批判和修正，减少对大量人工标注有害输出的依赖。可解释性研究试图理解模型内部特征、机制和行为来源。
+Amodei 相关的技术路线包括 RLHF、Constitutional AI 和 interpretability。RLHF 通过人类反馈训练模型，使输出更符合人类偏好。Constitutional AI（《Constitutional AI: Harmlessness from AI Feedback》，arXiv 2212.15006，2022）让模型根据一组原则自我批判和修正，减少对大量人工标注有害输出的依赖，是 AI 对齐技术的一个重要里程碑。可解释性研究（Anthropic 的 mechanistic interpretability 项目）试图理解模型内部特征、机制和行为来源。
+
+Anthropic 于 2023 年 9 月率先公开发布 Responsible Scaling Policy（RSP v1），引入 AI Safety Level（ASL-1 至 ASL-4）分级框架，把不同能力阶段的安全评估要求和行动条件明文化。这是行业首个结构化的前沿 AI 扩展安全政策，随后推动其他 AI 公司讨论类似机制。
 
 这些方向共同服务于 Anthropic 的核心问题：强大 AI 系统能否被理解、控制、引导，并在部署前接受足够评估。Amodei 的重要性在于，他没有把安全只作为口号，而是把它嵌入模型训练、评估、治理和公司定位中。
+
+## Claude 系列与竞争格局
+
+Claude 系列是 Anthropic 最重要的产品线。2024 年 3 月，Claude 3 Opus/Sonnet/Haiku 发布，Opus 在 MMLU、HumanEval 等主要基准上超越 GPT-4，首次确立 Anthropic 在前沿大模型竞争中的头部位置。2024 年 6 月，Claude 3.5 Sonnet 在编码基准上超越 GPT-4o，获得大量开发者迁移和认可。Anthropic 通过 Amazon Bedrock 和 Google Cloud 双轨分发 Claude，Amazon 承诺总投资 $4B（2023-2024），Google 投资 $2B+。2025 年 3 月 Anthropic 估值达 $61.5B，成为全球最重要的独立 AI 安全实验室。
 
 ## 评价：为什么 Amodei 是 AI 领军人才
 
@@ -67,3 +78,7 @@ Amodei 的领军性体现在三点。第一，他参与了 GPT-2/GPT-3 时代的
 - Anthropic company page: https://www.anthropic.com/company
 - TechCrunch, “Anthropic is the new AI research outfit from OpenAI’s Dario Amodei...”, May 28, 2021: https://techcrunch.com/2021/05/28/anthropic-is-the-new-ai-research-outfit-from-openais-dario-amodei-and-it-has-124m-to-burn/
 - Written Testimony of Dario Amodei, U.S. Senate Judiciary Committee, July 26, 2023: https://www.judiciary.senate.gov/imo/media/doc/2023-07-26_-_testimony_-_amodei.pdf
+- arXiv 2212.15006, Constitutional AI: Harmlessness from AI Feedback (2022): https://arxiv.org/abs/2212.15006
+- Anthropic, Responsible Scaling Policy: https://www.anthropic.com/news/anthropic-responsible-scaling-policy
+- Dario Amodei, "Machines of Loving Grace" (2024): https://darioamodei.com/machines-of-loving-grace
+- DataCenter Dynamics, Amazon $4B Anthropic investment: https://www.datacenterdynamics.com/en/news/amazon-invests-275bn-in-ai-startup-anthropic-as-part-of-planned-4bn-deal/
