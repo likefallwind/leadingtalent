@@ -37,7 +37,7 @@ Fei-Fei Li 在 Princeton University 学习物理学，1999 年高荣誉毕业。
 
 ## ImageNet：数据集驱动的视觉革命
 
-Fei-Fei Li 最具历史影响力的贡献是 ImageNet。Stanford HAI 页面称，她是 ImageNet 和 ImageNet Challenge 的 inventor，这一大规模数据集和基准对深度学习和 AI 的最新发展产生关键贡献。Stanford Engineering 的介绍称，ImageNet 包含约 22000 个对象类别和超过 1500 万张图像，并用普通英语描述。
+Fei-Fei Li 最具历史影响力的贡献是 ImageNet。Stanford HAI 页面称，她是 ImageNet 和 ImageNet Challenge 的 inventor，这一大规模数据集和基准对深度学习和 AI 的最新发展产生关键贡献。《ImageNet: A Large-Scale Hierarchical Image Database》（CVPR 2009，Deng, Dong, Socher, Li, Li, Li-Jia Li，被引 55,000+）是该数据集的原始论文；2015 年《ImageNet Large Scale Visual Recognition Challenge》（IJCV，被引 50,000+）综述了 2010-2014 年 ILSVRC 全部结果，成为行业必引文献。Stanford Engineering 的介绍称，ImageNet 包含约 22000 个对象类别和超过 1500 万张图像。
 
 ImageNet 的关键思想是：如果要让机器真正理解视觉世界，就不能只依赖小数据集和少量类别，而需要一个大规模、层级化、覆盖真实世界概念的图像数据库。在当时，很多研究者更关注模型和算法，Fei-Fei Li 则强调数据的重要性。她和团队利用 WordNet 层级结构、网络图片和众包标注，构建了前所未有规模的视觉数据资源。
 
@@ -63,13 +63,13 @@ Fei-Fei Li 与 Olga Russakovsky 等人共同推动 AI4ALL。Stanford HAI 页面�
 
 ## World Labs 与空间智能
 
-Stanford Profiles 页面显示，Fei-Fei Li 目前是 World Labs 的 Co-founder/CEO，这家公司聚焦 Spatial Intelligence 和 generative AI。World Labs 官方页面称，该公司构建 frontier world models，使 AI 能够感知、生成、推理并与 3D 世界互动；公司由 Fei-Fei Li 与 Justin Johnson、Christoph Lassner、Ben Mildenhall 共同创办。
+Stanford Profiles 页面显示，Fei-Fei Li 目前是 World Labs 的 Co-founder/CEO，这家公司聚焦 Spatial Intelligence 和 generative AI。World Labs 官方页面称，该公司构建 frontier world models，使 AI 能够感知、生成、推理并与 3D 世界互动；公司由 Fei-Fei Li 与 Justin Johnson、Christoph Lassner、Ben Mildenhall 共同创办。2024 年末完成 Series A 融资 $230M，估值约 $1B。
 
 World Labs 延续了 Fei-Fei Li 对视觉世界理解的长期关注。ImageNet 时代的核心问题是“机器能否识别图像中的对象”；World Labs 时代的问题则是“机器能否理解三维世界、空间关系、物理环境和行动可能性”。这与具身智能、机器人、AR/VR、仿真和生成式 3D 内容密切相关。
 
 ## 荣誉与评价
 
-Stanford Profiles 列出，Fei-Fei Li 是 National Academy of Engineering、National Academy of Medicine 和 American Academy of Arts and Sciences 成员，也是 ACM Fellow，并获得 Queen Elizabeth Prize for Engineering、VinFuture Prize、Intel Lifetime Achievements Award、IEEE PAMI Longuet-Higgins Prize 等多项荣誉。她也因《The Worlds I See》进入更广泛公众视野。
+Stanford Profiles 列出，Fei-Fei Li 是 National Academy of Engineering、National Academy of Medicine 和 American Academy of Arts and Sciences 三院院士，也是 ACM Fellow，并获得 2023 Queen Elizabeth Prize for Engineering（与 Hinton/LeCun/Bengio/Dean 等共同，表彰深度学习和 ImageNet 对工程的贡献）、2023 VinFuture Prize Grand Prize（与 Hinton/LeCun/Bengio 共同）、IEEE PAMI Longuet-Higgins Prize 等多项荣誉。她于 2023 年出版回忆录《The Worlds I See: Curiosity, Exploration, and Discovery at the Dawn of AI》（Flatiron Books），并被 Princeton University 选为 2024 届新生全体 Pre-read，进入更广泛公众视野。她的博士学生 Andrej Karpathy（现 Anthropic）和 Justin Johnson（World Labs 联合创始人）均活跃于 AI 前沿。
 
 Fei-Fei Li 的领军性体现在四方面。第一，她通过 ImageNet 改变了计算机视觉和深度学习历史。第二，她通过 Stanford、Google 和 HAI 把 AI 技术、产业和社会治理连接起来。第三，她通过 AI4ALL 扩大 AI 人才入口。第四，她通过 World Labs 把视觉 AI 推向空间智能和世界模型。
 
