@@ -2,25 +2,26 @@
 
 ## 基本信息
 
-Paul Christiano 是 AI alignment 研究者、Alignment Research Center（ARC）创始人，也是美国 AI Safety Institute 相关安全工作负责人之一。NIST 官方页面称，他是 U.S. AI Safety Institute 的 head of AI safety，创办了 Alignment Research Center；此前在 OpenAI 领导语言模型对齐团队，并开创了 reinforcement learning from human feedback（RLHF）相关工作。ARC 官方团队页面显示，ARC was founded in 2021 by Paul Christiano。
+Paul Christiano 是 AI alignment 研究者、Alignment Research Center（ARC）创始人，也是 NIST 下属 Center for AI Standards and Innovation（CAISI）技术顾问（paulfchristiano.com 自述）。他在 OpenAI 领导语言模型对齐团队，并与 Jan Leike 等人共同发表了 reinforcement learning from human feedback（RLHF）奠基论文（"Deep Reinforcement Learning from Human Preferences"，NeurIPS 2017，arXiv 1706.03741，5,324 引用 Semantic Scholar 2026-06）。ARC 官方网站显示，ARC was founded in 2021 by Paul Christiano；ARC 的评测部门（ARC Evals）于 2023 年独立为 METR（Model Evaluation & Threat Research，metr.org）。
 
 Christiano 是 AI 领军人才中“技术对齐 + RLHF + 安全评测”的代表。他不像 Sam Altman 那样以公司治理出名，也不像 Stuart Russell 那样以教材和宏观框架出名，而是长期尝试把“如何让模型按人类意图行动”变成具体技术研究问题。
 
 ## 人生与职业时间线
 
 - 早年：公开资料对其童年和家庭背景披露较少。
-- 学术训练阶段：接受数学、理论计算机科学和机器学习相关训练。
-- 2010 年代：在有效利他主义和 AI alignment 社区中活跃，撰写大量关于迭代放大、可扩展监督和对齐理论的文章。
-- 2017 年前后：参与 OpenAI 对 human preferences 和 RLHF 的早期研究。
+- 学术训练阶段：UC Berkeley 博士（统计学习理论方向，paulfchristiano.com 确认）；同期活跃于有效利他主义和 AI alignment 社区。[A]
+- 2010 年代：撰写大量关于迭代放大、可扩展监督和对齐理论的博客和论坛文章。
+- 2016 年：与 Dario Amodei 等人共同发表"Concrete Problems in AI Safety"（arXiv 1606.06565），框架化 AI 安全研究方向。[A]
+- 2017 年：与 Jan Leike、Tom Brown、Miljan Martic、Shane Legg、Dario Amodei 共同发表 RLHF 论文（NeurIPS 2017，5,324 引用）。[A]
+- 2018 年：发表"Supervising strong learners by amplifying weak experts"（Iterated Amplification，arXiv 1810.08575），与 AI Safety via Debate 一起成为可扩展监督的主要技术路线。[A]
 - 2020 年前后：在 OpenAI 领导语言模型对齐团队。
-- 2021 年：离开 OpenAI，创办 Alignment Research Center。
-- 2022-2024 年：ARC 推动前沿模型评测、危险能力识别和对齐研究。
-- 2023 年后：参与美国 AI Safety Institute 相关安全工作。
-- 2026 年：ARC 官网仍显示其使命是使未来机器学习系统与人类利益保持一致。
+- 2021 年：离开 OpenAI，创办 Alignment Research Center（ARC，www.alignment.org）；同年开始发展 Eliciting Latent Knowledge（ELK）研究方向。[A]
+- 2022–2023 年：ARC 的评测部门（ARC Evals）推动前沿模型危险能力评测，并于 2023 年独立为 METR（metr.org）；METR 原型化 Responsible Scaling Policies（RSP）方法，被 9 家头部 AI 开发商采用。[A]
+- 2023 年至今：NIST 下属 CAISI 技术顾问；ARC 当前聚焦神经网络行为的机理解释理论。
 
 ## 早年与教育背景
 
-Paul Christiano 的公开个人履历不像大学教授那样完整。权威页面更多聚焦其 OpenAI、ARC 和 NIST 相关身份，对童年经历、家庭背景和正式导师关系披露较少。因此本档案不编造具体早年故事。
+Paul Christiano 在 UC Berkeley 完成博士（统计学习理论，paulfchristiano.com 自述），此后进入 OpenAI。权威页面更多聚焦其 OpenAI、ARC 和 NIST 相关身份，对童年经历、家庭背景和导师关系披露较少。
 
 从其研究风格看，Christiano 深受理论计算机科学、决策理论、有效利他主义和机器学习安全社区影响。他的问题意识很清楚：如果 AI 系统能力不断提升，人类如何提供足够强、足够可靠、可扩展的监督，使系统在复杂任务中仍然追随人类意图。
 
@@ -30,7 +31,7 @@ Christiano 最具历史影响力的贡献之一，是 OpenAI 早期关于 human 
 
 RLHF 的意义在于，它把“人类想要什么”从不可操作的价值哲学问题，部分转化为可收集、可训练、可优化的数据问题。人类评审者比较模型输出，系统学习偏好，再把这种偏好反馈给模型。这个方法并不能彻底解决对齐，但它使大语言模型更有用、更礼貌、更少产生明显违背用户意图的输出。
 
-Christiano 等人的早期工作让 AI alignment 从抽象担忧进入训练流程。今天几乎所有主流大模型公司都使用某种形式的人类反馈、偏好优化或指令微调。RLHF 的局限很多，但它已经成为现代生成式 AI 产品化的关键基础。
+Christiano 等人的早期工作让 AI alignment 从抽象担忧进入训练流程。今天几乎所有主流大模型公司都使用某种形式的人类反馈、偏好优化或指令微调。RLHF 论文（NeurIPS 2017，arXiv 1706.03741）的 Semantic Scholar 引用量已达 5,324（截至 2026-06），且这个数字还远未体现它通过工程实践产生的更广泛间接影响。RLHF 的局限很多，但它已经成为现代生成式 AI 产品化的关键基础。
 
 ## 迭代放大与可扩展监督
 
@@ -40,13 +41,13 @@ Christiano 长期关注 scalable oversight，即当 AI 任务复杂到人类无�
 
 ## Alignment Research Center
 
-2021 年，Christiano 创办 Alignment Research Center。ARC 官网称，其使命是 align future machine learning systems with human interests。ARC 后来在模型评测、危险能力识别、可解释性和对齐理论方面开展研究。与商业实验室相比，ARC 更像独立安全研究组织，试图在前沿模型部署前识别潜在风险。
+2021 年，Christiano 创办 Alignment Research Center（ARC，www.alignment.org）。ARC 官网称，其使命是 align future machine learning systems with human interests。ARC 在模型评测、危险能力识别、可解释性和对齐理论方面开展研究。与商业实验室相比，ARC 更像独立安全研究组织，试图在前沿模型部署前识别潜在风险。
 
-ARC 的一个重要方向是评测模型是否具备危险能力，例如自主复制、网络攻击、生物风险辅助、欺骗性策略或长期规划能力。随着 GPT-4、Claude、Gemini 等模型能力提升，安全问题不再只是未来超级智能的想象，而变成当前模型评测的一部分。ARC 正是在这个连接点上工作。
+ARC 的一个重要方向是评测模型是否具备危险能力，例如自主复制、网络攻击、生物风险辅助、欺骗性策略或长期规划能力。随着 GPT-4、Claude、Gemini 等模型能力提升，安全问题不再只是未来超级智能的想象，而变成当前模型评测的一部分。ARC 的评测部门后来于 2023 年独立成为 METR（Model Evaluation & Threat Research，metr.org），持续评测前沿模型；METR 与 OpenAI、Anthropic 及 NIST AI Safety Institute Consortium 均有合作，并原型化了 Responsible Scaling Policies（RSP）方法——该方法已被9家头部 AI 开发商采纳，将危险能力阈值与模型部署决策绑定。ARC 当前聚焦神经网络行为的机理解释理论研究。
 
 ## NIST 与 AI Safety Institute
 
-NIST 页面显示，Christiano 是 U.S. AI Safety Institute 的 head of AI safety。这表明他的影响已从研究社区扩展到公共部门。美国 AI Safety Institute 的任务包括支持前沿 AI 模型评测、风险管理、标准制定和安全科学。
+paulfchristiano.com 显示，Christiano 现任 NIST 下属 Center for AI Standards and Innovation（CAISI）技术顾问。这表明他的影响已从研究社区扩展到公共部门。美国 AI Safety Institute（AISI）的任务包括支持前沿 AI 模型评测、风险管理、标准制定和安全科学。
 
 这一步很重要。AI 安全如果只停留在论坛和论文中，很难影响真实模型部署；进入 NIST 和 AI Safety Institute 后，技术对齐研究可以与标准、评测、政策和政府能力建设结合。Christiano 的角色说明，他是少数同时被前沿实验室、独立安全组织和政府安全机构认可的 alignment 研究者。
 
@@ -64,8 +65,11 @@ Christiano 的领军性体现在三方面。第一，他在 OpenAI 推动 RLHF �
 
 ## 资料来源
 
-- NIST, “Paul Christiano”: https://www.nist.gov/people/paul-christiano
+- Paul Christiano personal site: https://paulfchristiano.com/
+- NIST CAISI, “Paul Christiano”: https://www.nist.gov/people/paul-christiano
 - Alignment Research Center official website: https://www.alignment.org/
-- Alignment Research Center Team: https://www.alignment.org/team/
-- Christiano et al., “Deep reinforcement learning from human preferences”: https://arxiv.org/abs/1706.03741
+- METR (ARC Evals spin-off), About: https://metr.org/about/
+- Christiano et al., “Deep reinforcement learning from human preferences” (NeurIPS 2017, arXiv 1706.03741): https://arxiv.org/abs/1706.03741
+- Amodei et al., “Concrete Problems in AI Safety” (arXiv 1606.06565): https://arxiv.org/abs/1606.06565
+- Christiano et al., “Supervising strong learners by amplifying weak experts” (arXiv 1810.08575): https://arxiv.org/abs/1810.08575
 - OpenAI, “Learning from human preferences”: https://openai.com/research/learning-from-human-preferences

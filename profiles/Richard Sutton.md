@@ -2,7 +2,7 @@
 
 ## 基本信息
 
-Richard S. Sutton，是强化学习领域奠基人物之一、University of Alberta 计算机科学教授、Alberta Machine Intelligence Institute（Amii）Chief Scientific Advisor、Canada CIFAR AI Chair，并与 Andrew Barto 共同获得 2024 ACM A.M. Turing Award。ACM 官方公告称，Barto 和 Sutton 因“developing the conceptual and algorithmic foundations of reinforcement learning”获奖。Amii 官方页面则称 Sutton 是强化学习先驱，现任 Amii Fellow、Chief Scientific Advisor、University of Alberta Professor，并在 Keen Technologies 从事 AGI 研究。
+Richard S. Sutton，是强化学习领域奠基人物之一、University of Alberta 计算机科学教授、Alberta Machine Intelligence Institute（Amii）首席科学顾问（Chief Scientific Advisor）及 Amii Fellow、Canada CIFAR AI Chair（~2016），并与 Andrew Barto 共同获得 2024 ACM A.M. Turing Award。ACM 官方公告称，Barto 和 Sutton 因”developing the conceptual and algorithmic foundations of reinforcement learning”获奖。学术影响规模：Google Scholar（2026-06）总引用 186,608，h-index = 101；《RL: An Introduction》教材引用 96,662，TD 学习论文引用 9,201，策略梯度论文引用 11,127。
 
 Sutton 是 AI 领军人才中“强化学习 + 自主智能 + 经验学习”的代表。他长期研究智能体如何通过与环境交互、接收奖励、试错和规划来学习。AlphaGo、机器人控制、游戏智能、推荐系统、人类反馈强化学习和今天的大模型后训练，都与强化学习思想有直接或间接关系。
 
@@ -13,13 +13,18 @@ Sutton 是 AI 领军人才中“强化学习 + 自主智能 + 经验学习”的
 - 1980 年：获 University of Massachusetts Amherst 硕士学位。
 - 1984 年：获 University of Massachusetts Amherst 博士学位，Andrew Barto 为其博士导师。
 - 1980-1990 年代：在强化学习、时序差分学习、TD-Gammon 等方向建立基础影响。
-- 1998 年：与 Andrew Barto 出版《Reinforcement Learning: An Introduction》第一版。
+- 1981 年：与 Barto 发表"Toward a modern theory of adaptive networks"（Psychological Review，1,951 引用），奠定 TD 学习心理学理论基础。[A]
+- 1983 年：与 Barto、Anderson 发表 actor-critic 论文（IEEE Trans. SMC，5,693 引用）。[A]
+- 1988 年：发表 TD 学习论文（Machine Learning 3(1)，9,201 引用）。[A]
+- 1998 年：与 Andrew Barto 出版《Reinforcement Learning: An Introduction》第一版；96,662 引用（Google Scholar 2026-06）；incompleteideas.net/book 免费在线。[A]
+- 1999 年：发表策略梯度论文（NeurIPS，11,127 引用）及 options 框架论文（Artificial Intelligence，5,589 引用）。[A]
 - 2003 年后：长期任 University of Alberta 教授，推动 Edmonton 强化学习研究生态。
-- 2016 年：成为 Canada CIFAR AI Chair 相关研究者。
-- 2017-2023 年：在 DeepMind Alberta 任 Distinguished Research Scientist。
+- ~2016 年：成为 Canada CIFAR AI Chair。[B]
+- 2017–2023 年：在 DeepMind Alberta 任 Distinguished Research Scientist（amii.ca 确认）。[A]
 - 2018 年：《Reinforcement Learning: An Introduction》第二版出版。
-- 2023 年：与 John Carmack 旗下 Keen Technologies 合作，聚焦 AGI。
-- 2024 年：与 Andrew Barto 获 ACM A.M. Turing Award。
+- 2019 年 3 月 13 日：发布"The Bitter Lesson"（incompleteideas.net/IncIdeas/BitterLesson.html）。[A]
+- 2023 年：与 John Carmack 旗下 Keen Technologies/Keen AGI 合作，聚焦 AGI。[A]
+- 2024 年：与 Andrew Barto 获 ACM A.M. Turing Award（acm.org/articles/bulletins/2025/march/turing-award-2024）。[A]
 
 ## 早年与教育背景
 
@@ -35,7 +40,7 @@ Sutton 对强化学习的关键贡献包括时序差分学习、策略梯度思�
 
 ## 《Reinforcement Learning: An Introduction》
 
-Sutton 与 Barto 合著的《Reinforcement Learning: An Introduction》是强化学习领域最重要的教材。Amii 页面称该书 1998 年和 2018 年版本持续塑造领域。许多研究者学习强化学习的第一本系统教材就是这本书。
+Sutton 与 Barto 合著的《Reinforcement Learning: An Introduction》是强化学习领域最重要的教材。Google Scholar（2026-06）显示该书引用量达 96,662，且 incompleteideas.net/book 的免费在线版大幅降低了入门门槛。Amii 页面称该书 1998 年和 2018 年版本持续塑造领域。许多研究者学习强化学习的第一本系统教材就是这本书。
 
 这本书的影响类似 Russell 的 AIMA 或 Goodfellow 的 Deep Learning：它不只是总结已有知识，还定义了学科语言。价值函数、策略、Bellman 方程、TD learning、eligibility traces、policy gradient、actor-critic 等概念，通过这本书成为标准训练路径。教材贡献说明 Sutton 不仅做算法，也塑造了强化学习共同体。
 
@@ -76,3 +81,8 @@ Sutton 的领军性体现在四方面。第一，他与 Barto 共同奠定现代
 - Amii, “Richard S. Sutton”: https://www.amii.ca/about/our-people/richard-s-sutton
 - Amii, “Reinforcement Learning”: https://www.amii.ca/research-talent/research-areas/reinforcement-learning-rl
 - University of Alberta, “Rich Sutton receives the 2024 ACM A.M. Turing Award”: https://www.ualberta.ca/en/computing-science/news-and-events/news/2025/march/rich-sutton-receives-the-2024-acm-am-turing-award.html
+- Richard Sutton, “The Bitter Lesson” (2019-03-13): http://www.incompleteideas.net/IncIdeas/BitterLesson.html
+- Reinforcement Learning textbook (free online): http://incompleteideas.net/book/
+- Google Scholar, “Richard S. Sutton”: https://scholar.google.com/citations?user=6m4wv6gAAAAJ
+- Sutton, “Learning to predict by the methods of temporal differences” (1988): https://link.springer.com/article/10.1007/BF00115009
+- Sutton et al., “Policy gradient methods for reinforcement learning with function approximation” (NeurIPS 1999)
