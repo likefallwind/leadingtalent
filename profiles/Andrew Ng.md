@@ -40,7 +40,7 @@ Andrew Ng 在 Stanford 的 CS229 机器学习课程影响很大。该课程长�
 
 ## Google Brain 与大规模深度学习
 
-Ng 是 Google Brain 的早期推动者之一。Stanford HAI 页面称，他 founded and led Google Brain project，开发大规模深度学习算法，并产生著名的“Google cat”结果：一个拥有约 10 亿参数的神经网络从未标注 YouTube 视频中学习到猫的概念。Baidu 2014 年任命公告也称，Ng founded and led Google's Deep Learning team，并以构建大规模人工神经网络闻名。
+Ng 是 Google Brain 的早期推动者之一。Stanford HAI 页面称，他 founded and led Google Brain project，开发大规模深度学习算法，并产生著名的”Google cat”结果——《Building high-level features using large scale unsupervised learning》（arXiv 1112.6209，ICML 2012，Le, Ranzato, … Ng, Dean，被引 3,500+）：约 10 亿参数的神经网络从未标注 YouTube 视频中自发学习到猫的概念。Baidu 2014 年任命公告也称，Ng founded and led Google's Deep Learning team，并以构建大规模人工神经网络闻名。
 
 Google Brain 的意义在于证明：当神经网络与海量数据、分布式计算和强大工程系统结合时，可以产生此前难以实现的能力。这条路线后来成为现代深度学习和大模型工业化的基础。Ng 在 Google Brain 的角色，使他不仅是教育者，也是深度学习规模化实践的早期组织者。
 
@@ -52,7 +52,7 @@ Google Brain 的意义在于证明：当神经网络与海量数据、分布式�
 
 ## DeepLearning.AI、Landing AI 与 AI Fund
 
-2017 年，Ng 创办 DeepLearning.AI。DeepLearning.AI 官方页面写明，该机构由 Andrew Ng 创立，旨在提供世界级 AI 教育，并通过 Coursera 等平台形成全球学习社区。DeepLearning.AI 的课程从深度学习专项课程扩展到机器学习、生成式 AI、MLOps、agentic AI、prompt engineering 等方向，持续跟随行业变化。
+2017 年，Ng 创办 DeepLearning.AI。DeepLearning.AI 官方页面写明，该机构由 Andrew Ng 创立，旨在提供世界级 AI 教育，并通过 Coursera 等平台形成全球学习社区。DeepLearning.AI 的课程从深度学习专项课程扩展到机器学习（ML Specialization 与 Stanford 联合，2022 更新）、生成式 AI、MLOps、agentic AI、prompt engineering 等方向，学习者规模 700 万+（Coursera），持续跟随行业变化。Ng 还主编"The Batch"（deeplearning.ai/the-batch/，25 万+ 订阅者），是行业最广泛阅读的 AI 周刊之一。
 
 Landing AI 则体现了 Ng 对产业落地的关注。许多公司并不缺少模型论文，而是缺少数据流程、场景定义、MLOps、质量控制和组织能力。Ng 多次强调 data-centric AI，即通过改进数据质量而不仅是模型结构来提升系统效果。AI Fund 则用于投资和孵化 AI 初创公司，把技术、资本和创业团队连接起来。
 
