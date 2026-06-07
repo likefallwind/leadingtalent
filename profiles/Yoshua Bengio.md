@@ -57,15 +57,19 @@ Bengio 的基础贡献集中在深度学习和表示学习。表示学习的核�
 
 ## 关键研究之二：语言模型、词向量与注意力机制
 
-Bengio 对神经语言模型和词表示有重要影响。早期神经语言模型把词映射到连续向量空间，使语义相近或上下文相似的词在空间中更接近。这一思想后来发展为 word embeddings，并进一步进入神经机器翻译、预训练语言模型和大语言模型时代。虽然今天公众更熟悉 Transformer、GPT 或 BERT，但这些模型背后的连续表示、上下文建模和大规模语言学习思想，与 Bengio 等人在神经语言模型上的工作有深层联系。
+Bengio 对神经语言模型和词表示有重要影响。2003 年，他发表《A Neural Probabilistic Language Model》（JMLR，与 Ducharme、Vincent、Janvin 合作），首次系统地把词映射到连续向量空间，被引 7,600+（Semantic Scholar）。这一思想后来发展为 word2vec、word embeddings，并进一步进入神经机器翻译、预训练语言模型和大语言模型时代。
 
-ACM 传记还提到，Bengio 团队通过把神经词嵌入与注意力机制结合，改进了机器翻译系统。注意力机制使模型在生成每一步输出时关注输入中的相关部分，而不是把整个句子压缩成一个固定向量。后来的 Transformer 把注意力机制推向更核心的位置，成为大模型架构的基础之一。Bengio 团队在注意力进入主流之前的研究，是深度学习从视觉、语音扩展到语言和序列任务的重要组成部分。
+Bengio 团队在 2014-2015 年连续推出两篇奠基性序列学习论文。《Learning Phrase Representations using RNN Encoder-Decoder》（EMNLP 2014，Cho et al.，arXiv 1406.1078）建立了编码器-解码器（seq2seq）框架，被引 20,000+，今天从机器翻译到摘要生成的序列任务几乎都源于此架构。《Neural Machine Translation by Jointly Learning to Align and Translate》（ICLR 2015，Bahdanau, Cho, Bengio，arXiv 1409.0473）引入 soft attention，被引 25,000+，是 Transformer 注意力的直接前驱。
+
+此外，他 1994 年与 Simard、Frasconi 发表《Learning Long-Term Dependencies with Gradient Descent is Difficult》（IEEE TNN），揭示梯度消失/爆炸问题，为后来 LSTM 和残差网络的解决方案提供了理论基础。2009 年发表《Curriculum Learning》（ICML），被引 5,000+，引入课程学习训练策略，广泛影响深度学习训练方法设计。2016 年与 Goodfellow、Courville 共同撰写《Deep Learning》（MIT Press，deeplearningbook.org），成为全球高校深度学习第一本全面标准教材。
 
 ## 关键研究之三：生成模型与 GAN
 
 生成对抗网络 GAN 是 Bengio 学术谱系中的重要成果。GAN 的提出者 Ian Goodfellow 是 Bengio 的学生。GAN 的基本思想是让生成器和判别器相互博弈：生成器试图产生接近真实数据的样本，判别器试图区分真实样本和生成样本。这个机制为无监督或弱监督生成建模打开了新方向，并在图像生成、风格迁移、数据增强和合成媒体中产生广泛影响。
 
-虽然 GAN 的具体提出者是 Goodfellow 等人，但它与 Bengio 研究组长期关注的表示学习、生成模型和无监督学习密切相关。Bengio 的重要性不只在于自己署名的单篇论文，也在于他建立的研究环境能够产生这种高影响力思想。对 AI 领军人才研究来说，这一点尤其重要：领军者的价值常常体现在“能否创造让重大想法出现的土壤”。
+虽然 GAN 的具体提出者是 Goodfellow 等人，但它与 Bengio 研究组长期关注的表示学习、生成模型和无监督学习密切相关（Bengio 为 GAN 论文第六位共同作者）。Bengio 的重要性不只在于自己署名的单篇论文，也在于他建立的研究环境能够产生这种高影响力思想。从 Bengio 门下走出的还有 Aaron Courville（Deep Learning 教材共同作者）、Hugo Larochelle（Google Brain 加拿大负责人）、Kyunghyun Cho（NYU 教授，seq2seq 关键作者）等。对 AI 领军人才研究来说，这一点尤其重要：领军者的价值常常体现在”能否创造让重大想法出现的土壤”。
+
+Bengio 团队还主导开发了 Theano 深度学习框架（2010-2017），这是 TensorFlow 和 PyTorch 出现之前的主流深度学习研究框架，在早期深度学习生态中发挥了基础性作用。2016 年，他与 Jean-François Gagné 等联合创办 Element AI，获 $102M Series A 融资，2020 年以 $230M 被 ServiceNow 收购，展示了 Mila 生态的产业转化能力。
 
 ## 机构建设：Mila、CIFAR 与加拿大 AI 生态
 
@@ -85,7 +89,7 @@ LawZero 是他这一转向的重要标志。按其个人主页，Bengio 是 LawZ
 
 ## 重要荣誉与成就
 
-Bengio 的荣誉包括 2018 年 ACM A.M. 图灵奖、2019 年 Killam Prize in Natural Sciences、2019 年 IEEE Computational Intelligence Society Neural Networks Pioneer Award、Officer of the Order of Canada、Royal Society of Canada Fellow、Royal Society Fellow、Princess of Asturias Award、法国荣誉军团骑士、ACM Fellow 等。他的个人主页还称其为全球最被引用的计算机科学家之一，并按总引用量列为最被引用的在世科学家之一。
+Bengio 的荣誉包括 2018 年 ACM A.M. 图灵奖、2019 年 Killam Prize in Natural Sciences、2019 年 IEEE Computational Intelligence Society Neural Networks Pioneer Award、Officer of the Order of Canada、Royal Society of Canada Fellow、Royal Society Fellow（伦敦皇家学会）、Princess of Asturias Award、Knight of the Légion d'Honneur（法国荣誉军团骑士）、ACM Fellow 等。截至 2025 年 10 月，其 Google Scholar 总被引突破 100 万（1,091,407+），h-index 254，是全球在世科学家总被引第一，也是首位总被引突破 100 万的 AI 研究者（来源：UdeM nouvelles 2025-10-24）。
 
 这些荣誉体现了他在多个层面的影响：基础研究、人才培养、机构建设、加拿大 AI 生态、AI 安全和国际治理。与 Hinton、LeCun 相比，Bengio 的个人标签更接近“学术共同体组织者 + 深度学习理论和表示学习研究者 + AI 安全治理倡导者”。
 
@@ -100,5 +104,11 @@ Bengio 的领军性可以从四个方面理解。第一，他在深度学习低�
 - Yoshua Bengio personal website: https://yoshuabengio.org/en
 - Yoshua Bengio, ACM A.M. Turing Award Laureate profile: https://amturing.acm.org/award_winners/bengio_3406375.cfm
 - Mila, Transition in Mila's Scientific Direction, March 28, 2025: https://mila.quebec/en/news/transition-in-milas-scientific-direction
+- International AI Safety Report 2025/2026: https://internationalaisafetyreport.org/
+- Yoshua Bengio reaches 1 million citations on Google Scholar, UdeM nouvelles, 2025-10-24: https://nouvelles.umontreal.ca/en/article/2025/10/24/yoshua-bengio-reaches-1-million-citations-on-google-scholar
+- Element AI Wikipedia: https://en.wikipedia.org/wiki/Element_AI
+- Neural Machine Translation by Jointly Learning to Align and Translate, arXiv 1409.0473: https://arxiv.org/abs/1409.0473
+- Learning Phrase Representations using RNN Encoder-Decoder, arXiv 1406.1078: https://arxiv.org/abs/1406.1078
+- Deep Learning (book), deeplearningbook.org: https://www.deeplearningbook.org/
 - Mila, Hugo Larochelle becomes the new Scientific Director of Mila, September 2, 2025: https://mila.quebec/en/news/hugo-larochelle-becomes-the-new-scientific-director-of-mila
 - Written testimony and biography of Yoshua Bengio, U.S. Senate Judiciary Subcommittee, July 25, 2023: https://yoshuabengio.org/wp-content/uploads/2023/07/Written-Testimony-and-biography-of-Yoshua-Bengio_U.S.-Senate-Judiciary-Subcommittee-on-Privacy-Technology-and-the-Law_25_07_2023.pdf
