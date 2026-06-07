@@ -17,11 +17,16 @@ Altman 与本名单中许多技术研究者不同。他并非以某一篇机器�
 - 2011 年：开始在 Y Combinator 兼职担任 partner。
 - 2014 年：接替 Paul Graham，担任 Y Combinator 总裁。
 - 2015 年：与 Elon Musk、Ilya Sutskever、Greg Brockman 等共同创办 OpenAI，最初为非营利 AI 研究组织。
-- 2019 年：卸任 Y Combinator 总裁，成为 OpenAI CEO；OpenAI 逐步形成 capped-profit 结构并深化与 Microsoft 的合作。
-- 2022 年：ChatGPT 发布后，OpenAI 和 Altman 成为全球 AI 产业焦点。
+- 2019 年：卸任 Y Combinator 总裁，成为 OpenAI CEO；同年联合创办 Tools for Humanity（Worldcoin/World）；OpenAI 逐步形成 capped-profit 结构并深化与 Microsoft 的合作。
+- 2022 年：ChatGPT 发布后，OpenAI 和 Altman 成为全球 AI 产业焦点；ChatGPT 创下史上最快破亿用户纪录。
+- 2023 年：GPT-4 发布（3 月）；微软追加 $10B+ 投资；Altman 多次在美国国会作证谈 AI 治理。
 - 2023 年 11 月：OpenAI 董事会短暂解除 Altman CEO 职务，随后员工、投资方和管理层危机推动其回归。
 - 2023 年 11 月底：OpenAI 官方宣布 Altman 返回 CEO 职位，Bret Taylor、Larry Summers、Adam D'Angelo 成为初始新董事会成员。
-- 2024 年 3 月：OpenAI 内部审查完成，董事会宣布 Sam Altman 和 Greg Brockman 继续领导 OpenAI，Altman 重新加入董事会。
+- 2024 年 3 月：OpenAI 内部审查完成，Altman 重新加入董事会。
+- 2024 年 5 月：GPT-4o 发布，多模态实时交互。
+- 2024 年 10 月：OpenAI 融资 $6.6B，估值 $157B。
+- 2024 年 12 月：o1 推理模型完整发布；Sora 文本生成视频正式上线。
+- 2025 年 3 月：SoftBank 领投 $40B，估值 $300B，史上最大私募融资轮；OpenAI 推进为公益股份公司（Public Benefit Corporation）结构转型。
 
 ## 早年经历与性格形成
 
@@ -49,9 +54,9 @@ Loopt 对 Altman 的意义不在于它成为巨大成功公司，而在于它让
 
 ## ChatGPT 与大模型产品化
 
-2022 年 ChatGPT 发布后，OpenAI 成为全球生成式 AI 浪潮中心。Altman 的角色并不是亲自设计 Transformer 或训练细节，而是把研究能力、产品体验、开发者平台和商业合作整合成全球产品。ChatGPT 把大语言模型从研究圈和开发者工具推向普通用户，改变了公众对 AI 的感知。
+2022 年 ChatGPT 发布后创下史上最快破亿用户纪录，OpenAI 成为全球生成式 AI 浪潮中心。Altman 的角色并不是亲自设计 Transformer 或训练细节，而是把研究能力、产品体验、开发者平台和商业合作整合成全球产品。ChatGPT 把大语言模型从研究圈和开发者工具推向普通用户，改变了公众对 AI 的感知。
 
-在 Altman 领导下，OpenAI 推出 GPT-4、开发者 API、ChatGPT Plus、企业版本、多模态能力和围绕 agents、代码、语音、图像等方向的产品。OpenAI 也推动 AI 监管讨论，Altman 多次在美国国会和国际场合谈论 AI 风险与治理。他擅长把技术趋势转换为社会叙事：AGI、生产力、教育、医疗、科学、经济重组、全民基本收入等议题都进入其公开表达。
+在 Altman 领导下，OpenAI 持续推进主要产品里程碑：2023-03 GPT-4（多模态 LLM，确立行业基线）；2024-05 GPT-4o（多模态实时交互，大幅降低 API 成本）；2024-12 o1 推理模型完整发布（链式思维推理，开辟"reasoning model"新赛道）；2024-12 Sora 文本生成视频模型正式面向 ChatGPT Plus/Pro 用户开放；以及贯穿始终的开发者 API、企业版、agents 产品线。OpenAI 也推动 AI 监管讨论，Altman 多次在美国国会（参众两院）和国际场合谈论 AI 风险与治理，擅长把技术趋势转换为社会叙事：AGI、生产力、教育、医疗、科学、经济重组、全民基本收入等议题都进入其公开表达。
 
 ## 2023 年董事会危机
 
@@ -61,14 +66,26 @@ Loopt 对 Altman 的意义不在于它成为巨大成功公司，而在于它让
 
 这场危机是研究 Altman 必须讨论的部分。它说明 OpenAI 的核心矛盾不只是技术路线，还有治理结构、非营利控制、商业化压力、投资方影响、员工忠诚和安全使命之间的复杂关系。Altman 最终回归，显示其在组织和产业生态中的权力基础非常强。
 
+## World（原 Worldcoin）：人类 vs AI 身份基础设施
+
+Altman 的布局不止 OpenAI。2019 年，他与 Alex Blania 联合创办 Tools for Humanity，开发 Worldcoin 项目（2024 年更名 World）。World 的核心是通过虹膜扫描 Orb 设备，为每个人创建防止 AI 伪造的数字身份凭证（World ID），并分发加密货币作为 UBI（全民基本收入）实验。截至 2025 年 2 月，全球已有 2,500 万用户注册 World 网络（Wikipedia World(blockchain)）。这个项目同时引发数据隐私争议，多国监管机构进行调查。
+
+## OpenAI 资本结构演变
+
+OpenAI 的资本结构经历三次升级：2015 年非营利组织（全封闭）→ 2019 年 capped-profit 架构（设利润上限，保留非营利母公司控制）→ 2024-2025 年推进转型为公益股份公司（Public Benefit Corporation），后者为 SoftBank $40B 投资的前提条件之一，同时需通过 California 总检察长审核并面对 Elon Musk 的法律挑战。2024-10 融资 $6.6B（估值 $157B）；2025-03 SoftBank 领投 $40B（估值 $300B），是史上规模最大的私募融资轮。
+
 ## 评价：为什么 Altman 是 AI 领军人才
 
-Altman 的领军性不在于原创算法，而在于把 AI 研究转化为全球产品和产业平台的能力。他连接了研究人员、创业资本、云计算平台、企业客户、监管者、媒体和普通用户。没有这种组织能力，OpenAI 很难从研究实验室变成 ChatGPT 背后的全球 AI 公司。
+Altman 的领军性不在于原创算法，而在于把 AI 研究转化为全球产品和产业平台的能力，以及在产业/治理/资本层的持续博弈力。他连接了研究人员、创业资本、云计算平台、企业客户、监管者、媒体和普通用户。没有这种组织能力，OpenAI 很难从研究实验室变成 ChatGPT 背后的全球 AI 公司。
 
-同时，Altman 也是争议型领军者。他代表了大模型商业化的高速度路径，也引发关于开放性、安全、治理和权力集中的担忧。研究 AI 领军人才时，Altman 是“产业化和治理博弈型领导者”的典型案例。
+同时，Altman 也是争议型领军者。他代表了大模型商业化的高速度路径，也引发关于开放性、安全、治理和权力集中的担忧。研究 AI 领军人才时，Altman 是”产业化和治理博弈型领导者”的典型案例。
 
 ## 资料来源
 
 - Britannica Money, “Sam Altman”: https://www.britannica.com/money/Sam-Altman
 - OpenAI, “Sam Altman returns as CEO, OpenAI has a new initial board”, November 2023: https://openai.com/index/sam-altman-returns-as-ceo-openai-has-a-new-initial-board/
 - OpenAI, “Review completed & Altman, Brockman to continue to lead OpenAI”, March 2024: https://openai.com/index/review-completed-altman-brockman-to-continue-to-lead-openai/
+- Fortune, “OpenAI raises $6.6 billion at $157 billion valuation”, October 2024: https://fortune.com/2024/10/02/openai-officially-raises-6-6-billion-funding-deal-157-billion-valuation-sam-altman-thrive-capital/
+- CNBC, “OpenAI closes $40 billion funding round, largest private tech deal on record”, March 2025: https://www.cnbc.com/2025/03/31/openai-closes-40-billion-in-funding-the-largest-private-fundraise-in-history-softbank-chatgpt.html
+- TechCrunch, “Sam Altman's Worldcoin becomes World”, October 2024: https://techcrunch.com/2024/10/17/sam-altmans-worldcoin-becomes-world-and-shows-new-iris-scanning-orb-to-prove-your-humanity/
+- OpenAI, “Sora is here”, December 2024: https://openai.com/index/sora-is-here/
