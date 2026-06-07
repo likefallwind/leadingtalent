@@ -46,39 +46,37 @@ DeepMind 早期并不是传统互联网产品公司，而是研究导向的 AI �
 
 ## 关键成就之一：深度强化学习与 Atari
 
-DeepMind 早期最重要的科学突破之一是深度强化学习。团队将深度神经网络与强化学习结合，让智能体直接从像素输入中学习玩 Atari 游戏。这项工作表明，同一类算法可以在多个不同游戏环境中通过试错学习策略，而不需要为每个游戏单独手写规则。它把神经网络的表征能力、强化学习的奖励优化和游戏环境的可评估性结合起来，为后来的通用 agent 研究提供了重要范式。
+DeepMind 早期最重要的科学突破之一是深度强化学习。2015 年，DeepMind 在 *Nature* 发表《Human-level control through deep reinforcement learning》（Mnih, Kavukcuoglu, … Hassabis 共同通讯），证明同一个神经网络算法能够直接从像素学习玩 49 个 Atari 游戏，无需针对每款游戏单独手写规则，被引超过 30,000 次（Semantic Scholar）。它把神经网络的表征能力、强化学习的奖励优化和游戏环境的可评估性结合起来，为后来的通用 agent 研究提供了重要范式。
 
 这一路线与 Hassabis 的游戏背景和认知科学背景高度一致。游戏既是实验平台，也是智能行为的压缩模型：一个系统必须感知环境、记住状态、预测后果、规划行动并从反馈中改进。DeepMind 在 Atari 上的成功，使强化学习重新成为 AI 前沿的重要方向之一。
 
 ## 关键成就之二：AlphaGo 与复杂决策系统
 
-2016 年，AlphaGo 战胜围棋世界冠军李世石，是 AI 历史上的公共里程碑。围棋长期被认为比国际象棋更难用穷举搜索处理，因为其状态空间极其巨大，需要直觉式局面判断。AlphaGo 将深度神经网络、蒙特卡洛树搜索、强化学习和人类棋谱训练结合起来，最终达到并超越顶尖人类水平。
+2016 年，DeepMind 在 *Nature* 发表《Mastering the game of Go with deep neural networks and tree search》（Silver, … Hassabis 共同通讯，被引超过 18,000 次）。AlphaGo 将深度神经网络、蒙特卡洛树搜索、强化学习和人类棋谱训练结合起来，战胜围棋世界冠军李世石，成为 AI 历史上的公共里程碑。2017 年，《Mastering the game of Go without human knowledge》（AlphaGo Zero，被引超 10,000 次）进一步证明无需人类棋谱的自我对弈可以超越 AlphaGo；此后 AlphaZero、MuZero 探索更通用的学习和规划机制。
 
-AlphaGo 的意义不仅是赢棋。它向全球公众证明，AI 可以在需要直觉、规划和长期策略的复杂任务中取得突破。对 DeepMind 来说，AlphaGo 展示了其核心方法论：先在形式化环境中解决极难问题，再把相关能力迁移到科学和现实世界任务。AlphaGo 之后，DeepMind 又推动 AlphaZero、MuZero 等系统，进一步探索更通用的学习和规划机制。
+AlphaGo 的意义不仅是赢棋。它向全球公众证明，AI 可以在需要直觉、规划和长期策略的复杂任务中取得突破。对 DeepMind 来说，AlphaGo 展示了其核心方法论：先在形式化环境中解决极难问题，再把相关能力迁移到科学和现实世界任务。
 
 ## 关键成就之三：AlphaFold 与科学发现
 
-Hassabis 获得 2024 年诺贝尔化学奖，主要与 AlphaFold 相关。Google DeepMind 官方博客称，Hassabis 和 John Jumper 因开发 AlphaFold 获得 2024 年诺贝尔化学奖；AlphaFold 是能够从氨基酸序列预测蛋白质三维结构的 AI 系统。NobelPrize.org 则指出，2020 年 AlphaFold2 展示后，研究者已能预测几乎所有已知蛋白质结构，并广泛用于药物和环境技术研究。
+Hassabis 获得 2024 年诺贝尔化学奖，主要与 AlphaFold 相关。2021 年，DeepMind 在 *Nature* 发表《Highly accurate protein structure prediction with AlphaFold》（Jumper, Evans, … Hassabis 共同通讯，被引超过 43,000 次，截至 2025 年 11 月），证明 AI 能以近乎实验精度预测蛋白质三维结构。2022 年，DeepMind 与 EMBL-EBI 合作建立 AlphaFold 蛋白质结构数据库，免费收录超过 5 亿个结构，几乎覆盖所有已知物种；全球 2M+ 用户、190 个国家使用。2024 年，AlphaFold3（*Nature* 2024）进一步将预测能力延展至 DNA、RNA 和小分子配体，开启 AI 辅助药物发现新方向。
 
-蛋白质结构预测长期是生命科学中的核心难题。蛋白质的功能与其三维结构密切相关，但实验测定结构通常成本高、耗时长。AlphaFold 并不等于解决所有生物学问题，但它极大改变了结构生物学研究方式，为药物发现、酶设计、疾病机制理解和基础生命科学提供了新工具。Hassabis 的重要性在于，他把 DeepMind 从“游戏 AI 公司”推进到“AI for Science”的核心机构。
+蛋白质结构预测长期是生命科学中的核心难题，实验测定结构通常成本高、耗时长。AlphaFold 并不等于解决所有生物学问题，但它极大改变了结构生物学研究方式，为药物发现、酶设计、疾病机制理解和基础生命科学提供了新工具。Hassabis 的重要性在于，他把 DeepMind 从”游戏 AI 公司”推进到”AI for Science”的核心机构。
 
 ## Isomorphic Labs 与 AI 药物发现
 
-Hassabis 还创办并领导 Isomorphic Labs，目标是将 AI 用于药物发现。Google DeepMind 官方 Nobel 博客称他是 Google DeepMind 和 Isomorphic Labs 的联合创始人兼 CEO。Isomorphic Labs 可以看作 AlphaFold 之后的产业延伸：如果 AI 能预测生物分子结构和相互作用，那么它也可能改变药物靶点发现、分子设计、实验优先级排序和研发流程。
-
-这一步体现了 Hassabis 的长期战略：先通过研究突破证明方法，再把 AI 应用于科学和产业高价值问题。与只做聊天机器人或广告推荐的 AI 商业路径相比，Hassabis 更强调 AI 对科学发现的基础性影响。
+Hassabis 还创办并领导 Isomorphic Labs，目标是将 AI 用于药物发现。2024 年，Isomorphic Labs 与 Eli Lilly 和 Novartis 签署大规模 AI 药物发现合作协议，将 AlphaFold3 的分子相互作用预测能力直接应用于药物研发管线。这一步体现了 Hassabis 的长期战略：先通过研究突破（AlphaFold）证明方法，再把 AI 应用于科学和产业高价值问题，将研究成果转化为制药行业的实际工具。
 
 ## 组织领导与 Google DeepMind
 
 2023 年 Google 将 Google Brain 与 DeepMind 合并为 Google DeepMind。Google DeepMind 官方页面称，该组织汇合两个世界级 AI 实验室，由 Demis Hassabis 领导。这个职位使 Hassabis 从 DeepMind 创始 CEO 转变为 Google 整体前沿 AI 研究的核心领导者之一。与此同时，Jeff Dean 担任 Google Chief Scientist，负责 Google Research 和 Google DeepMind 的科学方向和战略技术项目。
 
-Hassabis 的组织能力体现在多个方面：吸引顶尖研究人才、保持长期研究使命、把游戏和科学作为测试场、在 Google 体系内维持 DeepMind 品牌和研究文化，并推动 AlphaGo、AlphaFold、Gemini 等跨团队成果。作为 AI 领军人才，他既是研究路线设计者，也是机构建设者。
+Hassabis 的组织能力体现在多个方面：吸引顶尖研究人才、保持长期研究使命、把游戏和科学作为测试场、在 Google 体系内维持 DeepMind 品牌和研究文化，并推动 AlphaGo、AlphaFold、Gemini 等跨团队成果。值得一提的是，2016 年 DeepMind 还发布 WaveNet 神经网络语音合成系统，接近自然语音质量，后落地 Google Assistant 和 Google Translate TTS——展示了 DeepMind 在语音和生成领域的广度。作为 AI 领军人才，他既是研究路线设计者，也是机构建设者。
 
 ## 荣誉与评价
 
-Hassabis 2024 年获得诺贝尔化学奖，同年获得英国爵士头衔，并当选英国皇家学会 Fellow。诺贝尔奖对他的确认具有标志意义：AI 不再只是计算机科学或互联网产品工具，而是能够在自然科学核心问题中产生诺贝尔级影响的技术。
+Hassabis 的荣誉序列体现其贡献的广度：2018 年获 CBE（Commander of the Order of the British Empire），同年当选英国皇家学会 Fellow（FRS）并获英国爵士头衔（Sir Demis）；2024 年因 AlphaFold 获诺贝尔化学奖（与 John Jumper 共享一半，另一半授予 David Baker）。诺贝尔奖对他的确认具有标志意义：AI 不再只是计算机科学或互联网产品工具，而是能够在自然科学核心问题中产生诺贝尔级影响的技术。
 
-Hassabis 的领军性可以概括为三点。第一，他把游戏、认知神经科学和机器学习结合成一条通向通用智能的研究路线。第二，他创办并长期领导 DeepMind，使其成为全球最重要的 AI 实验室之一。第三，他通过 AlphaFold 证明 AI 可以直接改变科学发现过程。对研究 AI 领军人才来说，Hassabis 是“使命型研究组织领导者”的典型案例。
+Hassabis 的领军性可以概括为四点。第一，他把游戏、认知神经科学和机器学习结合成一条通向通用智能的研究路线。第二，他创办并长期领导 DeepMind，使其成为全球最重要的 AI 实验室之一。第三，他通过 AlphaFold（43,000+ 被引，5 亿+ 结构，2M+ 用户）证明 AI 可以直接改变科学发现过程并获诺贝尔级认可。第四，他在每个里程碑（DQN→AlphaGo→AlphaFold→AlphaFold3→Gemini）上不重复赛道，始终向更大挑战推进。对研究 AI 领军人才来说，Hassabis 是”使命型研究组织领导者”的典型案例。
 
 ## 资料来源
 
@@ -87,3 +85,8 @@ Hassabis 的领军性可以概括为三点。第一，他把游戏、认知神�
 - Google DeepMind, “Demis Hassabis & John Jumper awarded Nobel Prize in Chemistry”, October 2024: https://deepmind.google/blog/demis-hassabis-john-jumper-awarded-nobel-prize-in-chemistry/
 - Google DeepMind, About: https://deepmind.google/about/
 - Britannica, “Demis Hassabis”: https://www.britannica.com/biography/Demis-Hassabis
+- Nature 2015, DQN: https://www.nature.com/articles/nature14236
+- Nature 2016, AlphaGo: https://www.nature.com/articles/nature16961
+- Nature 2021, AlphaFold2: https://www.nature.com/articles/s41586-021-03819-2
+- AlphaFold Protein Structure Database: https://alphafold.ebi.ac.uk/
+- DeepMind WaveNet blog (2016): https://deepmind.google/blog/wavenet-a-generative-model-for-raw-audio/
