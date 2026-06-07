@@ -9,20 +9,27 @@ Bostrom 对 AI 领域的影响主要来自《Superintelligence: Paths, Dangers, 
 ## 人生与职业时间线
 
 - 1973 年：出生于瑞典。
-- 1990 年代：在 Stockholm University、King's College London 等机构学习哲学、物理和计算神经科学。
-- 2000 年代初：在 London School of Economics 等机构从事哲学和风险相关研究。
-- 2005 年：创办 Oxford Future of Humanity Institute。
+- 1994 年：在 University of Gothenburg 获学士学位（哲学与数学）。[A]
+- 1996 年：在 King's College London 获计算神经科学 MSc 学位。[A]
+- 2000 年：在 London School of Economics 获哲学博士学位。[A]
+- 2000–2002 年：在 Yale University 任教。
+- 1998 年：与 David Pearce 联合创立 World Transhumanist Association（后更名 Humanity+）。[A]
+- 2002–2005 年：以 British Academy Postdoctoral Fellow 身份在 Oxford 工作。
+- 2004 年：与 James Hughes 联合创立 Institute for Ethics and Emerging Technologies（IEET）。[A]
+- 2005 年：创办 Oxford Future of Humanity Institute（FHI）。
 - 2008 年：起任 Oxford University 教授。
 - 2008 年：与 Milan Cirkovic 编辑《Global Catastrophic Risks》。
-- 2014 年：出版《Superintelligence: Paths, Dangers, Strategies》。
+- 2011 年：创立 Oxford Martin Programme on Impacts of Future Technology。[A]
+- 2014 年：出版《Superintelligence: Paths, Dangers, Strategies》，登 NYT 畅销书榜。[A]
 - 2019 年：发表 “The Vulnerable World Hypothesis”。
-- 2024 年：Future of Humanity Institute 关闭。
+- 2023 年 1 月：公开道歉 1996 年 Extropians 邮件列表中的种族主义言论；牛津大学于同年 8 月 10 日调查结论称”不认为其持种族主义观”。[A]
+- 2024 年 4 月 16 日：Future of Humanity Institute 正式关闭；Bostrom 称”death by bureaucracy”，起因于 2020 年起哲学系冻结 FHI 的招募和募资权。[A]
 - 2024 年：出版《Deep Utopia: Life and Meaning in a Solved World》。
-- 2025-2026 年：继续围绕 AGI governance、digital minds、superintelligence timing 等问题写作。
+- 2025-2026 年：以独立哲学家身份（Macrostrategy Research Initiative）继续围绕 AGI governance、digital minds、superintelligence timing 等问题写作。
 
 ## 早年与教育背景
 
-Bostrom 的教育背景横跨哲学、物理、计算神经科学和数学逻辑。公开简历显示，他在 Stockholm University 获哲学与物理相关学位，在 King's College London 学习计算神经科学，并最终进入 Oxford 学术体系。这种跨学科训练使他能够把技术问题转化为概率、决策理论、伦理学和长期未来问题。
+Bostrom 的教育背景横跨哲学、物理、计算神经科学和数学逻辑。他本科就读于 University of Gothenburg（1994 年，哲学与数学），后在 Stockholm University 获哲学与物理 MA 学位，在 King's College London 获计算神经科学 MSc（1996 年），并最终在 London School of Economics 完成哲学博士学位（2000 年）。[A] 这种跨学科训练使他能够把技术问题转化为概率、决策理论、伦理学和长期未来问题。
 
 公开资料对其童年细节披露不多，因此本档案不虚构具体家庭故事。可以确定的是，他不是从工程实现进入 AI，而是从哲学和未来风险研究进入 AI。他关注的问题不是“如何训练一个更强模型”，而是“如果人类能制造比自己更聪明的系统，文明应该如何避免灾难并获得巨大收益”。
 
@@ -32,13 +39,13 @@ Bostrom 的教育背景横跨哲学、物理、计算神经科学和数学逻辑
 
 FHI 的意义在于，它把“人类未来”作为严肃学术对象。传统学术更关注已经发生或短期可测的问题，而 FHI 关注低概率高影响事件：人工智能失控、生物风险、核战争、极端气候、纳米技术、全球治理失败等。AI 安全只是其中一部分，但后来成为最有影响力的一部分。
 
-到 2024 年，FHI 关闭。Bostrom 个人网站明确标注其 Oxford/FHI 身份为过去身份。这一点对档案正确性很重要，因为很多旧资料仍称他为 Oxford FHI 主任。
+FHI 在 2020 年开始遭遇牛津哲学系的行政阻力——哲学系冻结了 FHI 的招募和募资权，导致团队持续萎缩。2024 年 4 月 16 日，FHI 正式关闭。[A] Bostrom 称此为"death by bureaucracy"。Bostrom 个人网站明确标注其 Oxford/FHI 身份为过去身份。这一点对档案正确性很重要，因为很多旧资料仍称他为 Oxford FHI 主任。
 
 ## 《Superintelligence》与超级智能风险
 
 2014 年出版的《Superintelligence》是 Bostrom 最重要的作品。Oxford University Press 页面介绍该书讨论当机器智能超过人类智能后可能发生什么。书中提出一系列核心问题：超级智能是否可能快速出现；智能爆炸是否会使系统能力迅速超越人类；如果目标设定错误，系统是否会以不可逆方式追求错误目标；人类如何在能力爆发前解决控制问题。
 
-这本书影响极大。Elon Musk、Bill Gates、Sam Altman、有效利他主义社区、AI 安全研究者和政策制定者都曾受到其影响。它不是技术手册，而是战略和哲学分析：在高度不确定条件下，如何对待可能改变文明命运的技术。
+这本书影响极大，出版后登上 NYT 畅销书榜。[A] Elon Musk、Bill Gates、Sam Altman、有效利他主义社区、AI 安全研究者和政策制定者都曾受到其影响。Bostrom 的著作总计被译成 28 种以上语言，有 100 余次翻译和再版。[B] 它不是技术手册，而是战略和哲学分析：在高度不确定条件下，如何对待可能改变文明命运的技术。
 
 ## 核心思想：工具性趋同与控制问题
 
@@ -56,7 +63,7 @@ Bostrom 的一个核心观点是“工具性趋同”：不同最终目标的强
 
 ## 争议与复杂性
 
-Bostrom 是有争议的人物。一方面，他使 AI 存在风险进入主流讨论；另一方面，他的思想也被部分批评者认为过度抽象、过度末日化，或者容易使公众忽略当前 AI 的偏见、劳动、隐私和权力集中问题。FHI 的关闭、有效利他主义社区的争议，也使其影响处在更复杂的背景中。
+Bostrom 是有争议的人物。2023 年 1 月，他 1996 年在 Extropians 邮件列表写下的含种族侮辱词和种族智力论言论被曝光；他随即公开道歉，但部分批评者认为道歉回避了核心问题。牛津大学于 2023 年 8 月 10 日调查结束，结论称"不认为其持种族主义观"，但公共声誉已有所损伤。[A] 此外，他的思想也被部分批评者认为过度抽象、过度末日化，或者容易使公众忽略当前 AI 的偏见、劳动、隐私和权力集中问题。FHI 的关闭、有效利他主义社区的争议，也使其影响处在更复杂的背景中。
 
 评价 Bostrom 时应避免两种极端：一种是把他神化为唯一预见 AI 风险的人；另一种是因其不是工程师而否定其贡献。事实上，AI 安全和治理需要工程、政策、哲学、经济和战略共同参与。Bostrom 的贡献正是在哲学和宏观战略层面提出了必须被回答的问题。
 
@@ -64,12 +71,19 @@ Bostrom 是有争议的人物。一方面，他使 AI 存在风险进入主流�
 
 Bostrom 的领军性体现在三方面。第一，他通过《Superintelligence》系统化地提出超级智能风险、智能爆炸和控制问题，深刻影响 AI 安全领域。第二，他创办 Future of Humanity Institute，把存在风险和长期未来研究制度化。第三，他持续讨论 AGI governance、digital minds 和超级智能时机等问题，为 AI 治理提供哲学和战略框架。
 
-他不是模型训练者，也不是 AI 公司管理者，但他改变了很多技术领导者理解 AI 的方式。在研究 AI 领军人才时，Bostrom 代表的是“风险想象力和长期未来战略”的路线。
+他不是模型训练者，也不是 AI 公司管理者，但他改变了很多技术领导者理解 AI 的方式。他的 Google Scholar 引用总计达 43,317 次，h-index 为 63（2026 年测量）。[A] 在研究 AI 领军人才时，Bostrom 代表的是”风险想象力和长期未来战略”的路线。
 
 ## 资料来源
 
 - Nick Bostrom official website: https://nickbostrom.com/
 - Nick Bostrom CV: https://nickbostrom.com/cv.pdf
-- Oxford University Press, “Superintelligence”: https://www.oup.com.au/books/higher-education/art-and-technology/9780198739838-superintelligence
+- Wikipedia, Nick Bostrom: https://en.wikipedia.org/wiki/Nick_Bostrom
+- Oxford University Press, “Superintelligence”: https://global.oup.com/academic/product/superintelligence-9780199678112
 - Le Monde, “Swedish transhumanist Nick Bostrom fears a 'pendulum swinging too far' against AI”: https://www.lemonde.fr/en/economy/article/2026/05/24/swedish-transhumanist-nick-bostrom-fears-a-pendulum-swinging-too-far-against-ai_6753767_19.html
 - Nick Bostrom, “The Vulnerable World Hypothesis”: https://nickbostrom.com/papers/vulnerable.pdf
+- Nick Bostrom, “Apology for an Old Email” (2023): https://nickbostrom.com/oldemail.pdf
+- Daily Nous, “Why a Philosopher's Racist Email from 26 Years Ago is News Today” (2023-01-13): https://dailynous.com/2023/01/13/why-philosophers-racist-email-26-years-ago-news-today/
+- Daily Nous, “The End of the Future of Humanity Institute” (2024-04-18): https://dailynous.com/2024/04/18/end-future-of-humanity-institute/
+- Bioethics Observatory, “The Future of Humanity Institute closes” (2024-05): https://bioethicsobservatory.org/2024/05/the-future-of-humanity-institute/46366/
+- Nick Bostrom Google Scholar: https://scholar.google.com/citations?user=oQwpz3QAAAAJ
+- Simulation Argument paper: https://simulation-argument.com/simulation.pdf

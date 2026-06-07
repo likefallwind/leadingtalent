@@ -13,11 +13,14 @@ Stuart Russell 是 AI 领军人才中“教材奠基 + AI 安全 + 人类兼容 
 - 1986 年：获 Stanford University 计算机科学博士学位。
 - 1980 年代后期：加入 UC Berkeley，并长期任教。
 - 1995 年：与 Peter Norvig 出版《Artificial Intelligence: A Modern Approach》第一版。
-- 2016 年：参与创立 UC Berkeley Center for Human-Compatible Artificial Intelligence。
+- 1997 年：当选 AAAI Fellow。[A]
+- 2003 年：当选 ACM Fellow。[A]
+- 2016 年：参与创立 UC Berkeley Center for Human-Compatible Artificial Intelligence（CHAI）；Open Philanthropy 初始资助 $5,555,550，后续追加超 $12,000,000。[A]
 - 2016 年：与 Peter Norvig 获 AAAI/EAAI Outstanding Educator Award。
-- 2019 年：出版《Human Compatible: Artificial Intelligence and the Problem of Control》。
-- 2023 年：在美国参议院等场合就 AI 风险和治理作证。
-- 2025 年：当选 Royal Society Fellow。
+- 2019 年：出版《Human Compatible: Artificial Intelligence and the Problem of Control》；入围 FT/McKinsey Award longlist，《卫报》称为"今年最重要 AI 书"。[A]
+- 2021 年：获英国 OBE 勋章；担任 BBC Reith Lectures 主讲人（"Living with Artificial Intelligence"）。[A]
+- 2023 年 7 月 25 日：在美国参议院司法委员会"Oversight of A.I."听证会就 AI 风险和治理作证。[A]
+- 2025 年：当选英国皇家学会 Fellow（FRS）。[A]
 
 ## 早年与教育背景
 
@@ -27,7 +30,7 @@ Stuart Russell 是 AI 领军人才中“教材奠基 + AI 安全 + 人类兼容 
 
 ## AIMA：一代 AI 学习者的基础教材
 
-Russell 最广为人知的贡献，是与 Peter Norvig 合著《Artificial Intelligence: A Modern Approach》。Berkeley CHAI 页面称，该书是 AI 标准教材，被翻译成多种语言，在全球上千所大学使用。AI2050 介绍也称 AIMA 第四版已被翻译成 14 种语言，在 135 个国家 1500 多所大学使用。
+Russell 最广为人知的贡献，是与 Peter Norvig 合著《Artificial Intelligence: A Modern Approach》。Berkeley CHAI 页面称，该书是 AI 标准教材，被翻译成多种语言，在全球上千所大学使用。AI2050 介绍也称 AIMA 第四版已被翻译成 14 种语言，在 135 个国家 1500 多所大学使用；Google Scholar 引用超过 59,000 次；被称为"世界最流行 AI 教材"。[A]
 
 AIMA 的重要性在于，它把 AI 组织成一套可教学、可学习、可研究的知识体系。书中从智能代理、搜索、约束满足、逻辑、概率推理、机器学习、规划、自然语言、机器人和哲学问题展开，使学生能把 AI 看成一个整体，而不是零散算法集合。许多后来进入 AI 产业和学术界的人，第一次系统学习 AI 就是通过这本书。
 
@@ -53,7 +56,7 @@ Russell 也是自主武器风险的公开倡议者之一。他参与推动国际
 
 ## 学术荣誉与影响
 
-Russell 是 AAAI Fellow、ACM Fellow、AAAS Fellow 等，2025 年当选 Royal Society Fellow。Berkeley 工程学院称，他的研究覆盖机器学习、多目标跟踪等领域，并努力推动 AI 以有益于人类的方式使用。AIMA 和 CHAI 则分别代表其教育与安全影响。
+Russell 是 AAAI Fellow（1997）、ACM Fellow（2003）、AAAS Fellow、美国国家工程院（NAE）院士，2021 年获英国 OBE，2025 年当选英国皇家学会 Fellow（FRS）。[A] 他的 Google Scholar 总引用达 155,107 次，h-index 为 106（2026 年测量）。[A] 2021 年他还担任 BBC Reith Lectures 主讲人，就人工智能发表面向全球受众的系列讲座。Berkeley 工程学院称，他的研究覆盖机器学习、多目标跟踪等领域，并努力推动 AI 以有益于人类的方式使用。AIMA 和 CHAI 则分别代表其教育与安全影响。
 
 他的学术影响不只来自论文数量，而来自“框架塑造”。他帮助定义 AI 课程，也帮助重塑 AI 目标问题。如果现代 AI 界越来越重视 alignment、human values、control problem 和 safe AI，Russell 是其中重要推动者。
 
@@ -70,3 +73,12 @@ Russell 的领军性体现在三方面。第一，他通过 AIMA 塑造了全球
 - Berkeley Engineering, “EECS professor Stuart Russell elected to Royal Society”: https://engineering.berkeley.edu/news/2025/05/eecs-professor-stuart-russell-elected-to-royal-society/
 - AI2050, “Community Perspective - Stuart Russell”: https://ai2050.schmidtsciences.org/community-perspective-stuart-russell/
 - Stuart Russell, “Written Statement”, U.S. Senate, Dec. 6, 2023: https://aima.cs.berkeley.edu/~russell/papers/russell-senate23b-statement.pdf
+- Stuart Russell Senate Testimony (Judiciary Committee, July 25, 2023): https://www.judiciary.senate.gov/imo/media/doc/2023-07-26_-_testimony_-_russell.pdf
+- CHAI at Berkeley — HUMANCOMPATIBLE.AI: https://humancompatible.ai/
+- Stuart Russell biography (Berkeley): https://people.eecs.berkeley.edu/~russell/biography.html
+- Berkeley Engineering, “AI pioneer Stuart Russell named 2021 Reith Lecturer”: https://engineering.berkeley.edu/news/2021/10/ai-pioneer-stuart-russell-named-2021-reith-lecturer/
+- Founders Pledge, “Center for Human-Compatible AI”: https://founderspledge.com/stories/center-for-human-compatible-ai-high-impact-funding-opportunity
+- Stuart Russell Google Scholar: https://scholar.google.com/citations?user=2oy3OXYAAAAJ
+- AIMA official site: https://aima.cs.berkeley.edu/
+- AIMA translations list: https://aima.cs.berkeley.edu/translations.html
+- Royal Society, Stuart Russell profile: https://royalsociety.org/people/stuart-russell-37368/
