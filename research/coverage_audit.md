@@ -32,7 +32,7 @@
 | # | 人物 | 状态 | 本轮权威来源对照 | 候选缺口 / 处理提示 |
 |---|---|---|---|---|
 | F01 | Geoffrey Hinton | updated | U of T个人页/前博士生名单、NobelPrize.org、ACM Turing页、vectorinstitute.ai/Newswire 2017、CIFAR官方2024、JMLR(Dropout/t-SNE)、arXiv 2212.13345(Forward-Forward)、research.com/citationmap(Scholar) | 贡献清单v1已穷举八类；新增F14-F20：Dropout/t-SNE/知识蒸馏/胶囊网络/Forward-Forward/Gatsby Unit/MoE；更正F10（联合创始人）；扩写F11（38博士生谱系）；扩充F12（QE Prize/Order of Canada）；总被引103万+/h190补入。清单见contributions/F01_Geoffrey_Hinton.md。对分数潜在影响：D1.1(更强confirmed)、D7.3(confirmed)、D6.2(confirmed)，待60人齐后统一重评。 |
-| F02 | Yann LeCun | queued |  | 需复核 AMI Labs、Meta/FAIR、JEPA/世界模型、PyTorch/ICLR 与现有 facts |
+| F02 | Yann LeCun | updated | 个人官方页/publications列表、ACM Turing页、Meta AI官方博客、Semantic Scholar(LeNet 1998)、TechCrunch/SiliconANGLE(AMI Labs 2026)、research.com/citationmap(Scholar)、Wikipedia、OpenReview(JEPA 2022) | 贡献清单v1已穷举八类；新增F14-F17：SVM奠基(1992)、DjVu压缩格式、MNIST数据集、I/V-JEPA具体模型、LLaMA开源系列；补充AMI Labs融资$1.03B；更正F7(补JEPA论文名年份)、F9(明确PyTorch/LLaMA)、F12(补融资数字)、F13(补QE Prize)；扩写F17(Kavukcuoglu博士生谱系)；h-index171/总引47万补入。清单见contributions/F02_Yann_LeCun.md。对分数潜在影响：D2.2(PyTorch/LLaMA→更强)、D7.3(Kavukcuoglu→confirmed)，待60人齐后统一重评。 |
 | F03 | Yoshua Bengio | queued |  | 需复核 LawZero、International AI Safety Report、Mila、Element AI、GAN/attention 相关表述 |
 | F04 | Jeff Dean | queued |  | 需复核 Google 官方 bio 中列出的 Google Brain/TPU/TensorFlow/Pathways/Gemini/产品线影响 |
 | F05 | Ilya Sutskever | queued |  | 需复核 seq2seq、AlexNet、GPT/Scaling、Superalignment、SSI 的来源与下游编码 |

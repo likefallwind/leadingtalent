@@ -68,15 +68,15 @@ LeCun 的研究始终强调可训练系统，而不是手工拼接的模块。�
 
 ## 关键研究之四：JEPA、世界模型与 AMI Labs
 
-LeCun 近年的研究重点包括 Joint Embedding Predictive Architecture（JEPA）和世界模型。他希望系统不必预测所有像素级细节，而是在抽象表征空间中预测世界的关键状态。这与纯生成式像素预测不同，更接近“理解哪些变量对行动和推理重要”。在机器人、自动驾驶和具身智能中，这类模型可能比只依赖语言 token 的模型更接近物理世界。
+LeCun 近年的研究重点包括 Joint Embedding Predictive Architecture（JEPA）和世界模型。他在 2022 年发布白皮书《A Path Towards Autonomous Machine Intelligence》（OpenReview），系统提出 JEPA 架构与层级世界模型框架：系统不必预测像素细节，而是在抽象表征空间中预测世界状态。FAIR 在其主导下相继发布 I-JEPA（图像）和 V-JEPA（视频）模型，将理论落地为具体系统。
 
-2026 年 NYU Tandon 的新闻称，LeCun 在 2026 年 1 月成为 AMI Labs 执行董事长，正在围绕世界模型推进新的路线。这说明他在离开 Meta 后，并不是退出 AI 前沿，而是把研究判断转化为创业组织。AMI Labs 的定位也体现了 LeCun 的长期反主流倾向：当行业大量资源投入 LLM 和聊天机器人时，他选择押注能理解物理世界、具有预测和规划能力的模型。
+2025 年底 LeCun 离开 Meta，创办 AMI Labs 任执行董事长。AMI Labs 于 2026 年 3 月完成 $1.03B 种子轮融资（估值 $3.5B），是史上最大欧洲初创企业种子轮（来源：TechCrunch 2026-03-09）。这说明他在离开 Meta 后，并不是退出 AI 前沿，而是把研究判断转化为创业组织。AMI Labs 的定位也体现了 LeCun 的长期反主流倾向：当行业大量资源投入 LLM 时，他选择押注能理解物理世界、具有预测和规划能力的模型。
 
 ## 产业经历：Bell Labs、AT&T、Facebook/Meta 与 AMI
 
 LeCun 的产业经历比许多大学教授更深。Bell Labs 和 AT&T Labs 让他在通信、文档处理和真实系统中验证神经网络，这也是他不同于纯学术 AI 研究者的重要之处。手写数字识别、支票读取、文档识别等应用并不华丽，却在 1990 年代证明了神经网络可以解决真实商业任务。
 
-2013 年，他被 Facebook 邀请创建 FAIR。ACM 传记指出，LeCun 从 2013 年 12 月起在 Facebook 创建 FAIR，并在纽约领导该实验室至 2018 年；2018 年之后，他转为 Chief AI Scientist，更关注战略和科学领导。FAIR 的重要性不只在 Meta 内部产品，也在于其开放研究文化。PyTorch、开源模型、论文、数据集和研究人员流动，使 FAIR 成为全球 AI 研究生态的重要节点。
+2013 年，他被 Facebook 邀请创建 FAIR。ACM 传记指出，LeCun 从 2013 年 12 月起在 Facebook 创建 FAIR，并在纽约领导该实验室至 2018 年；2018 年之后，他转为 Chief AI Scientist，更关注战略和科学领导。FAIR 的重要性不只在 Meta 内部产品，也在于其开放研究文化。PyTorch（200k+ GitHub Stars，AI 研究主流框架）、LLaMA 开源大模型系列（1/2/3，最大 405B，成为开源 LLM 事实标准）、论文、数据集和研究人员流动，使 FAIR 成为全球 AI 研究生态的重要节点。此外，他在 AT&T Labs 时期与 Bottou、Haffner 等共同开发了 DjVu 图像压缩格式，被维基百科、互联网档案馆等大规模采用；MNIST 数据集（1998，与 Cortes 共同发布）至今仍是深度学习最常用的基准数据集之一。
 
 离开 Meta 后，LeCun 转向 AMI Labs。这个变化反映了他与主流大模型竞赛之间的张力。他并不否认深度学习和大规模训练的价值，但认为当前 LLM 路线不足以单独抵达他理解中的高级机器智能。作为 AI 领军人才，他的影响既包括已经被行业吸收的 CNN 和深度学习，也包括仍在争议中的下一代 AI 路线判断。
 
@@ -88,7 +88,7 @@ LeCun 的荣誉包括 2018 年 ACM A.M. 图灵奖、IEEE Neural Network Pioneer 
 
 ## 评价：为什么 LeCun 是 AI 领军人才
 
-LeCun 的领军性体现在三个方面。第一，他把卷积神经网络从思想推进到可训练系统和真实应用，为现代计算机视觉奠定基础。第二，他长期坚持端到端学习和自监督学习，影响了深度学习系统的基本训练范式。第三，他在 FAIR、NYU、CILVR、CDS 和 AMI Labs 等组织中持续塑造人才网络和研究方向。
+LeCun 的领军性体现在四个方面。第一，他把卷积神经网络从思想推进到可训练系统和真实应用（LeNet-5，57,979 被引），为现代计算机视觉奠定基础。第二，他长期坚持端到端学习和自监督学习，影响了深度学习系统的基本训练范式。第三，他主导 FAIR 推出 PyTorch 和 LLaMA 等行业基础设施，并与 Bengio 联合创立 ICLR 改造学术评审制度。第四，他在 FAIR、NYU、CILVR、CDS 和 AMI Labs 等组织中持续塑造人才网络和研究方向，博士生 Koray Kavukcuoglu 后成 Google DeepMind CTO。总被引 467,791+，h-index 171。
 
 更重要的是，LeCun 是一个不断提出“下一步应该是什么”的研究者。在 1990 年代，他押注卷积网络和梯度学习；在 2010 年代，他推动企业 AI 研究实验室和开放深度学习生态；在 2020 年代，他强调世界模型和自监督表征，挑战“扩大语言模型就足够”的叙事。这种持续判断技术路线的能力，是 AI 领军人才区别于单项高产研究者的重要特征。
 
@@ -100,3 +100,8 @@ LeCun 的领军性体现在三个方面。第一，他把卷积神经网络从�
 - AI Pioneer Yann LeCun Will Address the Class of 2026 at the NYU Tandon Commencement, May 4, 2026: https://engineering.nyu.edu/news/ai-pioneer-yann-lecun-will-address-class-2026-nyu-tandon-commencement
 - CILVR Lab, About CILVR: https://wp.nyu.edu/cilvr/about-cilvr/
 - LeNet-5 demos and references, Yann LeCun website: https://yann.lecun.org/exdb/lenet/index.html
+- Gradient-Based Learning Applied to Document Recognition, Semantic Scholar: https://www.semanticscholar.org/paper/Gradient-based-learning-applied-to-document-LeCun-Bottou/162d958ff885f1462aeda91cd72582323fd6a1f4
+- I-JEPA: The first AI model based on Yann LeCun's vision for more human-like AI, Meta AI Blog: https://ai.meta.com/blog/yann-lecun-ai-model-i-jepa/
+- A Path Towards Autonomous Machine Intelligence, OpenReview 2022: https://openreview.net/forum?id=BZ5a1r-kVsf
+- Yann LeCun's AMI Labs raises $1.03B to train world models, TechCrunch, 2026-03-09: https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/
+- Yann LeCun citation metrics, research.com / citationmap.com (accessed June 2026)
