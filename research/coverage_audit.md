@@ -51,46 +51,46 @@
 | F18 | 张钹 | updated | 清华大学官方/AI研究院(tsinghua.edu.cn)、智源社区、CCF官网(ccf.org.cn/c/2015-02-04/647520)、维基百科、Amazon(英文专著)、媒体报道(人民日报/腾讯新闻/知乎) | 贡献清单v1已穷举八类；既有facts已较完整；新增F7(英文专著"Quotient Space…" Morgan Kaufmann 2014/200+论文)+F8(ICL欧洲AI奖1984/国家自然科学三等奖1995/CCF终身成就奖2014/吴文俊最高成就奖2019)；新增C8。清单见contributions/F18_张钹.md。对分数潜在影响：D6.2(多重奖项strong confirmed)，待60人齐后统一重评。 |
 | F19 | 高文 | updated | 百度百科、北大校友网(pku.org.cn/info/1013/2163, ACM Fellow 2013)、AVS工作组官网(avs.org.cn, AVS3/DVB采纳)、鹏城实验室官网、USTC通知(IEEE Fellow 2009)、DVBCN | 贡献清单v1已穷举八类；既有facts已较完整；补IEEE Fellow年份2009/ACM Fellow年份2013；新增F7(AVS3 2021/DVB 2022采纳/8K标准效率提升30%/北大数字视频国家工程实验室主任)；新增C8。清单见contributions/F19_高文.md。对分数潜在影响：D5.1(AVS3 DVB国际标准confirmed)，待60人齐后统一重评。 |
 | F20 | 梁文锋 | updated | GitHub(deepseek-ai/DeepSeek-R1 92k stars)、arXiv 2412.19437(V3 Tech Report)、arXiv 2501.12948(R1)、api-docs.deepseek.com(R1-0528/V3.2)、TechCrunch 2025-01-27、HuggingFace统计、marketingltb.com(DeepSeek统计) | 贡献清单v1已穷举八类；扩写F5(V2 236B+V3 671B/37B激活/$5.6M训练/2048 H800/arXiv号)；扩写F6(R1 671B MoE/超越o1 benchmarks/92k GitHub stars/500+衍生模型/2.5M下载/股市震荡)；新增F8(R1-0528 AIME 87.5%/V3.2 2025-12智能体)；清单见contributions/F20_梁文锋.md。对分数潜在影响：D1.1(R1 benchmark结果强化)、D2.2(开源生态规模confirmed)，待60人齐后统一重评。 |
-| F21 | 杨植麟 | queued |  | 需复核 Transformer-XL、XLNet、Moonshot/Kimi、Mooncake、长上下文与产品化 |
-| F22 | 王慧文 | queued |  | 需复核美团、光年之外、资本/组织与大模型创业事实边界 |
-| F23 | 王小川 | queued |  | 需复核搜狗输入法/搜索、百川智能、大模型产品、清华/IOI 背景 |
-| F24 | 李开复 | queued |  | 需复核微软/Google China/创新工场/零一万物/AI 投资生态 |
-| F25 | Stuart Russell | queued |  | 需复核 AIMA、CHAI、Human Compatible、国会证词、AI safety 报告 |
-| F26 | Nick Bostrom | queued |  | 需复核 Superintelligence、FHI、existential risk、哲学/治理影响 |
-| F27 | Paul Christiano | queued |  | 需复核 RLHF、iterated amplification、ARC、OpenAI alignment 贡献 |
-| F28 | Richard Sutton | queued |  | 需复核 TD learning、policy gradient、RL textbook、Bitter Lesson、DeepMind/Alberta |
-| F29 | Ian Goodfellow | queued |  | 需复核 GAN、deep learning textbook、adversarial examples、Google/OpenAI/Apple |
-| F30 | Aidan Gomez | queued |  | 需复核 Transformer、Cohere、企业级 LLM、开源/社区边界 |
+| F21 | 杨植麟 | updated | 贡献清单v1 contributions/F21_杨植麟.md；TechCrunch/Moonshot官网/arXiv 2407.00079/GitHub | 补充融资链($60M→$2B@$20B)/Kimi MAU 3600万/K1.5(2025-01)/K2 MoE开源/Mooncake FAST'25 |
+| F22 | 王慧文 | updated | 贡献清单v1 contributions/F22_王慧文.md；美团港交所公告/36氪/创业邦 | 补充美团港股(3690.HK)/光年之外个人投入$5000万/A轮$2.3亿/美团收购$2.34亿结构 |
+| F23 | 王小川 | updated | 贡献清单v1 contributions/F23_王小川.md；百川智能官网/GitHub/TechCrunch/新浪财经 | 补充搜狗NYSE IPO/$21.3亿私有化/百川融资@$28亿/Baichuan-M3 HealthBench全球第一 |
+| F24 | 李开复 | updated | 贡献清单v1 contributions/F24_李开复.md；创新工场官网/01.ai GitHub/NYT Books/媒体 | 补充创新工场AUM$3B/500+投组/零一万物Yi-34B 7800stars/癌症经历细节/双榜单畅销书 |
+| F25 | Stuart Russell | updated | 贡献清单v1 contributions/F25_Stuart_Russell.md；CHAI官网/Semantic Scholar/Senate记录/BBC | 补充AIMA 59k引用/CHAI资助$12M+/OBE 2021/BBC Reith Lectures/h-index 106/155k引用 |
+| F26 | Nick Bostrom | updated | 贡献清单v1 contributions/F26_Nick_Bostrom.md；FHI关闭公告/牛津调查/ICAI/Wikipedia | 补充FHI 2024关闭原因/著作28+语种/世界超人类主义协会创立/争议邮件调查结论/h-index 63 |
+| F27 | Paul Christiano | updated | 贡献清单v1 contributions/F27_Paul_Christiano.md；arXiv/ARC Evals官网/METR公告 | 补充RLHF 5324引用/METR创立/RSP被9家AI采纳/ELK报告(2021-22)/iterated amplification |
+| F28 | Richard Sutton | updated | 贡献清单v1 contributions/F28_Richard_Sutton.md；Semantic Scholar/Amii官网/Bitter Lesson原文 | 补充h-index 101/186k引用/RL教材96662/TD 9201/策略梯度11127/Bitter Lesson日期URL |
+| F29 | Ian Goodfellow | updated | 贡献清单v1 contributions/F29_Ian_Goodfellow.md；Semantic Scholar/Inceptive官网/arXiv | 补充h-index 103/430k引用/GAN 117960/教材99251/FGSM 30602/Inceptive CTO 2023 |
+| F30 | Aidan Gomez | updated | 贡献清单v1 contributions/F30_Aidan_Gomez.md；Semantic Scholar/Cohere官网/BetaKit | 补充Attention 173k+引用/Cohere融资$1.6B+@$7B/Command R+/UofT学士2018/Roger Grosse导师 |
 | F31 | 刘铁岩 | updated | MSRA「2021 ACM Fellow」官方文章、github.com/microsoft/LightGBM、LightGBM 作者页、Alan Turing Institute 人物页、清华电子系/校友总会页、MS Research 本人页 | 贡献清单 v1 已穷举八类维度并回填 F8–F14：对偶学习/listwise/Graphormer/LightLDA/FastSpeech/Suphx/新冠预测/T-DETECT/被引3.5万·h68/ACM Fellow2021/顶会主席·期刊副主编/专著近10万册/三清学历。清单见 `research/contributions/F31_刘铁岩.md`；对分数的建议见 evidence，待 60 人齐后统一重评。唯「具体学生谱系」仍 needs-source |
 | F32 | 张林峰 | updated | DeePMD-kit GitHub、深势科技/Bohrium/Hermite 官网、arXiv(1707.09571/1712.03641/2004.11658/2008.00167)、北大讲座预告、36氪/投中网/财联社融资报道、新华网/人民网专访、百度百科/LinkedIn | 贡献清单 v1 已穷举八类并回填 F8–F12、更正 F1（博导 Roberto Car，非鄂维南）：新增 AISI 院长、完整融资链(累计十几亿/估值数十倍)、DeePMD-kit 框架规模、Bohrium/Hermite/RiDYMO/Piloteye 产品矩阵、Uni 系列、DeepModeling 开源社区、福布斯/胡润 U30、Gordon Bell 亚洲首位。清单见 `research/contributions/F32_张林峰.md`；建议 D4.1/D7.3/D2 上调，待 60 人齐后统一重评。Scholar 精确被引与学生谱系仍 needs-source |
-| F33 | 鄂维南 | needs-followup | DeePMD-kit GitHub/arXiv、Deep Ritz/PNAS 论文线索、DeepModeling 文档 | 现有 facts 覆盖 AI4S 和数学基础，但需补 Deep Ritz/high-dimensional PDE、DeePMD-kit/DeepModeling 谱系、DeepPKS 等候选，判断是否强化 `D1.1/D1.3/D5.5/D8.3` |
-| F34 | 唐杰 | needs-followup | 唐杰清华个人主页、ChatGLM/GLM arXiv、CogDL PyPI、Zhipu/Z.ai 资料 | 现有 facts 已覆盖 AMiner/GLM/ChatGLM/智谱主线；还需补充 GLM-130B、ChatGLM 下载/使用规模、CogView/CogVideo、CodeGeeX、CogDL 与 AMiner 用户规模，判断是否强化 `D1.1/D2.2/D7.3` |
-| F35 | 雷军 | queued |  | 需复核金山、小米、MIUI、IoT/汽车/机器人、AIoT 与资本生态 |
-| F36 | 张鹏 | queued |  | 需复核 GLM/ChatGLM、智谱商业化、开源/企业平台、清华 KEG 背景 |
-| F37 | 闫俊杰 | queued |  | 需复核 MiniMax、Talkie、abab 模型、海螺 AI、多模态/语音产品 |
-| F38 | 姜大昕 | queued |  | 需复核 Bing/Cortana/STCA、Step 系列、StepFun-Prover、融资与治理升级 |
-| F39 | 印奇 | queued |  | 需复核 Face++、Brain++、MegEngine、旷视城市/IoT、AI 基础设施转型 |
-| F40 | 余凯 | queued |  | 需复核百度 IDL、地平线征程芯片、车规量产数据、SuperDrive、Wintel 愿景 |
-| F41 | 朱珑 | queued |  | 需复核依图、医疗 AI、求索芯片、计算机视觉与监管/商业化边界 |
-| F42 | 陈天石 | queued |  | 需复核寒武纪、DianNao 系列、MLU、上市、国产算力生态 |
-| F43 | 王兴兴 | queued |  | 需复核 Unitree 四足/人形机器人、产品销量、开源/低成本工程路线 |
-| F44 | 张一鸣 | queued |  | 需复核推荐系统、今日头条/抖音/TikTok、组织算法文化、AI/大模型布局 |
-| F45 | 周靖人 | queued |  | 需复核 Qwen/通义千问、阿里云 CTO、开源模型、云上 AI 平台 |
-| F46 | 王海峰 | queued |  | 需复核飞桨、文心、百度搜索/NLP/知识图谱、昆仑芯/全栈 AI |
-| F47 | 田奇 | queued |  | 需复核华为诺亚、盘古大模型、盘古天气、视觉研究、工业/云平台落地 |
-| F48 | 张正友 | queued |  | 需复核 Zhang calibration、微软/腾讯、Robotics X、机器人/三维视觉 |
-| F49 | 何恺明 | needs-followup | MIT 个人主页、Mask R-CNN arXiv/OpenAccess、MAE arXiv、MoCo GitHub/论文线索 | 现有 facts 覆盖 ResNet/研究品味，但需补 Mask R-CNN、MoCo、MAE、Faster R-CNN 相关视觉基础件，判断 `D1.1/D7.3` 是否低估 |
-| F50 | 谢赛宁 | needs-followup | 个人主页、GitHub、ResNeXt/ConvNeXt/MAE/DiT 论文线索 | 现有 facts 需复核是否漏掉 ConvNeXt、DiT、MAE 共同贡献、AMI Labs CSO 等近期角色，判断是否影响 `D1.1/D8.4` |
-| F51 | 张祥雨 | needs-followup | ShuffleNet OpenAccess、RepLKNet 论文线索、ResNet 论文/作者信息、旷视相关资料 | 现有 facts 覆盖 ResNet/ShuffleNet/RepLKNet 主线；需补具体论文证据与 MegEngine/Brain++ 角色边界，判断是否强化 `D2.2/D5.3` |
-| F52 | 朱松纯 | queued |  | 需复核 stochastic grammar、Raven、BIGAI、通用智能、认知/具身路线 |
-| F53 | 张亚勤 | queued |  | 需复核微软/百度/清华 AIR、自动驾驶/产业研究、AI 治理/教育 |
-| F54 | 黄铁军 | queued |  | 需复核智源、悟道、FlagOpen/FlagEval、类脑计算、开源生态 |
+| F33 | 鄂维南 | updated | 贡献清单v1 contributions/F33_鄂维南.md；ICIAM官网/Princeton DOF/arXiv/GitHub | 补充ICIAM Collatz(2003)+Maxwell(2023)双奖全球首例/DeePMD-kit~2k stars/完整学术谱系 |
+| F34 | 唐杰 | updated | 贡献清单v1 contributions/F34_唐杰.md；AMiner官网/雷峰网/GitHub THUDM/新浪财经 | 补充IEEE/ACM/AAAI Fellow年份/AMiner 3000万用户/ChatGLM 41100 stars/智谱港股IPO |
+| F35 | 雷军 | updated | 贡献清单v1 contributions/F35_雷军.md；小米官网/HK交易所/小米汽车官网/研究报告 | 补充IPO 240亿HKD/SU7首年136,854辆/玄戒O1芯片(3nm)/MiMo-7B/总营收3659亿/AIoT 9亿设备 |
+| F36 | 张鹏 | updated | 贡献清单v1 contributions/F36_张鹏.md；智谱官网/港交所/arXiv GLM/GitHub THUDM | 补充GLM IPO 02513.HK/578.9亿首日/"大模型第一股"/融资83亿/CogVideoX ICLR 2025 |
+| F37 | 闫俊杰 | updated | 贡献清单v1 contributions/F37_闫俊杰.md；MiniMax官网/港交所/媒体报道 | 补充MiniMax融资$1.55B/IPO 830亿港元市值/abab6.5万亿参数/星野MAU 2760万/7轮融资详情 |
+| F38 | 姜大昕 | updated | 贡献清单v1 contributions/F38_姜大昕.md；阶跃星辰官网/媒体报道 | 补充StepFun融资轮次/Step-1/Step-2模型/Step-Video/MSRA全球伙伴VP背景 |
+| F39 | 印奇 | updated | 贡献清单v1 contributions/F39_印奇.md；旷视官网/GitHub MegEngine/港交所公告 | 补充MegEngine 4.8k stars/Brain++三层架构/旷视IPO撤回(2024.11)/D轮$40亿估值/力帆科技董事长 |
+| F40 | 余凯 | updated | 贡献清单v1 contributions/F40_余凯.md；港交所公告/地平线官网/汽车行业报告 | 补充IPO HK$63.2B(09660.HK)/600万片芯片出货/Journey6/27 OEM合作/大众合资Carizon |
+| F41 | 朱珑 | updated | 贡献清单v1 contributions/F41_朱珑.md；NIST FRVT/Nature Medicine/依图官网 | 补充NIST FRVT 2017-18双冠/Nature Medicine 136万就诊AI诊断/求索SoC/科创板CDR终止(非HK IPO) |
+| F42 | 陈天石 | updated | 贡献清单v1 contributions/F42_陈天石.md；ASPLOS 2014/寒武纪上交所/官网 | 补充ASPLOS 2014 Best Paper(大陆首次)/华为麒麟采用/IPO首日千亿/2024营收11.74亿+65% |
+| F43 | 王兴兴 | updated | 贡献清单v1 contributions/F43_王兴兴.md；Unitree官网/GitHub/媒体/TIME | 补充G1人形$16K全球最低/四足23700台全球70%份额/春晚16台H1/Series C 7亿@120亿/TIME 100 AI |
+| F44 | 张一鸣 | updated | 贡献清单v1 contributions/F44_张一鸣.md；Bloomberg/Fortune/媒体报道 | 补充ByteDance$3000亿估值/2024营收$1550亿/豆包3.3亿用户/南开双专业(纠正)/净资产$928亿 |
+| F45 | 周靖人 | updated | 贡献清单v1 contributions/F45_周靖人.md；Qwen官网/GitHub QwenLM/ModelScope | 补充Qwen3 27k stars/36T tokens/119语言/235B-A22B MoE; QwQ-32B超o1; 100+模型4000万下载 |
+| F46 | 王海峰 | updated | 贡献清单v1 contributions/F46_王海峰.md；飞桨官网/GitHub/百度IR/媒体报道 | 补充PaddlePaddle 23937 stars/文心一言上线/昆仑芯片7nm量产/深度学习国家工程研究中心(中国首个) |
+| F47 | 田奇 | updated | 贡献清单v1 contributions/F47_田奇.md；Nature官方/Science评选/华为诺亚/IEEE/ACM | 补充h-index 141/112k引用/IEEE Fellow 2016/ACM Fellow 2024/AAAI Fellow 2026/盘古气象Nature/Science十大突破#1 |
+| F48 | 张正友 | updated | 贡献清单v1 contributions/F48_张正友.md；Semantic Scholar/ICCV 2013/IEEE/腾讯官网 | 补充标定法23325引用/ICCV Helmholtz 2013首届奖/IEEE Fellow 2004/ACM Fellow 2013/腾讯T17最高技术等级 |
+| F49 | 何恺明 | updated | 贡献清单v1 contributions/F49_何恺明.md；Nature 2025/NeurIPS 2025/MIT官网/Google DeepMind | 补充ResNet 328513引用/"21世纪最高被引"(Nature 2025)/MIT副教授+终身教职2025/未来科学奖2023/Faster R-CNN NeurIPS ToT |
+| F50 | 谢赛宁 | updated | 贡献清单v1 contributions/F50_谢赛宁.md；Semantic Scholar/AMI Labs官网/NYU | 补充AMI Labs co-founder种子轮$1.03B(欧洲最大)/DiT 7456引用(Sora基础)/ConvNeXt 13962/h-index 53 |
+| F51 | 张祥雨 | updated | 贡献清单v1 contributions/F51_张祥雨.md；Semantic Scholar/GitHub MegEngine/StepFun官网 | 补充h-index 80/453k引用/ResNet单篇323978/StepFun联创Step-2国内首个万亿MoE/ShuffleNetV2 ECCV |
+| F52 | 朱松纯 | updated | 贡献清单v1 contributions/F52_朱松纯.md；IEEE官网/Science/BIGAI官网/Google Scholar | 补充h-index 110/51k引用/IEEE Fellow 2011/通通AGI儿童2024/Tong Test/BIGAI创立/$30M DARPA经费 |
+| F53 | 张亚勤 | updated | 贡献清单v1 contributions/F53_张亚勤.md；IEEE官网/清华AIR官网/百度IR | 补充IEEE Fellow 1997最年轻/CAE 2021/清华AIR 20+教师400+实习/Apollo平台/《智能涌现》2023 |
+| F54 | 黄铁军 | updated | 贡献清单v1 contributions/F54_黄铁军.md；BAAI官网/国家科学技术奖/AVS官网/IEEE | 补充BAAI首任院长/AVS秘书长/国家技术发明奖2017/吴文俊奖2022/四会士/SpikeCV类脑框架 |
 | F55 | 林达华 | audited-v1 | OpenMMLab 官网、MMDetection GitHub/arXiv、OpenMMLab ReadTheDocs | 现有 facts 已覆盖 OpenMMLab 作为视觉开源基础设施、复现标准与从视觉到大模型开源的主线；后续可补具体项目名 MMDetection/MMCV/MMEngine/MMDeploy 作为证据颗粒度增强，但暂未发现会改变能力归属的大缺口 |
-| F56 | 贾佳亚 | queued |  | 需复核图像去模糊/修复、CUHK、SmartMore、工业视觉平台 |
-| F57 | 颜水成 | queued |  | 需复核 SAIL/Sea AI Lab、压缩/AutoML/视觉、360/商汤经历 |
-| F58 | 刘知远 | needs-followup | OpenNRE GitHub/arXiv、OpenKE GitHub、OpenBMB/MiniCPM GitHub、清华新闻、MiniCPM arXiv | 现有 facts 覆盖 OpenBMB/密度法则/面壁智能主线，但缺少 OpenNRE、OpenKE、MiniCPM/MiniCPM-V 等具体工具与模型证据；需判断是否强化 `D2.2/D7.3/D7.5/D8.1` |
-| F59 | 孙茂松 | queued |  | 需复核自然标注语料、九歌、学堂在线、OpenBMB/密度法则、中文 NLP 谱系 |
-| F60 | 李航 | queued |  | 需复核统计学习方法、Learning to Rank、华为诺亚、字节 AI Lab、工业 NLP/搜索 |
+| F56 | 贾佳亚 | updated | 贡献清单v1 contributions/F56_贾佳亚.md；IEEE官网/ACM官网/港交所/TPAMI | 补充IEEE Fellow 2018/ACM Fellow 2025/TPAMI副主编首位华人/思谋独角兽$12.3亿/港交所递表2026/h≥120 |
+| F57 | 颜水成 | updated | 贡献清单v1 contributions/F57_颜水成.md；ACM/AAAI/IEEE官网/NUS官网 | 补充NIN论文1×1卷积(9900+引)/h≥125/110k引用/ACM Fellow 2020/AAAI Fellow 2022/Sea SAIL创立/NUS回归2025 |
+| F58 | 刘知远 | updated | 贡献清单v1 contributions/F58_刘知远.md；GitHub thunlp/面壁智能官网/arXiv MiniCPM | 补充MiniCPM-V 25565 stars/面壁融资10亿+/WantWords 7108 stars/密度法则100天翻倍/OpenNRE+OpenKE |
+| F59 | 孙茂松 | updated | 贡献清单v1 contributions/F59_孙茂松.md；ACL官网/欧洲院官网/清华新闻/Scholar | 补充ACL Fellow 2022(唯一华人)/欧洲人文院院士2020/九歌千万首/THULAC 2086 stars/Scholar 40k引用 |
+| F60 | 李航 | updated | 贡献清单v1 contributions/F60_李航.md；ACL官网/IEEE/出版社/字节跳动研究 | 补充ACL Fellow 2019(第5位华人)/IEEE+ACM Fellow/统计学习方法4版全程/华为2012-17+字节2017-至今 |
 
 ## 下一批优先级
 
