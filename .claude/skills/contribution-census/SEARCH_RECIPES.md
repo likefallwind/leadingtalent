@@ -61,7 +61,20 @@
 - `<name> 本科 OR 硕士 OR 博士 院校 年份`
 - `<en> PhD OR education <university>`
 
+## benchmark 自报成绩的第三方核验（定 S 级前必做）
+- `<榜单名> leaderboard official`（赛事/榜单官方页是 S1；只在厂商博客出现的成绩 = S3"自报"）
+- `<model> paperswithcode` / `<model> lmarena OR chatbot arena`
+- 比赛冠军查赛事官方结果页：`WMT <year> results` / `KDD Cup <year> winners` / `NIST FRVT report`
+- 核验不到第三方记录 → 保留 S3，表述带"自报/称"，不支撑 ≥2 分建议
+
+## 来源定级速查（S1–S4，详见 SKILL.md）
+- 招股书/年报/获奖官方页/标准采纳文件/赛事官方榜 → **S1**
+- 仓库 stars/forks、Scholar/DBLP/SS 被引、下载量、论文原文 → **S2**（记口径 + as-of 日期）
+- 本人主页 bio、公司官网、**机构给自己人写的特写/通稿** → **S3**（具体成绩顺藤摸外部锚可升级；
+  最高级形容词"最高/首个/领先"无外部锚则保留 S3 并带"称"字）
+- 媒体/百科 → **S4**，只交叉不单独作硬来源
+
 ## 实测注意
 - `WebFetch` 抓不动 JS 渲染官页（`microsoft.com/.../research/people/*` 等）→ 当指针，改抓机构文章/镜像/大学新闻/仓库/arXiv。
 - 百度百科常 403 → 用 WebSearch 摘要交叉，别直接抓。
-- 影响/规模一律落到**数字**；本人角色一律区分 独立/共同/团队/组织者。
+- 影响/规模一律落到**数字 + 口径 + as-of 日期**（Google Scholar 与 Semantic Scholar 被引数可差数倍，混用会让 60 人不可比）；本人角色一律区分 独立/共同/团队/组织者。
