@@ -98,6 +98,9 @@
 | F59 | 孙茂松 | updated | 贡献清单v1 contributions/F59_孙茂松.md；ACL官网/欧洲院官网/清华新闻/Scholar | 补充ACL Fellow 2022(唯一华人)/欧洲人文院院士2020/九歌千万首/THULAC 2086 stars/Scholar 40k引用 |
 | F60 | 李航 | updated | 贡献清单v1 contributions/F60_李航.md；ACL官网/IEEE/出版社/字节跳动研究 | 补充ACL Fellow 2019(第5位华人)/IEEE+ACM Fellow/统计学习方法4版全程/华为2012-17+字节2017-至今 |
 
+### 增补（第二批，F61+）
+| F61 | 李彦宏 | audited-v1 | 贡献清单v1 contributions/F61_李彦宏.md；US5920859专利(S1)/Nasdaq 8-K(S1)/TIME100 AI 2023(S1)/Baidu IR/Bloomberg | 新人入库：RankDex超链分析专利(早于PageRank)/百度2000创办+2005纳斯达克IPO/文心一言3亿用户/昆仑芯+Apollo/All in AI千亿研发/TIME100 AI唯一中国企业家。建议9维向量见 facts 末，待 v4 统一重评，未入 scores.md。 |
+
 ## 下一批优先级
 
 第一优先级是工具/框架/平台型人物，因为这类成果最容易被人物叙事漏掉：
