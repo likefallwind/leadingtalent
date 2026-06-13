@@ -6,7 +6,7 @@
 > ✅ **统一重评已执行（v2，2026-06-10）**：60 人全部达 `audited-v1`/`updated` 后，按"满 60 人单次重评"规则
 > 完成一轮统一重评——29 人 39 处分数上调（全部为补全证据后的上调，无下调），明细见 `research/scores.md` 末
 > 的 v2 变更记录，每处依据在 `research/capability_matrix.md` 以 `▲v2` 标注。下游 `capability_pool.md` 频率、
-> `profile/portrait.md` 分布、`FINDINGS.md`、`report.html` 已同步重算。核心结论（多峰、59 种形状、无单一模板）不变。
+> `profile/portrait.md` 分布、`FINDINGS.md`、`report.html` 已同步重算。核心结论（多峰、60 种形状、无单一模板）不变。
 > 各行"对分数潜在影响：…待 60 人齐后统一重评"的提示至此已兑现，留作历史记录。
 
 ## 审计原则
