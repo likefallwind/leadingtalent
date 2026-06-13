@@ -7,19 +7,26 @@
 
 ---
 
-## 已落地样例的 8 维分数汇总（v2，2026-06-13，n=5）
+## 已落地样例的 8 维分数汇总（v3，2026-06-14，n=10）
 
 | # | 姓名 | D1原创 | D2工程 | D3机构 | D4资本 | D5物理 | D6安全 | D7教育开源 | D8预判逆向 | 主要模式 |
 |---|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|---|
 | NS01 | Kyunghyun Cho | 3 | 0 | 1 | 0 | 0 | 0 | 1 | 1 | D1 独柱；D2–D6 全空 |
 | NS02 | Percy Liang | 3 | 1 | 2 | 2 | 0 | 1 | 2 | 2 | **D3+D4+D6 俱全仍落选**；高度均衡 |
 | NS03 | Pieter Abbeel | 2 | 2 | 2 | 1 | 3 | 0 | 2 | 1 | D5 独高；D1–D3 中段均衡 |
+| NS04 | Graham Neubig | 2 | 2 | 1 | 1 | 0 | 0 | 3 | 1 | **D7 顶格 + 有创业/融资**仍落选 |
 | NS05 | Oriol Vinyals | 3 | 2 | 2 | 0 | 0 | 0 | 1 | 1 | **D1/D2/D3 达标、仅缺 D4** |
+| NS08 | Luke Zettlemoyer | 3 | 1 | 2 | 1 | 0 | 0 | 2 | 1 | **全面达标、无单一标志神作** |
 | NS09 | Diederik Kingma | 3 | 1 | 1 | 0 | 0 | 0 | 1 | 1 | D1 极高（255k 引），其余全低 |
+| NS10 | Ilya Loshchilov | 3 | 1 | 0 | 0 | 0 | 0 | 1 | 1 | **纯工具型 D1 独柱**（AdamW），最极端 |
+| NS12 | Tim Salimans | 3 | 2 | 1 | 0 | 0 | 0 | 1 | 1 | 工业生成模型科学家，**与 Vinyals 同型缺 D4** |
+| NS14 | 刘群 Liu Qun | 2 | 2 | 2 | 1 | 0 | 0 | 2 | 1 | **非西方案例**：中文 NLP 均衡达标仍落选 |
 
 > 参照：60 人各维均值 ≈ [2.5, 2.0, 2.3, 1.6, 1.0, 0.8, 1.8, 1.9]
+> NS06（Shuicheng Yan = **颜水成**）**已确认即名单内 F57**，不满足"未入名单"，从对照组剔除（见候选表注）。
+> NS07（Noam Shazeer）已被 TIME100 AI 2023 收录，同样剔除。
 
-**判别力诊断 v2**（n=5；完整分析见各人文件末尾）：
+**判别力诊断 v3**（n=10；完整分析见各人文件末尾）：
 
 v1（n=3，仅 D1 独柱型科学家）曾倾向"局部重叠 → D3/D4 机构建设和资本动员可能才是真正筛子"。**v2 新增的两个反例从相反方向同时证伪了这一猜想：**
 
@@ -31,6 +38,16 @@ v1（n=3，仅 D1 独柱型科学家）曾倾向"局部重叠 → D3/D4 机构�
 - D3/D4 同样不能干净区分（Liang 两维俱全仍落选；Vinyals 缺 D4 但 D1/D2/D3 达标）——**这是 v2 的新证据，把"门槛特异度低"从 D1 推进到了 D3/D4。**
 - 8 维中**没有任何单一维度构成纳入的充分判别**。真正起作用的更可能是维度之外的**公众可见度 / 单一标志性叙事 / 提名显著性**——即名单循环性本身（见 `METHOD_IMPROVEMENTS.md` 共识 1）。
 - 局限不变：负样本本身也是人选的（5 人仍偏学术/工业科学家型），故只能把循环边界推远一步，无法根除。后续可补 D5/D6 主导型负样本（如机器人/治理方向）进一步压力测试。
+
+**v3 扩样到 n=10（2026-06-14，新增 NS04/08/10/12/14）——结论稳定且覆盖面更广：**
+- **新增覆盖三类此前缺口**：① 纯工具型 D1 独柱极端值（NS10 Loshchilov，AdamW 跑遍所有现代 LLM，D3/D4/D7≈0）；
+  ② "全面达标无神作"型（NS08 Zettlemoyer，与 NS02 Liang 互证"广而散也落选"）；
+  ③ **非西方案例**（NS14 刘群，证明名单盲区跨地域一致，不是西方特有）。
+- **再获独立复证**：NS12 Salimans [3,2,1,0,…] 与 NS05 Vinyals [3,2,2,0,…] 同型——"工业科学家、D1/D2 达标、缺 D4/缺可见度"是名单的**稳定盲区**，非孤例。
+- **甚至 D4 也不是充分项**：NS04 Neubig **有创业、有融资、有数万星开源框架**（D7=3）仍落选——连"创始人身份"都不保证纳入。
+- **收敛判别结论（n=10 稳健）**：8 维中**无任何单维（含 D3/D4，乃至"是否创业"）构成纳入的充分判别**；
+  10 个反例横跨独柱型/均衡型/创业型/中西方，统一指向同一筛子——**维度之外的公众可见度 / 单一标志性叙事 / 提名显著性**（即名单循环性本身，`METHOD_IMPROVEMENTS.md` 共识 1）。
+  这与 `validation/factor_structure.md`（PC1 仅 40%）、`subsample_robustness.md`（D3 定义特征非鉴别特征）三方互证。
 
 ---
 
@@ -59,7 +76,7 @@ v1（n=3，仅 D1 独柱型科学家）曾倾向"局部重叠 → D3/D4 机构�
 | NS03 | Pieter Abbeel | 奠基科学家（机器人/RL） | ACM Prize in Computing 2021；模仿学习奠基；被引 ~26 万 | 机器人强化学习领域标志性人物，covariant.ai 联创，长期 Berkeley 教席 | 机器人方向比 NLP/LLM 媒体可见度低；covariant.ai 估值未及头部；行业列表偏向 LLM 浪潮人物 |
 | NS04 | Graham Neubig | 学术/开源 NLP | CMU LTI 教授；被引 ~4.6 万；All Hands AI 创始人（OpenHands 框架） | 长期 NLP 基础研究+教育贡献，OpenHands 开源影响力大 | 引用量低于顶级，名字知名度仅限学术圈；All Hands AI 规模小 |
 | NS05 | Oriol Vinyals | 奠基科学家（工业） | Pointer Networks；seq2seq 联合作者；AlphaStar；被引 ~43 万 | 贡献极大，被引超过名单内多人，是 Gemini 核心贡献者 | 长期在 DeepMind 内部，不担任 CEO/创始人，媒体曝光受 Hassabis 遮蔽；身份是"工业科学家"而非创始人 |
-| NS06 | Shuicheng Yan | 巨头统帅/学术（亚洲） | Sea AI Lab 主任；被引 ~13 万；H-index 140+；ACM/IEEE/AAAI Fellow | 长期生产前沿视觉/多模态论文，亚洲工业研究院代表人物 | Sea Group 知名度低于 BAT/华为；新加坡背景在名单中代表性不足；贡献分散于大量论文而非单一标志成果 |
+| NS06 | Shuicheng Yan | 巨头统帅/学术（亚洲） | Sea AI Lab 主任；被引 ~13 万；H-index 140+；ACM/IEEE/AAAI Fellow | ~~长期生产前沿视觉/多模态论文~~ | ❌ **作废：Shuicheng Yan 即颜水成，已在第一批名单内（F57）**，不满足"未入名单"条件，从对照组剔除 |
 | NS07 | Noam Shazeer | 工程架构师 | "Attention Is All You Need" 核心作者；MoE 架构；被引 ~33 万；无博士学位 | 所有 LLM 都跑在他参与发明的 Transformer 上；MoE 成为主流架构 | ~~未进名单~~ **已被 TIME100 AI 2023 收录，不满足负样本条件——候选名单中移除，样例落地改为 NS09 Kingma** |
 | NS08 | Luke Zettlemoyer | 奠基科学家（学术） | ACL Fellow；PECASE；被引 ~19 万；Meta AI Research Director | NLP/语义解析/预训练长期贡献，UW 教席+Meta 双职 | 贡献广度高但无单一标志性"神作"；学术风格低调；Meta AI Research Director 职位知名度低于 LeCun |
 | NS09 | Diederik Kingma | 奠基科学家（学术） | VAE 发明者；Adam 优化器（引用 13 万+）；ICLR 2024 Test of Time Award | Adam 是所有神经网络训练的标配优化器，VAE 奠定生成模型基础 | 两篇里程碑论文后研究产出减少；无公司创始人身份；现就职 Anthropic（内部研究） |
@@ -79,11 +96,16 @@ v1（n=3，仅 D1 独柱型科学家）曾倾向"局部重叠 → D3/D4 机构�
 | `NS01_Kyunghyun_Cho.md` | Kyunghyun Cho | 引用量高（~20万）、GRU+注意力机制贡献明确、S2 可直接核验 |
 | `NS02_Percy_Liang.md` | Percy Liang | **关键反例**：D3（CRFM 主任）+D4（Together AI 联创 $3.3B）+D6（HELM 治理）俱全仍落选，证伪"D3/D4 是筛子" |
 | `NS03_Pieter_Abbeel.md` | Pieter Abbeel | ACM Prize S1 可核验、Berkeley/Covariant 事实清晰、D5 机器人方向典型 |
+| `NS04_Graham_Neubig.md` | Graham Neubig | **反例**：有创业(All Hands AI)+融资+D7=3(OpenHands 数万星)仍落选——"创始人身份"也非充分项 |
 | `NS05_Oriol_Vinyals.md` | Oriol Vinyals | **关键反例**：D1（437k 引）/D2/D3 达标、仅缺 D4 而落选，孤立出"创始人/资本身份"变量 |
+| `NS08_Luke_Zettlemoyer.md` | Luke Zettlemoyer | **反例**：D1/D3/D7 全面达标、无单一标志神作而落选，与 Liang 互证"广而散也落选" |
 | `NS09_Diederik_Kingma.md` | Diederik Kingma | Adam 255k 引用（极端值）+ VAE 57k 引、两个 ICLR Test of Time Award（S1）、"D1 独柱"模式典型 |
+| `NS10_Ilya_Loshchilov.md` | Ilya Loshchilov | **极端反例**：AdamW 跑遍所有现代 LLM，却 D3/D4/D7≈0——最纯粹的"D1 顶格仍隐形" |
+| `NS12_Tim_Salimans.md` | Tim Salimans | 工业生成模型科学家，与 Vinyals 同型（D1/D2 达标缺 D4），独立复证盲区 |
+| `NS14_Liu_Qun.md` | 刘群 | **非西方案例**：中文 NLP 均衡达标、机构角色明确仍落选，证盲区跨地域一致 |
 
-> 注：NS07（Noam Shazeer）已从样例落地中移除，因其已被 TIME100 AI 2023 收录（不满足"未进任何权威名单"条件）。
-> NS02/NS05 为 v2（2026-06-13）新增，专门选取"高 D3/D4"与"高 D1/D2/D3 仅缺 D4"两类，以压力测试 v1 的"D3/D4 是筛子"猜想——结果两侧夹击证伪之。
+> 注：NS06（Shuicheng Yan = 颜水成）即名单内 F57，NS07（Noam Shazeer）已被 TIME100 AI 2023 收录——二者均不满足"未进任何权威名单"，从样例落地剔除。
+> NS02/NS05 为 v2（2026-06-13）新增；**NS04/08/10/12/14 为 v3（2026-06-14）新增**，覆盖纯工具型/全面达标型/创业型/非西方四类缺口，使 n 达 10。
 
 ---
 
@@ -102,4 +124,4 @@ v1（n=3，仅 D1 独柱型科学家）曾倾向"局部重叠 → D3/D4 机构�
 
 ---
 
-*最后更新：2026-06-13（v2，n=5，新增 NS02 Liang / NS05 Vinyals）| 负样本工作流定义见 `.claude/skills/contribution-census/SKILL.md`（对照组分支）*
+*最后更新：2026-06-14（v3，n=10，新增 NS04 Neubig / NS08 Zettlemoyer / NS10 Loshchilov / NS12 Salimans / NS14 刘群；剔除 NS06=F57 颜水成）| 负样本工作流定义见 `.claude/skills/contribution-census/SKILL.md`（对照组分支）*
