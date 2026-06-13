@@ -101,6 +101,7 @@
 ### 增补（第二批，F61+）
 | F61 | 李彦宏 | audited-v1 | 贡献清单v1 contributions/F61_李彦宏.md；US5920859专利(S1)/Nasdaq 8-K(S1)/TIME100 AI 2023(S1)/Baidu IR/Bloomberg | 新人入库：RankDex超链分析专利(早于PageRank)/百度2000创办+2005纳斯达克IPO/文心一言3亿用户/昆仑芯+Apollo/All in AI千亿研发/TIME100 AI唯一中国企业家。建议9维向量见 facts 末，待 v4 统一重评，未入 scores.md。 |
 | F62 | 王坚 | audited-v1 | 贡献清单v1 contributions/F62_王坚.md；CAE院士增选2019(S1)/飞天电子学会特等奖2017(S1)/Alibaba Cloud Community/ITU | 新人入库：飞天中国唯一自研云OS提出者+总架构师/阿里云2009创办($135亿营收)/城市大脑首创/之江实验室主任/2019工程院院士(民营首位)。D8信念逆向极强。建议9维向量见 facts 末，待 v4 统一重评，未入 scores.md。 |
+| F63 | Michael I. Jordan | audited-v1 | 贡献清单v1 contributions/F63_Michael_Jordan.md；NAS院士2010(S1)/IEEE von Neumann 2020(S1)/LDA JMLR(S2)/Science2016报道 | 新人入库：LDA(与Blei/Ng)+变分推断+图模型奠基/Science 2016最具影响力CS学者/三院院士/ML史上最具影响力博导之一(Ng/Blei/Ghahramani/Xing,博后Bengio)。D1+D7标志级。建议9维向量见 facts 末，待 v4 统一重评，未入 scores.md。 |
 
 ## 下一批优先级
 
