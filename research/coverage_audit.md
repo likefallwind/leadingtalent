@@ -104,6 +104,7 @@
 | F63 | Michael I. Jordan | audited-v1 | 贡献清单v1 contributions/F63_Michael_Jordan.md；NAS院士2010(S1)/IEEE von Neumann 2020(S1)/LDA JMLR(S2)/Science2016报道 | 新人入库：LDA(与Blei/Ng)+变分推断+图模型奠基/Science 2016最具影响力CS学者/三院院士/ML史上最具影响力博导之一(Ng/Blei/Ghahramani/Xing,博后Bengio)。D1+D7标志级。建议9维向量见 facts 末，待 v4 统一重评，未入 scores.md。 |
 | F64 | Lisa Su 苏姿丰 | audited-v1 | 贡献清单v1 contributions/F64_Lisa_Su.md；TIME100 AI 2024(S1)/SEMI Silicon Medal 2025(S1)/MIT News/TAMEST(NAE) | 新人入库：AMD扭亏(市值+5000%/约$2000亿)/MI300 AI加速器(AI算力第二极)/Ryzen·EPYC复兴/$490亿收购Xilinx/IEEE诺伊斯奖章。D2+D3+D4+D5四高的硬件巨头统帅。建议9维向量见 facts 末，待 v4 统一重评，未入 scores.md。 |
 | F65 | 周伯文 Zhou Bowen | audited-v1 | 贡献清单v1 contributions/F65_周伯文.md；上海AI Lab(S3/S4)/InternLM GitHub(S2)/AI-45°Law WAIC2024(S4)/清华主页 | 新人入库：上海AI实验室主任(接任汤晓鸥F17)/前IBM Watson首席科学家+京东AI掌门/AI-45°平衡律安全治理叙事/书生InternLM开源/IEEE·CAAI Fellow+吴文俊奖。D3统帅+D6安全复合，迁移✓。建议9维向量见 facts 末，待 v4 统一重评，未入 scores.md。 |
+| F66 | 陈天奇 Tianqi Chen | audited-v1 | 贡献清单v1 contributions/F66_陈天奇.md；XGBoost KDD2016(S1)/TVM OSDI18(S1)/Scholar 116k引·h47(S2)/GitHub stars(S2)/OctoAI→NVIDIA收购(S4)/MLSys(S1) | 新人入库：XGBoost单篇8万引+开创ML编译(TVM)/三大高star开源系统(XGBoost 28.5k·TVM 13.5k·MLC-LLM 22.8k)/MXNet共同创作+DMLC联合发起/OctoAI联创被NVIDIA收购/MLSys理事长。D2+D7双标志+D1强的"纯开源系统建设者"形状，名单此前最稀缺。无院士/Fellow——领军由行为性指标确立。建议9维向量见 facts 末，待 v4 统一重评，未入 scores.md。 |
 
 ## 下一批优先级
 
